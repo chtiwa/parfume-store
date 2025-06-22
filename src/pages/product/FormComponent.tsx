@@ -6,7 +6,7 @@ import { BsFillSignpostFill } from "react-icons/bs"
 // import Offers from "./Offers"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
-import { useProductsStore } from "../../store/productsStore"
+import { useAppSelector } from "../../features/hooks.ts"
 // import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
@@ -22,7 +22,7 @@ interface FormErrors {
 }
 
 const FormComponent = () => {
-  const product = useProductsStore((state) => state.product)
+  const product = useAppSelector((state) => state.products.product)
   // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
 
   const [form, setForm] = useState({
@@ -57,10 +57,6 @@ const FormComponent = () => {
         Number(tarifs[Number(form?.stateNumber) - 1][form?.shippingMethod])
     }))
   }, [form.state, form.shippingMethod, form.price, product])
-
-  // useEffect(() => {
-  //   console.log(form.totalPrice)
-  // }, [form.totalPrice])
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -99,6 +95,7 @@ const FormComponent = () => {
   }
 
   const validateForm = () => {
+    // TODO : validate phone number
     const newErrors: FormErrors = {}
 
     if (!form.fullName.trim()) {
@@ -143,8 +140,8 @@ const FormComponent = () => {
             name="fullName"
             value={form.fullName || ""}
             onChange={handleChange}
-            max={20}
-            min={3}
+            maxLength={20}
+            minLength={3}
             className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full"
           />
           <IoPerson className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
@@ -160,11 +157,11 @@ const FormComponent = () => {
           <input
             maxLength={10}
             minLength={10}
-            type="text"
+            type="tel"
             name="phoneNumber"
             value={form.phoneNumber || ""}
             onChange={handleChange}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full"
+            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rtl"
           />
           <FaPhoneAlt className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>

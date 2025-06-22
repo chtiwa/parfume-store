@@ -9,7 +9,7 @@ const Footer = () => {
     { link: "", icon: <FaTiktok /> }
   ]
   return (
-    <footer className="w-full p-8 border-t border-gray-300">
+    <footer className="w-full px-8 py-4 border-t border-gray-300">
       <div className="flex items-center justify-between flex-col sm:flex-row gap-4">
         <img
           src="/logo.png"
@@ -33,7 +33,7 @@ const Footer = () => {
           })}
         </ul>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 mt-4 sm:mt-0">
         <BiCopyright />
         <span className="text-xs">Copryright 2025, LK Parfumo.</span>
       </div>

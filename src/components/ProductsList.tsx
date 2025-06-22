@@ -6,7 +6,7 @@ const ProductsList = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+    <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 py-4">
       {products &&
         products.map((product) => {
           const { id, title, price, images } = product
@@ -17,7 +17,10 @@ const ProductsList = () => {
             >
               <div
                 className="overflow-hidden hover:cursor-pointer"
-                onClick={() => navigate("/product/" + id)}
+                onClick={() => {
+                  window.scrollTo({ top: 0 })
+                  navigate("/product/" + id)
+                }}
               >
                 <img
                   src={`/${images[0]}`}
@@ -28,7 +31,7 @@ const ProductsList = () => {
               <h3 className="altfont mt-2">{title}</h3>
               <p className="font-semibold mt-1 text-sm text-red-900">
                 {price}
-                {" $"}
+                {" DA"}
               </p>
             </div>
           )

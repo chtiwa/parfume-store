@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface ImageContainerI {
   images: string[]
@@ -6,6 +6,8 @@ interface ImageContainerI {
 
 const ImageContainer = ({ images }: ImageContainerI) => {
   const [active, setActive] = useState(0)
+  const [transformOrigin, setTransformOrigin] = useState("center center")
+  const imgRef = useRef(null)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -18,13 +20,35 @@ const ImageContainer = ({ images }: ImageContainerI) => {
     return () => clearInterval(timer)
   }, [active])
 
+  const handleMouseMove = (e) => {
+    const bounds = imgRef.current.getBoundingClientRect()
+    const x = e.clientX - bounds.left
+    const y = e.clientY - bounds.top
+    const xPercent = (x / bounds.width) * 100
+    const yPercent = (y / bounds.height) * 100
+
+    setTransformOrigin(`${xPercent}% ${yPercent}%`)
+  }
+
+  const handleMouseLeave = () => {
+    setTransformOrigin("center center")
+  }
+
   return (
     <div className="p-4 flex flex-col gap-2 w-full md:w-max">
-      <img
-        src={`/${images[active]}`}
-        alt=""
-        className="w-xl h-[576px] mx-auto object-cover rounded-sm"
-      />
+      <div className="w-full flex items-center justify-center overflow-hidden">
+        <div className="overflow-hidden flex items-center justify-center w-full max-w-lg">
+          <img
+            ref={imgRef}
+            src={`/${images[active]}`}
+            alt=""
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            className={`w-xl h-[576px] mx-auto rounded-sm object-cover transition-transform duration-300 hover:scale-${130}`}
+            style={{ transformOrigin }}
+          />
+        </div>
+      </div>
       <div className="flex gap-2 w-full justify-center flex-wrap">
         {images.map((image, i) => (
           <div className={`${active === i && "border-black rounded"}`} key={i}>
