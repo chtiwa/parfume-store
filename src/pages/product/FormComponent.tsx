@@ -27,7 +27,7 @@ interface FormErrors {
 
 const FormComponent = () => {
   const dispatch = useAppDispatch()
-  const [createOrder, { data, error, isLoading }] = useCreateOrderMutation()
+  const [createOrder, { error, isLoading }] = useCreateOrderMutation()
   const product = useAppSelector((state) => state.products.product)
   // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
 
