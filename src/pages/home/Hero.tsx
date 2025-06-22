@@ -1,21 +1,21 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 const Hero = () => {
   const navigate = useNavigate()
   const [activeIndex, setActiveIndex] = useState(0)
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     if (activeIndex < 1) {
-  //       setActiveIndex((prev: number) => prev + 1)
-  //     } else {
-  //       setActiveIndex(0)
-  //     }
-  //   }, 10000)
-  //   console.log(activeIndex)
-  //   return () => clearInterval(timer)
-  // }, [activeIndex])
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (activeIndex < 1) {
+        setActiveIndex((prev: number) => prev + 1)
+      } else {
+        setActiveIndex(0)
+      }
+    }, 10000)
+    console.log(activeIndex)
+    return () => clearInterval(timer)
+  }, [activeIndex])
 
   return (
     <div

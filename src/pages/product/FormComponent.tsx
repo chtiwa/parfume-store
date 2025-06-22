@@ -7,7 +7,7 @@ import { BsFillSignpostFill } from "react-icons/bs"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
 import { useProductsStore } from "../../store/productsStore"
-import { useModalsStore } from "../../store/modalsStore"
+// import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
 // import { useModalsStore } from "../../store/modalsStore"
@@ -23,7 +23,7 @@ interface FormErrors {
 
 const FormComponent = () => {
   const product = useProductsStore((state) => state.product)
-  const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
+  // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
 
   const [form, setForm] = useState({
     productName: product?.title,

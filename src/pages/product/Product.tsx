@@ -12,6 +12,7 @@ const Product = () => {
   const product = getProduct(Number(id))
 
   useEffect(() => {
+    // @ts-ignore
     setProduct(product)
   }, [product])
 
