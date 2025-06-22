@@ -20,8 +20,9 @@ const ImageContainer = ({ images }: ImageContainerI) => {
     return () => clearInterval(timer)
   }, [active])
 
-  const handleMouseMove = (e) => {
-    const bounds = imgRef.current.getBoundingClientRect()
+  const handleMouseMove = (e: any) => {
+    // @ts-ignore
+    const bounds = imgRef?.current?.getBoundingClientRect()
     const x = e.clientX - bounds.left
     const y = e.clientY - bounds.top
     const xPercent = (x / bounds.width) * 100

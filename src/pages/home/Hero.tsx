@@ -13,7 +13,6 @@ const Hero = () => {
         setActiveIndex(0)
       }
     }, 10000)
-    console.log(activeIndex)
     return () => clearInterval(timer)
   }, [activeIndex])
 
@@ -27,7 +26,7 @@ const Hero = () => {
         <h3 className="text-lg sm:text-xl mb-6 font-bold altfont">
           LK PARFUMO
         </h3>
-        <h1 className="text-3xl sm:text-5xl mb-4 altfont">Parfum de luxe</h1>
+        <h1 className="text-3xl sm:text-5xl mb-4 altfont">Parfums de luxe</h1>
         <button
           className="px-4 py-2 bg-white text-black mt-4 hover:bg-black hover:border-white hover:text-white cursor-pointer transition duration-300 altfont"
           onClick={() => navigate("/homme")}
