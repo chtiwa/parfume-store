@@ -35,7 +35,7 @@ const ProductsList = () => {
                 <img
                   src={`/${images[0]}`}
                   alt={title}
-                  className="hover:scale-110 transition duration-300"
+                  className="hover:scale-110 transition duration-300 rounded"
                 />
               </div>
               <h3 className="altfont mt-2">{title}</h3>

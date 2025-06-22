@@ -172,7 +172,7 @@ const FormComponent = () => {
             onChange={handleChange}
             maxLength={20}
             minLength={3}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full"
+            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rounded"
           />
           <IoPerson className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
@@ -191,7 +191,7 @@ const FormComponent = () => {
             name="phoneNumber"
             value={form.phoneNumber || ""}
             onChange={handleChange}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rtl"
+            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rtl rounded"
           />
           <FaPhoneAlt className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
@@ -206,7 +206,7 @@ const FormComponent = () => {
           <select
             name="state"
             value={form?.state}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none"
+            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
             onChange={handleChange}
           >
             {tarifs &&
@@ -239,7 +239,7 @@ const FormComponent = () => {
           <select
             name="city"
             value={form?.city}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none"
+            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
             onChange={handleChange}
           >
             {form.state !== "" &&
@@ -286,7 +286,7 @@ const FormComponent = () => {
       {error && <span className="text-red-500">Internal Server Error</span>}
 
       <button
-        className="flex items-center justify-center px-8 pt-2 pb-2.5 border border-gray-500 font-bold text-lg text-white bg-black hover:scale-105 hover:border-green-500 animate-bounce transition duration-300 cursor-pointer mt-8"
+        className="flex items-center justify-center px-8 pt-2 pb-2.5 border border-gray-500 font-bold text-lg text-white bg-black hover:scale-105 hover:border-green-500 animate-bounce transition duration-300 cursor-pointer mt-8 rounded"
         type="submit"
       >
         {isLoading ? "..." : "احصل عليه الآن"}

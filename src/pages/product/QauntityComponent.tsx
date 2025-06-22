@@ -19,7 +19,7 @@ const QauntityComponent = ({ form, setForm }: QauntityComponentI) => {
   }
   return (
     <div className="w-full flex items-center justify-center gap-2">
-      <div className="flex items-center justify-center gap-4 border-2 p-2">
+      <div className="flex items-center justify-center gap-4 border-2 p-2 rounded">
         <FaPlus
           className="hover:cursor-pointer"
           onClick={() => handleQuantityChange("inc")}

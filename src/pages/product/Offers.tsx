@@ -7,7 +7,7 @@ const Offers = ({ form, setForm }: OffersProps) => {
   const variants = ["100ml", "50ml", "30ml"]
   return (
     <div className="w-full mt-4">
-      <ul className="w-full border-b-2 border-t-2 border-l border-r flex justify-evenly text-sm sm:text-base ">
+      <ul className="w-full border-b-2 border-t-2 border-l border-r flex justify-evenly text-sm sm:text-base rounded ">
         {variants.map((variant, i) => (
           <li
             className={`border-l border-r w-full flex items-center justify-center py-1.5  hover:cursor-pointer ${
