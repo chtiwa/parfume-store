@@ -18,7 +18,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarI) => {
       className={`${
         !isSidebarOpen
           ? "hidden w-0"
-          : "fixed inset-0 w-full max-w-sm h-screen backdrop-blur-2xl bg-white shadow-xl p-4 z-10"
+          : "fixed inset-0 w-full max-w-sm h-screen backdrop-blur-2xl bg-white shadow-xl p-4 z-20"
       }`}
     >
       <div className="w-full">

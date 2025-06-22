@@ -21,8 +21,8 @@ const Hero = () => {
       className={`relative w-full h-[calc(100vh-88px)] bg-center bg-cover`}
       style={{ backgroundImage: `url('hero-${activeIndex}.webp')` }}
     >
-      <div className="absolute inset-0 bg-black/50 z-10" />
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <div className="absolute inset-0 bg-black/50" />
+      <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h3 className="text-lg sm:text-xl mb-6 font-bold altfont">
           LK PARFUMO
         </h3>

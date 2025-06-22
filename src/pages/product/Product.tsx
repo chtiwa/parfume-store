@@ -37,12 +37,22 @@ const Product = () => {
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-4">
               {product?.title}{" "}
             </h3>
+
             <div className="flex items-center text-yellow-500">
               <IoMdStar />
               <IoMdStar />
               <IoMdStar />
               <IoMdStar />
               <IoMdStar />
+            </div>
+            <div className="flex items-center gap-2 text-sm">
+              <span className="font-semibold">Categorie :</span>
+              <span>Homme </span>
+            </div>
+
+            <div className="flex items-center gap-2 text-sm">
+              <span className="font-semibold">Tags :</span>
+              <span>Parfum </span>
             </div>
             <span className="text-red-900 font-bold text-xl sm:text-2xl">
               {product?.price} DA
