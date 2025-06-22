@@ -5,7 +5,13 @@ const products = [
     description:
       "A delicate floral blend with notes of jasmine, peony, and white musk for a soft and sensual finish.",
     price: 6900,
-    images: ["parfum1.webp"],
+    images: [
+      "parfum1.webp",
+      "parfum2.webp",
+      "parfum3.webp",
+      "parfum4.webp",
+      "parfum5.webp"
+    ],
     type: "women"
   },
   {
@@ -14,7 +20,13 @@ const products = [
     description:
       "A bold, smoky scent featuring oud, amber, and black pepper, perfect for evening wear.",
     price: 8450,
-    images: ["parfum2.webp"],
+    images: [
+      "parfum2.webp",
+      "parfum1.webp",
+      "parfum3.webp",
+      "parfum4.webp",
+      "parfum5.webp"
+    ],
     type: "men"
   },
   {
@@ -23,7 +35,13 @@ const products = [
     description:
       "Fresh and airy with hints of green apple, freesia, and aquatic notes — light yet captivating.",
     price: 5900,
-    images: ["parfum3.webp"],
+    images: [
+      "parfum3.webp",
+      "parfum1.webp",
+      "parfum2.webp",
+      "parfum4.webp",
+      "parfum5.webp"
+    ],
     type: "women"
   },
   {
@@ -32,7 +50,13 @@ const products = [
     description:
       "Woody and aromatic, with vetiver, cedarwood, and bergamot delivering a clean masculine profile.",
     price: 7525,
-    images: ["parfum4.webp"],
+    images: [
+      "parfum4.webp",
+      "parfum1.webp",
+      "parfum2.webp",
+      "parfum3.webp",
+      "parfum5.webp"
+    ],
     type: "men"
   },
   {
@@ -41,7 +65,13 @@ const products = [
     description:
       "Elegant and radiant with a blend of rose, mandarin, and soft vanilla for a luxurious finish.",
     price: 9200,
-    images: ["parfum5.webp"],
+    images: [
+      "parfum5.webp",
+      "parfum1.webp",
+      "parfum2.webp",
+      "parfum3.webp",
+      "parfum4.webp"
+    ],
     type: "women"
   },
   {
@@ -50,7 +80,13 @@ const products = [
     description:
       "Dark and intense with hints of leather, tobacco, and spicy cinnamon — unapologetically masculine.",
     price: 8890,
-    images: ["parfum6.webp"],
+    images: [
+      "parfum6.webp",
+      "parfum7.webp",
+      "parfum8.webp",
+      "parfum1.webp",
+      "parfum4.webp"
+    ],
     type: "men"
   },
   {
@@ -59,7 +95,13 @@ const products = [
     description:
       "A graceful harmony of iris, violet, and sandalwood for a soft and powdery signature.",
     price: 6630,
-    images: ["parfum7.webp"],
+    images: [
+      "parfum7.webp",
+      "parfum6.webp",
+      "parfum8.webp",
+      "parfum1.webp",
+      "parfum4.webp"
+    ],
     type: "women"
   },
   {
@@ -68,7 +110,13 @@ const products = [
     description:
       "Vibrant and energetic with grapefruit, sage, and marine accords — modern and fresh.",
     price: 7145,
-    images: ["parfum8.webp"],
+    images: [
+      "parfum8.webp",
+      "parfum6.webp",
+      "parfum7.webp",
+      "parfum1.webp",
+      "parfum4.webp"
+    ],
     type: "men"
   }
 ]

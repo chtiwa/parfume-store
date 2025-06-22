@@ -6,10 +6,11 @@ import { BsFillSignpostFill } from "react-icons/bs"
 // import Offers from "./Offers"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
-import { useAppSelector } from "../../features/hooks.ts"
+import { useAppDispatch, useAppSelector } from "../../features/hooks.ts"
 import Offers from "./Offers.tsx"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "./QauntityComponent.tsx"
+import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 // import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
@@ -25,7 +26,8 @@ interface FormErrors {
 }
 
 const FormComponent = () => {
-  const [createOrder, { error, isLoading }] = useCreateOrderMutation()
+  const dispatch = useAppDispatch()
+  const [createOrder, { data, error, isLoading }] = useCreateOrderMutation()
   const product = useAppSelector((state) => state.products.product)
   // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
 
@@ -106,21 +108,27 @@ const FormComponent = () => {
       handleCreateOrder()
       // createOrder(form).then((data) => {
       //   //   setIsPopupOpen(true)
-      //   //   // if (window.fbq) {
-      //   //   //   window.fbq("track", "Purchase", {
-      //   //   //     value: form.totalPrice,
-      //   //   //     currency: "DZA"
-      //   //   //   })
-      //   //   // }
+      //   //
       // })
     }
   }
 
   const handleCreateOrder = async () => {
     const res = await createOrder(form).unwrap()
-    const data = await res.json()
-    if (data.data.success) {
+    if (res.success) {
       // show success modal
+      dispatch(
+        setIsSuccessModalOpen({
+          isSuccessModalOpen: true,
+          orderedProductTitle: product.title
+        })
+      )
+      if (window.fbq) {
+        window.fbq("track", "Purchase", {
+          value: form.totalPrice,
+          currency: "DZA"
+        })
+      }
     }
   }
 

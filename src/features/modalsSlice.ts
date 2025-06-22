@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 interface ModalsProps {
-  isSuccessModalOpen: boolean
   isSidebarOpen: boolean
+  isSuccessModalOpen: boolean
+  orderedProductTitle: string
 }
 
 const initialState: ModalsProps = {
   isSidebarOpen: false,
-  isSuccessModalOpen: false
+  isSuccessModalOpen: false,
+  orderedProductTitle: ""
 }
 
 const modals = createSlice({
@@ -15,12 +17,12 @@ const modals = createSlice({
   initialState,
   reducers: {
     setIsSidebarOpen: (state, action) => {
-      console.log(action.payload)
       state.isSidebarOpen = action.payload
     },
 
     setIsSuccessModalOpen: (state, action) => {
-      state.isSuccessModalOpen = action.payload
+      state.isSuccessModalOpen = action.payload.isSuccessModalOpen
+      state.orderedProductTitle = action.payload.orderedProductTitle
     }
   }
 })

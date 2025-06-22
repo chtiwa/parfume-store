@@ -1,14 +1,17 @@
-import { useState } from "react"
 import { FaCheck } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import { useAppDispatch, useAppSelector } from "../features/hooks"
+import { setIsSuccessModalOpen } from "../features/modalsSlice"
 
 const SuccessModal = () => {
-  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(true)
+  const dispatch = useAppDispatch()
+  const { isSuccessModalOpen } = useAppSelector((state) => state.modals)
+
   return (
     <div
       className={`${
         isSuccessModalOpen
-          ? "w-full h-screen fixed inset-0 backdrop-blur-2xl z-30 flex items-center justify-center opacity-100 p-4"
+          ? "w-full h-screen fixed inset-0 backdrop-blur-3xl z-30 flex items-center justify-center opacity-100 p-4"
           : "opacity-0 z-0 hidden"
       } transition-opacity duration-300`}
     >
@@ -27,7 +30,14 @@ const SuccessModal = () => {
         <Link
           className="hover:cursor-pointer"
           to={"/"}
-          onClick={() => setIsSuccessModalOpen(false)}
+          onClick={() =>
+            dispatch(
+              setIsSuccessModalOpen({
+                isSuccessModalOpen: false,
+                orderedProductTitle: ""
+              })
+            )
+          }
         >
           <button className="w-full bg-black px-4 py-1.5 text-sm text-white rounded hover:cursor-pointer">
             Retour
