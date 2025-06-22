@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.altfont {
+  font-family: "Caprasimo", serif;
+}
+
+.rtl {
+  direction: rtl;
+}
