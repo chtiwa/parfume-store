@@ -17,12 +17,19 @@ const Hero = () => {
   }, [activeIndex])
 
   return (
-    <div
-      className={`relative w-full h-[calc(100vh-88px)] bg-center bg-cover`}
-      style={{ backgroundImage: `url('hero-${activeIndex}.webp')` }}
-    >
+    <div className="relative w-full h-[calc(100vh-88px)] overflow-hidden">
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        // loop
+        muted
+        playsInline
+        src={`/hero.mp4`} // adjust path as needed
+      />
+
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4">
+
+      <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4 z-10">
         <h3 className="text-lg sm:text-xl mb-6 font-bold altfont">
           LK PARFUMO
         </h3>
