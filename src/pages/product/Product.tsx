@@ -5,6 +5,7 @@ import ImageContainer from "./ImageContainer"
 import { useEffect } from "react"
 import { setProduct } from "../../features/productsSlice"
 import { useAppDispatch } from "../../features/hooks"
+import { IoMdStar } from "react-icons/io"
 
 const Product = () => {
   const dispatch = useAppDispatch()
@@ -32,13 +33,21 @@ const Product = () => {
         <div className="flex flex-col gap-4 lg:flex-row items-center lg:items-start justify-center">
           {/*  @ts-ignore */}
           <ImageContainer images={product?.images} />
-          <div className="flex flex-col gap-2 lg:gap-6 max-w-lg px-4 sm:px-1 ">
+          <div className="flex flex-col gap-1 lg:gap-2 max-w-lg px-4 sm:px-1 ">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold lg:mt-4">
               {product?.title}{" "}
             </h3>
+            <div className="flex items-center text-yellow-500">
+              <IoMdStar />
+              <IoMdStar />
+              <IoMdStar />
+              <IoMdStar />
+              <IoMdStar />
+            </div>
             <span className="text-red-900 font-bold text-xl sm:text-2xl">
-              {product?.price} د.ج
+              {product?.price} DA
             </span>
+
             <p className="text-sm sm:text-base text-gray-700">
               {product?.description}{" "}
             </p>

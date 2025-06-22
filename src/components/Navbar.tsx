@@ -14,7 +14,7 @@ const Navbar = ({ setIsSidebarOpen }: NavbarI) => {
     { title: "Accueil", href: "/" },
     { title: "Homme", href: "/homme" },
     { title: "Femme", href: "/femme" },
-    { title: "Promotion", href: "/sale" }
+    { title: "Collection", href: "/homme" }
   ]
 
   return (

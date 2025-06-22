@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import { getProducts } from "../features/productsFeatures"
+// import { CiHeart } from "react-icons/ci"
+// import { FaHeart } from "react-icons/fa"
+import { IoMdStar } from "react-icons/io"
 
 const ProductsList = () => {
   const products = getProducts()
@@ -12,16 +15,23 @@ const ProductsList = () => {
           const { id, title, price, images } = product
           return (
             <div
-              className="flex flex-col items-center justify-center p-4"
+              className="flex flex-col items-center justify-center p-4 "
               key={id}
             >
               <div
-                className="overflow-hidden hover:cursor-pointer"
+                className="overflow-hidden hover:cursor-pointer relative group"
                 onClick={() => {
                   window.scrollTo({ top: 0 })
                   navigate("/product/" + id)
                 }}
               >
+                {/* <span className="z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute top-2 right-2">
+                  <CiHeart className="text-red-500 hover:hidden" size={30} />
+                  <FaHeart
+                    className="text-red-500 hidden hover:flex"
+                    size={28}
+                  />
+                </span> */}
                 <img
                   src={`/${images[0]}`}
                   alt={title}
@@ -29,6 +39,13 @@ const ProductsList = () => {
                 />
               </div>
               <h3 className="altfont mt-2">{title}</h3>
+              <div className="flex items-center justify-center text-yellow-500">
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+              </div>
               <p className="font-semibold mt-1 text-sm text-red-900">
                 {price}
                 {" DA"}

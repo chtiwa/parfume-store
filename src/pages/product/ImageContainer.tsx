@@ -45,7 +45,7 @@ const ImageContainer = ({ images }: ImageContainerI) => {
             alt=""
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className={`w-xl h-[576px] mx-auto rounded-sm object-cover transition-transform duration-300 hover:scale-${130}`}
+            className={`w-xl  mx-auto rounded-sm object-cover transition-transform duration-300 hover:scale-180`}
             style={{ transformOrigin }}
           />
         </div>

@@ -8,17 +8,17 @@ interface SidebarI {
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarI) => {
   const links = [
-    { title: "Home", href: "/" },
-    { title: "Men", href: "/men" },
-    { title: "Women", href: "/women" },
-    { title: "Sale", href: "/sale" }
+    { title: "Accueil", href: "/" },
+    { title: "Homme", href: "/homme" },
+    { title: "Femme", href: "/femme" },
+    { title: "Collection", href: "/homme" }
   ]
   return (
     <div
       className={`${
         !isSidebarOpen
           ? "hidden w-0"
-          : "fixed inset-0 w-full max-w-sm h-screen backdrop-blur-2xl bg-white shadow-xl p-4"
+          : "fixed inset-0 w-full max-w-sm h-screen backdrop-blur-2xl bg-white shadow-xl p-4 z-10"
       }`}
     >
       <div className="w-full">
@@ -43,6 +43,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }: SidebarI) => {
           )
         })}
       </ul>
+      <div className="flex justify-center items-end h-full">Balls</div>
     </div>
   )
 }

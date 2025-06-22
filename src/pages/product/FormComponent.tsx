@@ -7,6 +7,9 @@ import { BsFillSignpostFill } from "react-icons/bs"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
 import { useAppSelector } from "../../features/hooks.ts"
+import Offers from "./Offers.tsx"
+import { useCreateOrderMutation } from "../../services/ordersService.ts"
+import QauntityComponent from "./QauntityComponent.tsx"
 // import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
@@ -22,22 +25,25 @@ interface FormErrors {
 }
 
 const FormComponent = () => {
+  const [createOrder, { error, isLoading }] = useCreateOrderMutation()
   const product = useAppSelector((state) => state.products.product)
   // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
 
   const [form, setForm] = useState({
-    productName: product?.title,
+    shopName: "lk-parfumo",
+    productName: product && product?.title,
     fullName: "",
     phoneNumber: "",
     state: "Alger",
     stateNumber: 16,
     city: "",
-    shippingMethod: "Stopdesk",
     // @ts-ignore
     price: product && product.price,
+    shippingMethod: "Stopdesk",
     shippingPrice: 370,
     totalPrice: product && product?.price + 370,
-    quantity: 1
+    quantity: 1,
+    variant: "100ml"
   })
 
   const [errors, setErrors] = useState<FormErrors>({
@@ -49,14 +55,29 @@ const FormComponent = () => {
   })
 
   useEffect(() => {
+    let factor = 1
+    if (form.variant === "100ml") {
+      factor = 1
+    } else if (form.variant === "50ml") {
+      factor = 0.5
+    } else {
+      factor = 0.3
+    }
     setForm((prev) => ({
       ...prev,
       totalPrice:
-        Number(product?.price) +
+        Number(product?.price) * factor * prev.quantity +
         // @ts-ignore
         Number(tarifs[Number(form?.stateNumber) - 1][form?.shippingMethod])
     }))
-  }, [form.state, form.shippingMethod, form.price, product])
+  }, [
+    form.state,
+    form.shippingMethod,
+    form.price,
+    form.quantity,
+    product,
+    form.variant
+  ])
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -82,15 +103,24 @@ const FormComponent = () => {
     e.preventDefault()
     if (validateForm()) {
       // console.log(form)
-      // createOrder(form).then(() => {
-      //   setIsPopupOpen(true)
-      //   // if (window.fbq) {
-      //   //   window.fbq("track", "Purchase", {
-      //   //     value: form.totalPrice,
-      //   //     currency: "DZA"
-      //   //   })
-      //   // }
+      handleCreateOrder()
+      // createOrder(form).then((data) => {
+      //   //   setIsPopupOpen(true)
+      //   //   // if (window.fbq) {
+      //   //   //   window.fbq("track", "Purchase", {
+      //   //   //     value: form.totalPrice,
+      //   //   //     currency: "DZA"
+      //   //   //   })
+      //   //   // }
       // })
+    }
+  }
+
+  const handleCreateOrder = async () => {
+    const res = await createOrder(form).unwrap()
+    const data = await res.json()
+    if (data.data.success) {
+      // show success modal
     }
   }
 
@@ -239,7 +269,9 @@ const FormComponent = () => {
         )}
       </div>
 
-      {/* <Offers form={form} setForm={setForm} /> */}
+      <Offers form={form} setForm={setForm} />
+
+      <QauntityComponent form={form} setForm={setForm} />
 
       <ShippingForm form={form} setForm={setForm} tarifs={tarifs} />
       {errors.shippingMethod && (
@@ -251,11 +283,13 @@ const FormComponent = () => {
         <span>{form?.totalPrice} د.ج</span>
       </div>
 
+      {error && <span className="text-red-500">Internal Server Error</span>}
+
       <button
         className="flex items-center justify-center px-8 pt-2 pb-2.5 border border-gray-500 font-bold text-lg text-white bg-black hover:scale-105 hover:border-green-500 animate-bounce transition duration-300 cursor-pointer mt-8"
         type="submit"
       >
-        احصل عليه الآن
+        {isLoading ? "..." : "احصل عليه الآن"}
       </button>
     </form>
   )
