@@ -5,7 +5,9 @@ import { setIsSuccessModalOpen } from "../features/modalsSlice"
 
 const SuccessModal = () => {
   const dispatch = useAppDispatch()
-  const { isSuccessModalOpen } = useAppSelector((state) => state.modals)
+  const { isSuccessModalOpen, orderedProductTitle } = useAppSelector(
+    (state) => state.modals
+  )
 
   return (
     <div
@@ -24,8 +26,8 @@ const SuccessModal = () => {
         </div>
 
         <p className="text-sm text-center">
-          Nous avons bien reçu votre demande pour [Nom du Produit]. Nous vous
-          contacterons bientôt pour confirmer votre commande.
+          Nous avons bien reçu votre demande pour {orderedProductTitle}. Nous
+          vous contacterons bientôt pour confirmer votre commande.
         </p>
         <Link
           className="hover:cursor-pointer"
