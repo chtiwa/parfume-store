@@ -17,13 +17,12 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center px-4 sm:px-16 border-b border-gray-200 shadow-xs">
-      <div className="hover:cursor-pointer flex flex-1/6 items-center justify-center sm:hidden group">
+      <div
+        className="hover:cursor-pointer flex flex-1/6 items-center justify-center sm:hidden group"
+        onClick={() => dispatch(setIsSidebarOpen(true))}
+      >
         <RiMenu2Fill size={24} className="flex group-hover:hidden" />
-        <RiMenuFill
-          size={24}
-          className="hidden group-hover:flex"
-          onClick={() => dispatch(setIsSidebarOpen(true))}
-        />
+        <RiMenuFill size={24} className="hidden group-hover:flex" />
       </div>
       <div className="flex flex-4/6 sm:flex-1/6 items-center justify-center">
         <img
