@@ -16,7 +16,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="flex items-center px-4 sm:px-16">
+    <nav className="flex items-center px-4 sm:px-16 border-b border-gray-200 shadow-xs">
       <div className="hover:cursor-pointer flex flex-1/6 items-center justify-center sm:hidden group">
         <RiMenu2Fill size={24} className="flex group-hover:hidden" />
         <RiMenuFill

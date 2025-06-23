@@ -17,29 +17,62 @@ const Hero = () => {
   }, [activeIndex])
 
   return (
-    <div className="relative w-full h-[calc(100vh-88px)] overflow-hidden">
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        // loop
-        muted
-        playsInline
-        src={`/hero.mp4`} // adjust path as needed
-      />
+    <div className="w-full flex flex-col gap-4 px-8 py-4">
+      <div className="bg-gray-50 px-4 pb-8 pt-16 md:pt-8 flex flex-col md:flex-row items-center justify-center overflow-hidden rounded shadow border border-gray-200">
+        <div className="flex flex-col h-full items-center justify-center gap-8 w-full">
+          <h3 className="font-bold altfont text-xl sm:text-4xl w-full text-center">
+            Collection d'été
+          </h3>
+          <button
+            className="px-6 pt-2.5 pb-3 altfont bg-black text-white rounded hover:bg-white hover:cursor-pointer hover:text-black border hover:border-black hover:scale-110 transition duration-200"
+            onClick={() => navigate("/homme")}
+          >
+            Clickez ici!
+          </button>
+        </div>
+        <img
+          src="/parfum1.webp"
+          alt=""
+          className="object-cover max-w-sm xl:max-w-md"
+        />
+      </div>
 
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="w-full flex flex-col sm:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row-reverse items-center bg-gray-50 px-4 pt-4 pb-16 md:pb-8 rounded shadow border border-gray-200 w-full gap-4">
+          <img
+            src="/parfum3.webp"
+            alt="Collection Femme"
+            className="w-40 sm:w-48 object-contain"
+          />
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
+            <h3 className="altfont text-xl">Collection Femme</h3>
+            <button
+              className="px-4 pt-1.5 pb-2 altfont hover:cursor-pointer bg-black text-white rounded hover:bg-white hover:text-black border hover:border-black hover:scale-110 transition duration-200"
+              onClick={() => navigate("/femme")}
+            >
+              Cliquez ici!
+            </button>
+          </div>
+        </div>
 
-      <div className="relative flex flex-col items-center justify-center h-full text-white text-center px-4 z-10">
-        <h3 className="text-lg sm:text-xl mb-6 font-semibold ">LK PARFUMO</h3>
-        <h1 className="text-3xl sm:text-5xl mb-4 font-bold ">
-          Parfums de luxe
-        </h1>
-        <button
-          className="px-4 py-2 bg-white text-black mt-4 hover:bg-black hover:border-white hover:text-white cursor-pointer transition duration-300 font-semibold"
-          onClick={() => navigate("/homme")}
-        >
-          Voir Maintenant
-        </button>
+        {/* Collection Homme */}
+        <div className="flex flex-col lg:flex-row items-center bg-gray-50 px-4 pt-4 pb-16 md:pb-8 rounded shadow border border-gray-200 w-full gap-4">
+          <img
+            src="/parfum2.webp"
+            alt="Collection Homme"
+            className="w-40 sm:w-48 object-contain"
+          />
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
+            <h3 className="altfont text-xl">Collection Homme</h3>
+            <button
+              className="px-4 pt-1.5 pb-2 altfont hover:cursor-pointer bg-black text-white rounded hover:bg-white hover:text-black border hover:border-black hover:scale-110 transition 
+            duration-200"
+              onClick={() => navigate("/homme")}
+            >
+              Cliquez ici!
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   )

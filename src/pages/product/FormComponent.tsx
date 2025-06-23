@@ -132,8 +132,12 @@ const FormComponent = () => {
     }
   }
 
+  const isValidPhoneNumber = (phone: string) => {
+    const regex = /^(05|06|07)\d{8}$/
+    return regex.test(phone)
+  }
+
   const validateForm = () => {
-    // TODO : validate phone number
     const newErrors: FormErrors = {}
 
     if (!form.fullName.trim()) {
@@ -142,6 +146,10 @@ const FormComponent = () => {
 
     if (!form.phoneNumber.trim() || form.phoneNumber.length < 9) {
       newErrors.phoneNumber = "يجب عليك كتابة رقمك"
+    }
+
+    if (form.phoneNumber.length > 1 && !isValidPhoneNumber(form.phoneNumber)) {
+      newErrors.phoneNumber = "يجب عليك كتابة رقم صحيح"
     }
 
     if (!form.state.trim()) {
@@ -180,12 +188,12 @@ const FormComponent = () => {
             onChange={handleChange}
             maxLength={20}
             minLength={3}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rounded"
+            className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rounded"
           />
           <IoPerson className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
         {errors.fullName && (
-          <span className="text-red-500 text-sm">{errors.fullName} </span>
+          <span className="text-red-500 text-base">{errors.fullName} </span>
         )}
       </div>
 
@@ -199,12 +207,12 @@ const FormComponent = () => {
             name="phoneNumber"
             value={form.phoneNumber || ""}
             onChange={handleChange}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rtl rounded"
+            className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full rtl rounded"
           />
           <FaPhoneAlt className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
         {errors.phoneNumber && (
-          <span className="text-red-500 text-sm">{errors.phoneNumber} </span>
+          <span className="text-red-500 text-base">{errors.phoneNumber} </span>
         )}
       </div>
 
@@ -214,7 +222,7 @@ const FormComponent = () => {
           <select
             name="state"
             value={form?.state}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
+            className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
             onChange={handleChange}
           >
             {tarifs &&
@@ -237,7 +245,7 @@ const FormComponent = () => {
           <FaMapSigns className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
         {errors.state && (
-          <span className="text-red-500 text-sm">{errors.state} </span>
+          <span className="text-red-500 text-base">{errors.state} </span>
         )}
       </div>
 
@@ -247,7 +255,7 @@ const FormComponent = () => {
           <select
             name="city"
             value={form?.city}
-            className="border border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
+            className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
             onChange={handleChange}
           >
             {form.state !== "" &&
@@ -273,7 +281,7 @@ const FormComponent = () => {
           <BsFillSignpostFill className="absolute top-1/2  right-4 -translate-y-1/2 text-xl" />
         </div>
         {errors.city && (
-          <span className="text-red-500 text-sm">{errors.city} </span>
+          <span className="text-red-500 text-base">{errors.city} </span>
         )}
       </div>
 
@@ -283,7 +291,7 @@ const FormComponent = () => {
 
       <ShippingForm form={form} setForm={setForm} tarifs={tarifs} />
       {errors.shippingMethod && (
-        <span className="text-red-500 text-sm">{errors.shippingMethod} </span>
+        <span className="text-red-500 text-base">{errors.shippingMethod} </span>
       )}
 
       <div className="flex items-center justify-between gap-2 w-full pt-4">

@@ -12,7 +12,7 @@ const products = [
       "parfum4.webp",
       "parfum5.webp"
     ],
-    type: "women"
+    type: "homme"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const products = [
       "parfum4.webp",
       "parfum5.webp"
     ],
-    type: "men"
+    type: "homme"
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const products = [
       "parfum4.webp",
       "parfum5.webp"
     ],
-    type: "women"
+    type: "femme"
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const products = [
       "parfum3.webp",
       "parfum5.webp"
     ],
-    type: "men"
+    type: "homme"
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const products = [
       "parfum3.webp",
       "parfum4.webp"
     ],
-    type: "women"
+    type: "femme"
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const products = [
       "parfum1.webp",
       "parfum4.webp"
     ],
-    type: "men"
+    type: "homme"
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ const products = [
       "parfum1.webp",
       "parfum4.webp"
     ],
-    type: "women"
+    type: "femme"
   },
   {
     id: 8,
@@ -117,12 +117,12 @@ const products = [
       "parfum1.webp",
       "parfum4.webp"
     ],
-    type: "men"
+    type: "homme"
   }
 ]
 
-const getProducts = () => {
-  return products
+const getProducts = (type: string) => {
+  return products.filter((product) => product.type !== type)
 }
 
 const getProduct = (id: number) => {

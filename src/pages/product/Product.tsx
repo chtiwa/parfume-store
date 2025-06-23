@@ -19,7 +19,7 @@ const Product = () => {
 
   return (
     product && (
-      <div className="w-full flex flex-col gap-2 pb-8 md:px-18">
+      <div className="w-full flex flex-col gap-2 pt-8 pb-8 md:px-18">
         <div className="flex items-center justify-center w-full text-gray-700 text-sm">
           <span
             className="hover:underline cursor-pointer"
@@ -47,7 +47,7 @@ const Product = () => {
             </div>
             <div className="flex items-center gap-2 text-sm">
               <span className="font-semibold">Categorie :</span>
-              <span>Homme </span>
+              <span>{product.type.toUpperCase()} </span>
             </div>
 
             <div className="flex items-center gap-2 text-sm">

@@ -17,7 +17,7 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
               <input
                 type="radio"
                 name="shippingMethod"
-                className="peer appearance-none border border-gray-500 checked:border-black w-5 h-5 rounded-md cursor-pointer"
+                className="peer appearance-none border border-gray-500 checked:border-black checked:border-2 w-5 h-5 rounded-md cursor-pointer"
                 checked={form?.shippingMethod === "Stopdesk"}
                 onChange={() => {
                   setForm((form: any) => ({
@@ -45,7 +45,7 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
               <input
                 type="radio"
                 name="shippingMethod"
-                className="peer appearance-none border border-gray-500 checked:border-black-500 w-5 h-5 rounded-md cursor-pointer"
+                className="peer appearance-none border border-gray-500 checked:border-black checked:border-2 w-5 h-5 rounded-md cursor-pointer"
                 checked={form?.shippingMethod === "Domicile"}
                 onChange={() =>
                   setForm((form: any) => ({

@@ -1,4 +1,5 @@
-import { FiTruck, FiStar, FiCreditCard, FiHeadphones } from "react-icons/fi"
+import { FiTruck, FiStar, FiHeadphones } from "react-icons/fi"
+import { GiMoneyStack } from "react-icons/gi"
 
 const Services = () => {
   const services = [
@@ -16,7 +17,7 @@ const Services = () => {
     },
     {
       title: "Paiement à la Livraison",
-      icon: FiCreditCard,
+      icon: GiMoneyStack,
       description:
         "Commandez en toute confiance et payez uniquement à la réception de votre colis."
     },
@@ -30,15 +31,15 @@ const Services = () => {
 
   return (
     <div className="flex flex-col gap-4 w-full px-8 sm:px-16 py-8 bg-gray-50 border-gray-300 border-t">
-      <h3 className="font-bold text-xl sm:text-2xl text-center underline">
+      <h3 className="altfont font-bold text-xl sm:text-2xl text-center underline ">
         Nos Services :
       </h3>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-center">
         {services.map((service, i) => {
           const { title, description, icon: Icon } = service
           return (
-            <li className="flex flex-col gap-2" key={i}>
-              <Icon className="text-2xl sm:text-3xl mt-1 w-full flex items-center justify-center " />
+            <li className="flex flex-col gap-2 group" key={i}>
+              <Icon className="text-2xl sm:text-3xl mt-1 w-full flex items-center justify-center group-hover:scale-130 transition duration-200 " />
               <h3 className="font-semibold text-base">{title} </h3>
               <p className="text-gray-700 text-xs sm:text-sm">{description} </p>
             </li>

@@ -4,8 +4,12 @@ import { getProducts } from "../features/productsFeatures"
 // import { FaHeart } from "react-icons/fa"
 import { IoMdStar } from "react-icons/io"
 
-const ProductsList = () => {
-  const products = getProducts()
+interface ProductListProps {
+  filter: string
+}
+
+const ProductsList = ({ filter }: ProductListProps) => {
+  const products = getProducts(filter)
   const navigate = useNavigate()
 
   return (
@@ -35,10 +39,10 @@ const ProductsList = () => {
                 <img
                   src={`/${images[0]}`}
                   alt={title}
-                  className="hover:scale-110 transition duration-300 rounded"
+                  className="hover:scale-110 transition duration-300 rounded border-gray-200 border shadow-2xl"
                 />
               </div>
-              <h3 className="altfont mt-2">{title}</h3>
+              <h3 className="font-semibold text-lg sm:text-xl mt-2">{title}</h3>
               <div className="flex items-center justify-center text-yellow-500">
                 <IoMdStar />
                 <IoMdStar />
@@ -46,7 +50,7 @@ const ProductsList = () => {
                 <IoMdStar />
                 <IoMdStar />
               </div>
-              <p className="font-semibold mt-1 text-sm text-red-900">
+              <p className="font-bold text-base mt-1 text-red-900">
                 {price}
                 {" DA"}
               </p>
