@@ -4,6 +4,7 @@ import Footer from "./Footer"
 import Sidebar from "./Sidebar"
 import SuccessModal from "./SuccessModal"
 import { useEffect } from "react"
+import MetaPixel from "./MetaPixel"
 
 const Layout = () => {
   const location = useLocation()
@@ -16,6 +17,7 @@ const Layout = () => {
 
   return (
     <>
+      <MetaPixel />
       <SuccessModal />
       <Sidebar />
       <Navbar />
