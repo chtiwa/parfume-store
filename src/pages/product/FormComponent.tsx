@@ -33,7 +33,7 @@ const FormComponent = () => {
 
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
-    productName: product && product?.title,
+    productName: product?.title,
     fullName: "",
     phoneNumber: "",
     state: "Alger",
