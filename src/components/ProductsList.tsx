@@ -44,11 +44,11 @@ const ProductsList = ({ filter }: ProductListProps) => {
               </div>
               <h3 className="font-semibold text-lg sm:text-xl mt-2">{title}</h3>
               <div className="flex items-center justify-center text-yellow-500">
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
-                <IoMdStar />
+                <IoMdStar className="hover:scale-150 transition duration-200" />
+                <IoMdStar className="hover:scale-150 transition duration-200" />
+                <IoMdStar className="hover:scale-150 transition duration-200" />
+                <IoMdStar className="hover:scale-150 transition duration-200" />
+                <IoMdStar className="hover:scale-150 transition duration-200" />
               </div>
               <p className="font-bold text-base mt-1 text-red-900">
                 {price}

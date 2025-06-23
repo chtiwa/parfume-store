@@ -39,11 +39,11 @@ const Product = () => {
             </h3>
 
             <div className="flex items-center text-yellow-500">
-              <IoMdStar />
-              <IoMdStar />
-              <IoMdStar />
-              <IoMdStar />
-              <IoMdStar />
+              <IoMdStar className="hover:scale-150 transition duration-200" />
+              <IoMdStar className="hover:scale-150 transition duration-200" />
+              <IoMdStar className="hover:scale-150 transition duration-200" />
+              <IoMdStar className="hover:scale-150 transition duration-200" />
+              <IoMdStar className="hover:scale-150 transition duration-200" />
             </div>
             <div className="flex items-center gap-2 text-sm">
               <span className="font-semibold">Categorie :</span>
