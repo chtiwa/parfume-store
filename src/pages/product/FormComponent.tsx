@@ -6,7 +6,7 @@ import { BsFillSignpostFill } from "react-icons/bs"
 // import Offers from "./Offers"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
-import { useAppDispatch, useAppSelector } from "../../features/hooks.ts"
+import { useAppDispatch } from "../../features/hooks.ts"
 import Offers from "./Offers.tsx"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "./QauntityComponent.tsx"
@@ -25,15 +25,24 @@ interface FormErrors {
   shippingMethod?: string
 }
 
-const FormComponent = () => {
+interface FormComponentProps {
+  product: Product
+}
+
+interface Product {
+  title: string
+  iamges: string[]
+  price: number
+}
+
+const FormComponent = ({ product }: FormComponentProps) => {
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
-  const product = useAppSelector((state) => state.products.product)
-  // const setIsPopupOpen = useModalsStore((state) => state.setIsPopupOpen)
+  // const { product } = useAppSelector((state) => state.products)
 
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
-    productName: product?.title,
+    productName: product && product.title,
     fullName: "",
     phoneNumber: "",
     state: "Alger",
@@ -103,13 +112,9 @@ const FormComponent = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    console.log(form)
     if (validateForm()) {
-      // console.log(form)
       handleCreateOrder()
-      // createOrder(form).then((data) => {
-      //   //   setIsPopupOpen(true)
-      //   //
-      // })
     }
   }
 
@@ -168,7 +173,6 @@ const FormComponent = () => {
     }
 
     setErrors(newErrors)
-    console.log(errors)
 
     return Object.keys(newErrors).length === 0
   }

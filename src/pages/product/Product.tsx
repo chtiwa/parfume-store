@@ -14,8 +14,9 @@ const Product = () => {
   const product = getProduct(Number(id))
 
   useEffect(() => {
+    console.log(product)
     dispatch(setProduct(product))
-  }, [product])
+  }, [])
 
   return (
     product && (
@@ -62,7 +63,7 @@ const Product = () => {
               {product?.description}{" "}
             </p>
             {/*  @ts-ignore */}
-            {product && <FormComponent />}
+            <FormComponent product={product} />
           </div>
         </div>
       </div>
