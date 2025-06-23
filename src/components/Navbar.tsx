@@ -2,36 +2,34 @@ import { FaRegHeart } from "react-icons/fa"
 import { IoSearchOutline } from "react-icons/io5"
 import { RiMenu2Fill, RiMenuFill } from "react-icons/ri"
 import { Link, useNavigate } from "react-router-dom"
+import { setIsSidebarOpen } from "../features/modalsSlice"
+import { useAppDispatch } from "../features/hooks"
 
-interface NavbarI {
-  isSidebarOpen: boolean
-  setIsSidebarOpen: (isSidebarOpen: boolean) => void
-}
-
-const Navbar = ({ setIsSidebarOpen }: NavbarI) => {
+const Navbar = () => {
+  const dispatch = useAppDispatch()
   const navigate = useNavigate()
   const links = [
     { title: "Accueil", href: "/" },
     { title: "Homme", href: "/homme" },
-    { title: "Femme", href: "/femme" },
-    { title: "Collection", href: "/homme" }
+    { title: "Femme", href: "/femme" }
+    // { title: "Collection", href: "/homme" }
   ]
 
   return (
-    <nav className="flex items-center px-4 sm:px-16 py-1">
+    <nav className="flex items-center px-4 sm:px-16">
       <div className="hover:cursor-pointer flex flex-1/6 items-center justify-center sm:hidden group">
         <RiMenu2Fill size={24} className="flex group-hover:hidden" />
         <RiMenuFill
           size={24}
           className="hidden group-hover:flex"
-          onClick={() => setIsSidebarOpen(true)}
+          onClick={() => dispatch(setIsSidebarOpen(true))}
         />
       </div>
       <div className="flex flex-4/6 sm:flex-1/6 items-center justify-center">
         <img
           src="/logo.png"
           alt="lk parfumo logo"
-          className="h-20 w-20 object-cover hover:cursor-pointer"
+          className="h-22 w-22 object-cover hover:cursor-pointer"
           onClick={() => navigate("/")}
         />
       </div>

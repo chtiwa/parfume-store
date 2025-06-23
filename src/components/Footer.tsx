@@ -14,7 +14,7 @@ const Footer = () => {
         <img
           src="/logo.png"
           alt="lk parfumo"
-          className="w-20 h-20 cursor-pointer"
+          className="w-22 h-22 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0 })}
         />
         <ul className="flex items-center justify-center gap-4">

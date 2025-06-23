@@ -40,7 +40,7 @@ const Services = () => {
             <li className="flex flex-col gap-2" key={i}>
               <Icon className="text-2xl sm:text-3xl mt-1 w-full flex items-center justify-center " />
               <h3 className="font-semibold text-base">{title} </h3>
-              <p className="text-gray-700 text-xs">{description} </p>
+              <p className="text-gray-700 text-xs sm:text-sm">{description} </p>
             </li>
           )
         })}
