@@ -25,7 +25,10 @@ const Hero = () => {
           </h3>
           <button
             className="px-6 pt-2.5 pb-3 altfont bg-black text-white rounded hover:bg-white hover:cursor-pointer hover:text-black border hover:border-black hover:scale-110 transition duration-200"
-            onClick={() => navigate("/homme")}
+            onClick={() => {
+              navigate("/homme")
+              window.scrollTo({ top: 0 })
+            }}
           >
             Clickez ici!
           </button>
@@ -48,7 +51,10 @@ const Hero = () => {
             <h3 className="altfont text-xl">Collection Femme</h3>
             <button
               className="px-4 pt-1.5 pb-2 altfont hover:cursor-pointer bg-black text-white rounded hover:bg-white hover:text-black border hover:border-black hover:scale-110 transition duration-200"
-              onClick={() => navigate("/femme")}
+              onClick={() => {
+                navigate("/femme")
+                window.scrollTo({ top: 0 })
+              }}
             >
               Cliquez ici!
             </button>
@@ -67,7 +73,10 @@ const Hero = () => {
             <button
               className="px-4 pt-1.5 pb-2 altfont hover:cursor-pointer bg-black text-white rounded hover:bg-white hover:text-black border hover:border-black hover:scale-110 transition 
             duration-200"
-              onClick={() => navigate("/homme")}
+              onClick={() => {
+                navigate("/homme")
+                window.scrollTo({ top: 0 })
+              }}
             >
               Cliquez ici!
             </button>
