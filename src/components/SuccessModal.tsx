@@ -25,21 +25,22 @@ const SuccessModal = () => {
           </h3>
         </div>
 
-        <p className="text-sm text-center">
+        <p className="text-base text-center">
           Nous avons bien reçu votre demande pour {orderedProductTitle}. Nous
           vous contacterons bientôt pour confirmer votre commande.
         </p>
         <Link
           className="hover:cursor-pointer"
           to={"/"}
-          onClick={() =>
+          onClick={() => {
+            window.scrollTo({ top: 0 })
             dispatch(
               setIsSuccessModalOpen({
                 isSuccessModalOpen: false,
                 orderedProductTitle: ""
               })
             )
-          }
+          }}
         >
           <button className="w-full bg-black px-4 py-1.5 text-sm text-white rounded hover:cursor-pointer">
             Retour
