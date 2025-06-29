@@ -1,8 +1,7 @@
-import { FaRegHeart } from "react-icons/fa"
 import { IoSearchOutline } from "react-icons/io5"
 import { RiMenu2Fill, RiMenuFill } from "react-icons/ri"
 import { Link, useNavigate } from "react-router-dom"
-import { setIsSidebarOpen } from "../features/modalsSlice"
+import { setIsSearchModalOpen, setIsSidebarOpen } from "../features/modalsSlice"
 import { useAppDispatch } from "../features/hooks"
 
 const Navbar = () => {
@@ -46,9 +45,12 @@ const Navbar = () => {
           )
         })}
       </ul>
-      <div className="flex items-center justify-center gap-2 flex-1/6 hover:cursor-pointer">
-        <IoSearchOutline size={20} />
-        <FaRegHeart />
+      <div
+        className="flex items-center justify-center gap-2 flex-1/6 hover:cursor-pointer"
+        onClick={() => dispatch(setIsSearchModalOpen(true))}
+      >
+        <IoSearchOutline size={26} />
+        {/* <FaRegHeart /> */}
       </div>
     </nav>
   )

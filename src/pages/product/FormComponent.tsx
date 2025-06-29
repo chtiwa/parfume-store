@@ -7,10 +7,10 @@ import { BsFillSignpostFill } from "react-icons/bs"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities } from "../../data.ts"
 import { useAppDispatch } from "../../features/hooks.ts"
-import Offers from "./Offers.tsx"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "./QauntityComponent.tsx"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
+import Variants from "./Variants.tsx"
 // import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
@@ -54,6 +54,8 @@ const FormComponent = ({ product }: FormComponentProps) => {
     shippingPrice: 370,
     totalPrice: product && product?.price + 370,
     quantity: 1,
+    // @ts-ignore
+    variants: product.variants,
     variant: "100ml"
   })
 
@@ -70,9 +72,9 @@ const FormComponent = ({ product }: FormComponentProps) => {
     if (form.variant === "100ml") {
       factor = 1
     } else if (form.variant === "50ml") {
-      factor = 0.5
+      factor = 0.7
     } else {
-      factor = 0.3
+      factor = 0.5
     }
     setForm((prev) => ({
       ...prev,
@@ -112,7 +114,6 @@ const FormComponent = ({ product }: FormComponentProps) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(form)
     if (validateForm()) {
       handleCreateOrder()
     }
@@ -182,7 +183,7 @@ const FormComponent = ({ product }: FormComponentProps) => {
       onSubmit={handleSubmit}
       className="w-full flex flex-col gap-2 mt-4 rtl"
     >
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2">
         <label htmlFor="fullName">الاسم الكامل :</label>
         <div className="relative w-full">
           <input
@@ -289,7 +290,7 @@ const FormComponent = ({ product }: FormComponentProps) => {
         )}
       </div>
 
-      <Offers form={form} setForm={setForm} />
+      <Variants form={form} setForm={setForm} />
 
       <QauntityComponent form={form} setForm={setForm} />
 

@@ -41,11 +41,12 @@ const ImageContainer = ({ images }: ImageContainerI) => {
         <div className="overflow-hidden flex items-center justify-center w-full max-w-lg">
           <img
             ref={imgRef}
-            src={`/${images[active]}`}
+            // @ts-ignore
+            src={`${images[active].url}`}
             alt=""
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className={`w-xl  mx-auto rounded-sm object-cover transition-transform duration-300 hover:scale-180`}
+            className={`w-full max-w-xl sm:min-w-md rounded-sm object-cover transition-transform duration-300 hover:scale-180`}
             style={{ transformOrigin }}
           />
         </div>
@@ -54,7 +55,8 @@ const ImageContainer = ({ images }: ImageContainerI) => {
         {images.map((image, i) => (
           <div className={`${active === i && "border-black rounded"}`} key={i}>
             <img
-              src={`/${image}`}
+              // @ts-ignore
+              src={`${image.url}`}
               alt=""
               className={`object-cover w-20 h-20 sm:w-24 sm:h-24 rounded-sm cursor-pointer hover:opacity-80 transition border ${
                 active === i ? "opacity-70" : "border-white"
