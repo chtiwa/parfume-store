@@ -59,7 +59,7 @@ const SearchModal = () => {
             className="absolute top-1/2 -translate-y-1/2 right-2"
           />
         </div>
-        {!isLoading && !isError && (
+        {!isLoading && !isError && data?.data.length > 0 && (
           <ul className="w-full flex flex-col bg-white border border-t-0">
             {data?.success &&
               // @ts-ignore
@@ -69,7 +69,10 @@ const SearchModal = () => {
                   <li
                     className="flex items-center justify-start gap-4 py-2 px-4 hover:bg-gray-50 hover:cursor-pointer border-b last:border-b-0 "
                     key={id}
-                    onClick={() => navigate("/product/" + id)}
+                    onClick={() => {
+                      dispatch(setIsSearchModalOpen(false))
+                      navigate("/product/" + id)
+                    }}
                   >
                     <img
                       src={images[0].url}

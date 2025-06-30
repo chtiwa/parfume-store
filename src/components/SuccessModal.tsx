@@ -42,7 +42,7 @@ const SuccessModal = () => {
             )
           }}
         >
-          <button className="w-full bg-black px-4 py-1.5 text-sm text-white rounded hover:cursor-pointer">
+          <button className="w-full bg-black px-4 py-1.5 text-base text-white rounded hover:cursor-pointer">
             Retour
           </button>
         </Link>

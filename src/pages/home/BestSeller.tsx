@@ -8,7 +8,7 @@ const BestSeller = () => {
       </h3>
       <p className="text-gray-700 mt-1 sm:text-xl">Best Sellers !</p>
       {/* products list */}
-      <ProductsList filter="" />
+      <ProductsList tag="" />
     </div>
   )
 }

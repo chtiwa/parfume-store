@@ -8,8 +8,12 @@ export const productsApi = createApi({
   endpoints: (builder) => ({
     getProducts: builder.query({
       // @ts-ignore
-      query: (page: number, category: string) =>
-        `?page=${page}&categoryId=${category}`
+      query: ({ page, tag }) => {
+        const params = new URLSearchParams()
+        params.set("page", page.toString())
+        if (tag) params.set("tag", tag)
+        return `?${params.toString()}`
+      }
     }),
     getProduct: builder.query({
       query: (id: string) => `/${id}`

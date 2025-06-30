@@ -68,18 +68,18 @@ const FormComponent = ({ product }: FormComponentProps) => {
   })
 
   useEffect(() => {
-    let factor = 1
-    if (form.variant === "100ml") {
-      factor = 1
-    } else if (form.variant === "50ml") {
-      factor = 0.7
-    } else {
-      factor = 0.5
-    }
+    // let factor = 1
+    // if (form.variant === "100ml") {
+    //   factor = 1
+    // } else if (form.variant === "50ml") {
+    //   factor = 0.7
+    // } else {
+    //   factor = 0.5
+    // }
     setForm((prev) => ({
       ...prev,
       totalPrice:
-        Number(product?.price) * factor * prev.quantity +
+        Number(form?.price) * prev.quantity +
         // @ts-ignore
         Number(tarifs[Number(form?.stateNumber) - 1][form?.shippingMethod])
     }))

@@ -3,18 +3,19 @@ import { useNavigate } from "react-router-dom"
 // import { FaHeart } from "react-icons/fa"
 import { IoMdStar } from "react-icons/io"
 import { useGetProductsQuery } from "../services/productsService"
+import ProductListSkeleton from "./ProductListSkeleton"
 
 interface ProductListProps {
-  filter: string
+  tag: string
 }
 
 // @ts-ignore
-const ProductsList = ({ filter }: ProductListProps) => {
-  // const products = getProducts(filter)
-  // @ts-ignore
-  const { data, isLoading, error } = useGetProductsQuery(1, "")
+const ProductsList = ({ tag }: ProductListProps) => {
+  const { data, isLoading, error } = useGetProductsQuery({ page: 1, tag: tag })
 
   const navigate = useNavigate()
+
+  if (isLoading) return <ProductListSkeleton /> // product list skeleton
 
   return (
     !isLoading &&
@@ -26,7 +27,7 @@ const ProductsList = ({ filter }: ProductListProps) => {
             const { id, title, price, images } = product
             return (
               <div
-                className="flex flex-col items-center justify-center p-4 "
+                className="flex flex-col items-center justify-start p-4 "
                 key={id}
               >
                 <div
@@ -49,7 +50,7 @@ const ProductsList = ({ filter }: ProductListProps) => {
                     className="hover:scale-110 transition duration-300 rounded border-gray-200 border shadow-2xl"
                   />
                 </div>
-                <h3 className="font-semibold text-lg sm:text-xl mt-2">
+                <h3 className="text-center font-semibold text-base mt-2">
                   {title}
                 </h3>
                 <div className="flex items-center justify-center text-yellow-500">

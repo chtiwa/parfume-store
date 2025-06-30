@@ -4,10 +4,12 @@ import ProductsList from "../../components/ProductsList"
 
 const Products = () => {
   const location = useLocation()
-  const [filter, setFilter] = useState("")
+  const [tag, setTag] = useState("")
 
   useEffect(() => {
-    setFilter(location.pathname.slice(1))
+    if (location.pathname.slice(1) !== undefined) {
+      setTag(location.pathname.slice(1))
+    }
   }, [location])
 
   return (
@@ -22,10 +24,8 @@ const Products = () => {
           Nos Parfums :
         </h3>
       </div>
-      <h3 className="pl-8 mt-8 altfont text-xl underline">
-        Parfums {filter} :
-      </h3>
-      <ProductsList filter={filter} />
+      <h3 className="pl-8 mt-8 altfont text-xl underline">Parfums {tag} :</h3>
+      <ProductsList tag={tag} />
     </div>
   )
 }

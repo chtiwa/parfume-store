@@ -4,20 +4,6 @@ interface VariantsProps {
 }
 
 const Variants = ({ form, setForm }: VariantsProps) => {
-  // const variants = [
-  //   {
-  //     id: "1",
-  //     title: "Capacity",
-  //     variantItems: [
-  //       { id: "1", value: "100ml", quantity: 5 },
-  //       { id: "1", value: "50ml", quantity: 5 },
-  //       { id: "1", value: "30ml", quantity: 5 }
-  //     ]
-  //   }
-  // ]
-
-  console.log(form.variants)
-
   //  selec the variant item id
   return (
     <div className="w-full mt-4">
@@ -35,7 +21,8 @@ const Variants = ({ form, setForm }: VariantsProps) => {
                   setForm((prev: any) => ({
                     ...prev,
                     selectedVariantItem: variantItem,
-                    variant: variantItem.value
+                    variant: variantItem.value,
+                    price: variantItem.price
                   }))
                 }
                 key={i}
