@@ -4,9 +4,9 @@ import { FaFacebook, FaTiktok } from "react-icons/fa"
 
 const Footer = () => {
   const socials = [
-    { link: "https://facebook.com", icon: <FaFacebook /> },
-    { link: "", icon: <BsInstagram /> },
-    { link: "", icon: <FaTiktok /> }
+    { link: "https://facebook.com/lk_parfumo", icon: <FaFacebook /> },
+    { link: "https://www.instagram.com/lk_parfumo", icon: <BsInstagram /> },
+    { link: "https://www.tiktok.com/@lk.parfumo", icon: <FaTiktok /> }
   ]
   return (
     <footer className="w-full px-8 py-4 border-t border-gray-300">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 import ProductsList from "../../components/ProductsList"
+import PaginationComponent from "../../components/Pagination"
 
 const Products = () => {
   const location = useLocation()
@@ -26,6 +27,7 @@ const Products = () => {
       </div>
       <h3 className="pl-8 mt-8 altfont text-xl underline">Parfums {tag} :</h3>
       <ProductsList tag={tag} />
+      <PaginationComponent />
     </div>
   )
 }
