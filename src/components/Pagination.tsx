@@ -6,7 +6,7 @@ const PaginationComponent = () => {
   const dispatch = useAppDispatch()
   const { page, totalPages: pages } = useAppSelector((s) => s.products)
 
-  if (pages == 0) return <></>
+  if (pages === 0 || pages === 1) return <></>
 
   const handlePageClick = (p: number) => {
     if (p !== page && p >= 1 && p <= pages) {
