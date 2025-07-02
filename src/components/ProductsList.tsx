@@ -58,7 +58,7 @@ const ProductsList = ({ tag }: ProductListProps) => {
               <img
                 src={`${images[0].url}`}
                 alt={title}
-                className="hover:scale-110 transition duration-300 rounded border-gray-200 border shadow-2xl"
+                className="hover:scale-110 transition duration-300 rounded border-gray-200 border shadow-2xl aspect-square"
               />
             </div>
             <h3 className="text-center font-semibold text-base mt-2">

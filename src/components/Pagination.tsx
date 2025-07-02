@@ -19,7 +19,7 @@ const PaginationComponent = () => {
     <li
       key={p}
       onClick={() => handlePageClick(p)}
-      className={`px-3.5 py-1 rounded border text-sm font-semibold ${
+      className={`px-3.5 py-1 rounded border text-sm font-semibold hover:cursor-pointer ${
         page === p ? "text-white bg-black border-black" : "text-black"
       }`}
     >
