@@ -5,7 +5,7 @@ import ShippingForm from "./ShippingForm"
 import { BsFillSignpostFill } from "react-icons/bs"
 // import Offers from "./Offers"
 import { BiChevronDown } from "react-icons/bi"
-import { tarifs, cities } from "../../data.ts"
+import { tarifs, cities, bureaux } from "../../data.ts"
 import { useAppDispatch } from "../../features/hooks.ts"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "./QauntityComponent.tsx"
@@ -27,6 +27,8 @@ interface FormErrors {
 
 interface FormComponentProps {
   product: Product
+  form: any
+  setForm: (form: any) => void
 }
 
 interface Product {
@@ -35,29 +37,10 @@ interface Product {
   price: number
 }
 
-const FormComponent = ({ product }: FormComponentProps) => {
+const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
   // const { product } = useAppSelector((state) => state.products)
-
-  const [form, setForm] = useState({
-    shopName: "lk-parfumo",
-    productName: product && product.title,
-    fullName: "",
-    phoneNumber: "",
-    state: "Alger",
-    stateNumber: 16,
-    city: "",
-    // @ts-ignore
-    price: product && product.price,
-    shippingMethod: "Stopdesk",
-    shippingPrice: 370,
-    totalPrice: product && product?.price + 370,
-    quantity: 1,
-    // @ts-ignore
-    variants: product.variants,
-    variant: "100ml"
-  })
 
   const [errors, setErrors] = useState<FormErrors>({
     fullName: "",
@@ -68,18 +51,10 @@ const FormComponent = ({ product }: FormComponentProps) => {
   })
 
   useEffect(() => {
-    // let factor = 1
-    // if (form.variant === "100ml") {
-    //   factor = 1
-    // } else if (form.variant === "50ml") {
-    //   factor = 0.7
-    // } else {
-    //   factor = 0.5
-    // }
-    setForm((prev) => ({
+    setForm((prev: any) => ({
       ...prev,
       totalPrice:
-        Number(form?.price) * prev.quantity +
+        Number(form?.selectedVariantItem.price) * prev.quantity +
         // @ts-ignore
         Number(tarifs[Number(form?.stateNumber) - 1][form?.shippingMethod])
     }))
@@ -89,7 +64,7 @@ const FormComponent = ({ product }: FormComponentProps) => {
     form.price,
     form.quantity,
     product,
-    form.variant
+    form.selectedVariantItem
   ])
 
   const handleChange = (
@@ -108,7 +83,7 @@ const FormComponent = ({ product }: FormComponentProps) => {
         stateNumber: Number(stateNumber) || ""
       }))
     } else {
-      setForm((prev) => ({ ...prev, [name]: value }))
+      setForm((prev: any) => ({ ...prev, [name]: value }))
     }
   }
 
@@ -120,7 +95,10 @@ const FormComponent = ({ product }: FormComponentProps) => {
   }
 
   const handleCreateOrder = async () => {
-    const res = await createOrder(form).unwrap()
+    const res = await createOrder({
+      ...form,
+      variant: form.selectedVariantItem.value
+    }).unwrap()
     if (res.success) {
       // show success modal
       dispatch(
@@ -257,28 +235,55 @@ const FormComponent = ({ product }: FormComponentProps) => {
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="city">البلدية :</label>
         <div className="relative w-full">
-          <select
-            name="city"
-            value={form?.city}
-            className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
-            onChange={handleChange}
-          >
-            {form.state !== "" &&
-              cities
-                ?.filter(
-                  (c) => Number(c?.wilaya_code) === Number(form.stateNumber)
-                )
-                ?.map((c, i) => {
-                  const { commune_name_ascii: commune } = c
-                  return (
-                    <>
-                      <option value={commune} key={i}>
-                        {commune}
-                      </option>
-                    </>
+          {form.shippingMethod === "Domicile" ? (
+            <select
+              name="city"
+              value={form?.city}
+              className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
+              onChange={handleChange}
+            >
+              {form.state !== "" &&
+                cities
+                  ?.filter(
+                    (c) => Number(c?.wilaya_code) === Number(form.stateNumber)
                   )
-                })}
-          </select>
+                  ?.map((c, i) => {
+                    const { commune_name_ascii: commune } = c
+                    return (
+                      <>
+                        <option value={commune} key={i}>
+                          {commune}
+                        </option>
+                      </>
+                    )
+                  })}
+            </select>
+          ) : (
+            <select
+              name="city"
+              value={form?.city}
+              className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
+              onChange={handleChange}
+            >
+              {form.state !== "" &&
+                bureaux
+                  ?.filter(
+                    (b) => Number(b?.stateNumber) === Number(form.stateNumber)
+                  )
+                  ?.map((b) => {
+                    const { headquarters } = b
+                    return (
+                      <>
+                        {headquarters.map((h, i) => (
+                          <option value={h} key={i}>
+                            {h}
+                          </option>
+                        ))}
+                      </>
+                    )
+                  })}
+            </select>
+          )}
           <BiChevronDown
             className="absolute top-1/2  left-1 -translate-y-1/2"
             size={26}

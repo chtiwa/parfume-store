@@ -4,7 +4,6 @@ interface VariantsProps {
 }
 
 const Variants = ({ form, setForm }: VariantsProps) => {
-  //  selec the variant item id
   return (
     <div className="w-full mt-4">
       {form.variants.map((variant: any) => {
@@ -13,18 +12,17 @@ const Variants = ({ form, setForm }: VariantsProps) => {
             {variant.variantItems.map((variantItem: any, i: any) => (
               <li
                 className={`border-l border-r w-full flex items-center justify-center py-1.5  hover:cursor-pointer ${
-                  variantItem.value === form.variant
+                  variantItem.value === form.selectedVariantItem.value
                     ? "bg-black text-white border-black"
                     : "bg-white hover:bg-gray-100"
                 }`}
-                onClick={() =>
+                onClick={() => {
                   setForm((prev: any) => ({
                     ...prev,
                     selectedVariantItem: variantItem,
-                    variant: variantItem.value,
                     price: variantItem.price
                   }))
-                }
+                }}
                 key={i}
               >
                 {variantItem.value}

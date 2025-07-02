@@ -8114,3 +8114,242 @@ export const tarifs = [
     Annuler: "150"
   }
 ]
+
+export const bureaux = [
+  {
+    stateNumber: 1,
+    headquarters: ["ADRAR"]
+  },
+  {
+    stateNumber: 2,
+    headquarters: ["CHLEF", "TENES"]
+  },
+  {
+    stateNumber: 3,
+    headquarters: ["LAGHOUATE"]
+  },
+  {
+    stateNumber: 4,
+    headquarters: [
+      "OUM EL BOUGHI - AIN EL BEIDA",
+      "OUM EL BOUGHI - VILLE LIVREUR"
+    ]
+  },
+  {
+    stateNumber: 5,
+    headquarters: ["BATNA"]
+  },
+  {
+    stateNumber: 6,
+    headquarters: ["BEJAIA", "AKBOU", "BEJAIA REMLA"]
+  },
+  {
+    stateNumber: 7,
+    headquarters: ["BISKRA"]
+  },
+  {
+    stateNumber: 8,
+    headquarters: ["BECHAR"]
+  },
+  {
+    stateNumber: 9,
+    headquarters: ["BLIDA", "BLIDA BOUGARA", "BLIDA MOUZAIA"]
+  },
+  {
+    stateNumber: 10,
+    headquarters: ["BOUIRA"]
+  },
+  {
+    stateNumber: 11,
+    headquarters: ["TAMANRASSET"]
+  },
+  {
+    stateNumber: 12,
+    headquarters: ["TEBESSA"]
+  },
+  {
+    stateNumber: 13,
+    headquarters: ["TLEMCEN"]
+  },
+  {
+    stateNumber: 14,
+    headquarters: ["TIARET"]
+  },
+  {
+    stateNumber: 15,
+    headquarters: ["TIZI OUZOU"]
+  },
+  {
+    stateNumber: 16,
+    headquarters: [
+      "ALGER - BIRKHADEM",
+      "ALGER - LIDOU",
+      "ALGER - OULED FAYET",
+      "ALGER - REGHAIA",
+      "ALGER - BIRTOUTA",
+      "ALGER - ELJOMHORIA",
+      "ALGER - BARAKI"
+    ]
+  },
+  {
+    stateNumber: 17,
+    headquarters: ["DJELFA"]
+  },
+  {
+    stateNumber: 18,
+    headquarters: ["JIJEL", "JIJEL - TAHER"]
+  },
+  {
+    stateNumber: 19,
+    headquarters: ["SÉTIF", "El EULMA"]
+  },
+  {
+    stateNumber: 20,
+    headquarters: ["SAIDA"]
+  },
+  {
+    stateNumber: 21,
+    headquarters: ["SKIKDA"]
+  },
+  {
+    stateNumber: 22,
+    headquarters: ["SIDI BEL ABBES"]
+  },
+  {
+    stateNumber: 23,
+    headquarters: ["ANNABA", "ANNABA EL BOUNI"]
+  },
+  {
+    stateNumber: 24,
+    headquarters: ["GUELMA"]
+  },
+  {
+    stateNumber: 25,
+    headquarters: [
+      "CONSTANTINE - ZOUAGHI",
+      "CONSTANTINE - NOUVELLE VILLE",
+      "CONSTANTINE - BELLE VUE"
+    ]
+  },
+  {
+    stateNumber: 26,
+    headquarters: ["MEDEA"]
+  },
+  {
+    stateNumber: 27,
+    headquarters: ["MOSTAGANEM"]
+  },
+  {
+    stateNumber: 28,
+    headquarters: ["MSILA", "BOUSAADA"]
+  },
+  {
+    stateNumber: 29,
+    headquarters: ["MASCARA"]
+  },
+  {
+    stateNumber: 30,
+    headquarters: ["OUARGLA", "HASSI MESSAOUD"]
+  },
+  {
+    stateNumber: 31,
+    headquarters: [
+      "ORAN - EL-MORCHID",
+      "ORAN - ES-SENIA",
+      "ORAN - MILLENIUM",
+      "ORAN - MARAVAL"
+    ]
+  },
+  {
+    stateNumber: 32,
+    headquarters: ["EL BAYADH"]
+  },
+  {
+    stateNumber: 34,
+    headquarters: ["BORDJ BOU-ARRERIDJ"]
+  },
+  {
+    stateNumber: 35,
+    headquarters: ["BOUMERDES", "BORDJ MENAIEL"]
+  },
+  {
+    stateNumber: 36,
+    headquarters: ["EL TARF"]
+  },
+  {
+    stateNumber: 38,
+    headquarters: ["TISSEMSILT"]
+  },
+  {
+    stateNumber: 39,
+    headquarters: ["EL OUED"]
+  },
+  {
+    stateNumber: 40,
+    headquarters: ["KHENCHLA"]
+  },
+  {
+    stateNumber: 41,
+    headquarters: ["SOUK AHRAS"]
+  },
+  {
+    stateNumber: 42,
+    headquarters: ["TIPAZA", "TIPAZA KOLEA"]
+  },
+  {
+    stateNumber: 43,
+    headquarters: ["MILA"]
+  },
+  {
+    stateNumber: 44,
+    headquarters: ["AIN DEFLA"]
+  },
+  {
+    stateNumber: 45,
+    headquarters: ["NAAMA"]
+  },
+  {
+    stateNumber: 46,
+    headquarters: ["AIN TEMOUCHENT"]
+  },
+  {
+    stateNumber: 47,
+    headquarters: ["GHARDIA"]
+  },
+  {
+    stateNumber: 48,
+    headquarters: ["RELIZANEZ"]
+  },
+  {
+    stateNumber: 49,
+    headquarters: ["TIMIMOUN"]
+  },
+  {
+    stateNumber: 51,
+    headquarters: ["OULED DJELLAL"]
+  },
+  {
+    stateNumber: 52,
+    headquarters: ["BENI ABBES", "BENI ABBES CITE EL MOUSTAKBEL"]
+  },
+  {
+    stateNumber: 53,
+    headquarters: ["IN SALAH"]
+  },
+  {
+    stateNumber: 54,
+    headquarters: ["IN GUEZZAM"]
+  },
+  {
+    stateNumber: 55,
+    headquarters: ["TOUGGOURT"]
+  },
+  {
+    stateNumber: 57,
+    headquarters: ["MGHIER"]
+  },
+  {
+    stateNumber: 58,
+    headquarters: ["EL MNIAA"]
+  }
+]
