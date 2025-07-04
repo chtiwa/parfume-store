@@ -6,7 +6,7 @@ interface VariantsProps {
 const Variants = ({ form, setForm }: VariantsProps) => {
   return (
     <div className="w-full mt-4">
-      {form.variants.map((variant: any, i) => {
+      {form.variants.map((variant: any, i: any) => {
         return (
           <ul
             className="w-full border-b-2 border-t-2 border-l border-r flex justify-evenly text-sm sm:text-base rounded"
