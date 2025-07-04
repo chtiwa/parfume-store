@@ -53,14 +53,20 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   useEffect(() => {
     setForm((prev: any) => ({
       ...prev,
+      shippingPrice: Number(
+        // @ts-ignore
+        tarifs[Number(form?.stateNumber) - 1][form.shippingMethod]
+      ),
       totalPrice:
         Number(form?.selectedVariantItem.price) * prev.quantity +
         // @ts-ignore
-        Number(tarifs[Number(form?.stateNumber) - 1][form?.shippingMethod])
+        Number(tarifs[Number(form.stateNumber) - 1][form.shippingMethod])
     }))
   }, [
     form.state,
+    form.city,
     form.shippingMethod,
+    form.shippingPrice,
     form.price,
     form.quantity,
     product,
@@ -211,14 +217,15 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
             {tarifs &&
               tarifs?.map((tarif, i) => {
                 const { IDWilaya, Wilaya, Domicile } = tarif
-                if (Domicile === "0") return <></>
-                return (
-                  <>
-                    <option value={Wilaya} key={i} data-idwilaya={IDWilaya}>
-                      {IDWilaya}-{Wilaya}
-                    </option>
-                  </>
-                )
+                if (Domicile !== "0") {
+                  return (
+                    <>
+                      <option value={Wilaya} key={i} data-idwilaya={IDWilaya}>
+                        {IDWilaya}-{Wilaya}
+                      </option>
+                    </>
+                  )
+                }
               })}
           </select>
           <BiChevronDown

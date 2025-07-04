@@ -2,8 +2,9 @@ import { BiCopyright } from "react-icons/bi"
 import { BsInstagram } from "react-icons/bs"
 import { CiMail } from "react-icons/ci"
 import { FaFacebook, FaInfoCircle, FaTiktok } from "react-icons/fa"
-import { MdAlternateEmail, MdEmail, MdPrivacyTip } from "react-icons/md"
+import { MdPrivacyTip } from "react-icons/md"
 import { RiRefund2Fill } from "react-icons/ri"
+import { SlLocationPin } from "react-icons/sl"
 import { TbTruckDelivery } from "react-icons/tb"
 import { useNavigate } from "react-router-dom"
 
@@ -64,8 +65,12 @@ const Footer = () => {
             })}
           </ul>
           <div className="flex items-center-safe justify-center gap-1 mt-2">
+            <SlLocationPin size={22} />
+            <span className="text-sm">Alger, Reghaia</span>
+          </div>
+          <div className="flex items-center-safe justify-center gap-1">
             <CiMail size={22} />
-            <span className="text-sm">lakhalzineddine12@gmail.com</span>
+            <span className="text-sm">support@lkparfumo.com</span>
           </div>
         </div>
         <ul className="flex flex-col gap-2 my-4">

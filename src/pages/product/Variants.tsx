@@ -6,9 +6,12 @@ interface VariantsProps {
 const Variants = ({ form, setForm }: VariantsProps) => {
   return (
     <div className="w-full mt-4">
-      {form.variants.map((variant: any) => {
+      {form.variants.map((variant: any, i) => {
         return (
-          <ul className="w-full border-b-2 border-t-2 border-l border-r flex justify-evenly text-sm sm:text-base rounded ">
+          <ul
+            className="w-full border-b-2 border-t-2 border-l border-r flex justify-evenly text-sm sm:text-base rounded"
+            key={i}
+          >
             {variant.variantItems.map((variantItem: any, i: any) => (
               <li
                 className={`border-l border-r w-full flex items-center justify-center py-1.5  hover:cursor-pointer ${

@@ -22,10 +22,10 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
                 onChange={() => {
                   setForm((form: any) => ({
                     ...form,
-                    shippingMethod: "Stopdesk",
-                    shippingPrice: Number(
-                      tarifs[Number(form?.stateNumber) - 1]["Stopdesk"]
-                    )
+                    shippingMethod: "Stopdesk"
+                    // shippingPrice: Number(
+                    //   tarifs[Number(form?.stateNumber) - 1]["Stopdesk"]
+                    // )
                   }))
                 }}
               />
@@ -50,10 +50,10 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
                 onChange={() =>
                   setForm((form: any) => ({
                     ...form,
-                    shippingMethod: "Domicile",
-                    shippingPrice: Number(
-                      tarifs[Number(form?.stateNumber) - 1]["Domicile"]
-                    )
+                    shippingMethod: "Domicile"
+                    // shippingPrice: Number(
+                    //   tarifs[Number(form?.stateNumber) - 1]["Domicile"]
+                    // )
                   }))
                 }
               />

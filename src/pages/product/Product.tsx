@@ -17,7 +17,7 @@ const Product = () => {
 
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
-    productName: "data?.data && data?.data?.title",
+    productName: "",
     fullName: "",
     phoneNumber: "",
     state: "Alger",
