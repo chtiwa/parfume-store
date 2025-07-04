@@ -1,11 +1,12 @@
-import { FiTruck, FiStar, FiHeadphones } from "react-icons/fi"
+import { FiStar, FiHeadphones } from "react-icons/fi"
 import { GiMoneyStack } from "react-icons/gi"
+import { LiaShippingFastSolid } from "react-icons/lia"
 
 const Services = () => {
   const services = [
     {
       title: "Livraison Rapide, de 24h à 48h max.",
-      icon: FiTruck,
+      icon: LiaShippingFastSolid,
       description:
         "Recevez vos parfums directement chez vous en un temps record, partout en Algérie."
     },
