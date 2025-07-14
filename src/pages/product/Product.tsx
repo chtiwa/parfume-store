@@ -73,10 +73,10 @@ const Product = () => {
           {
             content_id: id,
             content_type: "product",
-            content_name: data.data.name
+            content_name: "product"
           }
         ],
-        value: data.data.price,
+        value: "1900",
         currency: "DZA"
       })
   }, [id])
