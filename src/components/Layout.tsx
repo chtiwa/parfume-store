@@ -14,6 +14,10 @@ const Layout = () => {
     if (window.fbq) {
       window.fbq("track", "PageView")
     }
+
+    if (window.ttq) {
+      window.ttq("track", "PageView")
+    }
   }, [location])
 
   return (
