@@ -122,7 +122,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       // @ts-ignore
       window.ttq &&
         // @ts-ignore
-        window.ttq.track("PlaceAnOrder", {
+        window.ttq.track("Purchase", {
           value: form.totalPrice,
           currency: "DZA"
         })
