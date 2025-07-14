@@ -11,6 +11,7 @@ import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "./QauntityComponent.tsx"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import Variants from "./Variants.tsx"
+import { useParams } from "react-router-dom"
 // import { useModalsStore } from "../../store/modalsStore"
 // import { useProductsStore } from "../../store/productsStore"
 // import { createOrder } from "../../services/orders"
@@ -38,6 +39,7 @@ interface Product {
 }
 
 const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
+  const { id } = useParams()
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
   // const { product } = useAppSelector((state) => state.products)
@@ -119,8 +121,17 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           currency: "DZA"
         })
       }
-      if (typeof window.ttq === "function") {
-        window.ttq("track", "Purchase", {
+
+      if (window.ttq) {
+        // @ts-ignore
+        window.ttq.track("Purchase", {
+          contents: [
+            {
+              content_id: id,
+              content_type: "product",
+              content_name: product.title
+            }
+          ],
           value: form.totalPrice,
           currency: "DZA"
         })

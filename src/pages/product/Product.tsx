@@ -65,6 +65,22 @@ const Product = () => {
     }
   }, [isLoading, data])
 
+  useEffect(() => {
+    window.ttq &&
+      // @ts-ignore
+      window.ttq.track("ViewContent", {
+        contents: [
+          {
+            content_id: id,
+            content_type: "product",
+            content_name: data.data.name
+          }
+        ],
+        value: data.data.price,
+        currency: "DZA"
+      })
+  }, [id])
+
   if (isLoading) return <ProductSkeleton />
 
   return (
