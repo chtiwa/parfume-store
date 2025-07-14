@@ -119,12 +119,11 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           currency: "DZA"
         })
       }
-      if (window.ttq) {
-        window.ttq &&
-          window.ttq("track", "Purchase", {
-            value: form.totalPrice,
-            currency: "DZA"
-          })
+      if (typeof window.ttq === "function") {
+        window.ttq("track", "Purchase", {
+          value: form.totalPrice,
+          currency: "DZA"
+        })
       }
     }
   }
