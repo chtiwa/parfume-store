@@ -119,6 +119,13 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           currency: "DZA"
         })
       }
+      // @ts-ignore
+      window.ttq &&
+        // @ts-ignore
+        window.ttq.track("PlaceAnOrder", {
+          value: form.totalPrice,
+          currency: "DZA"
+        })
     }
   }
 
