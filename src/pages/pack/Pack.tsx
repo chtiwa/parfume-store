@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 import { IoMdStar } from "react-icons/io"
 import {
-  useGetProductsQuery,
   useLazyGetProductsQuery
 } from "../../services/productsService"
 import ProductSkeleton from "../product/ProductSkeleton"
