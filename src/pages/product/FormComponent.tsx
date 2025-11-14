@@ -34,7 +34,7 @@ interface FormComponentProps {
 
 interface Product {
   title: string
-  iamges: string[]
+  images: string[]
   price: number
 }
 

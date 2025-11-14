@@ -12,6 +12,7 @@ import TermsOfService from "./pages/termsOfService/TermsOfService"
 import ShippingPolicy from "./pages/termsOfService/ShippingPolicy"
 import ReturnRefund from "./pages/termsOfService/ReturnRefund"
 import PrivacyPolicy from "./pages/termsOfService/PrivacyPolicy"
+import Pack from "./pages/pack/Pack"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/homme" element={<Products />} />
       <Route path="/femme" element={<Products />} />
+      <Route path="/pack" element={<Pack />} />
       <Route path="/product/:id" element={<Product />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
