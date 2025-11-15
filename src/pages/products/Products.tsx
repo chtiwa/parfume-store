@@ -1,18 +1,11 @@
-import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
 import ProductsList from "../../components/ProductsList"
 import PaginationComponent from "../../components/Pagination"
 
-const Products = () => {
-  const location = useLocation()
-  const [tag, setTag] = useState("")
+interface ProductsProps {
+  tag: string
+}
 
-  useEffect(() => {
-    if (location.pathname.slice(1) !== undefined) {
-      setTag(location.pathname.slice(1))
-    }
-  }, [location])
-
+const Products = ({ tag }: ProductsProps) => {
   return (
     <div className="flex flex-col gap-4 pb-16">
       <div

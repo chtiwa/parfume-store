@@ -9,8 +9,9 @@ const Sidebar = () => {
   const links = [
     { title: "Accueil", href: "/" },
     { title: "Homme", href: "/homme" },
-    { title: "Femme", href: "/femme" }
-    // { title: "Collection", href: "/homme" }
+    { title: "Femme", href: "/femme" },
+    { title: "Collection", href: "/collection" },
+    { title: "Pack", href: "/pack" }
   ]
 
   return (

@@ -24,8 +24,8 @@ const SearchModal = () => {
 
   useEffect(() => {
     if (debouncedSearch) {
-      const data = trigger(search).unwrap()
-      console.log(data)
+      trigger(search).unwrap()
+      // console.log(data)
     }
   }, [debouncedSearch])
 

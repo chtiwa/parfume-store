@@ -7,10 +7,7 @@ import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities, bureaux } from "../../data.ts"
 import { useAppDispatch } from "../../features/hooks.ts"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
-import QauntityComponent from "../product/QauntityComponent.tsx"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
-import Variants from "../product/Variants.tsx"
-// import { useParams } from "react-router-dom"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
 
@@ -20,6 +17,7 @@ interface FormErrors {
   state?: string
   city?: string
   shippingMethod?: string
+  selectedPerfumes?: string
 }
 
 interface Product {
@@ -31,8 +29,8 @@ interface Product {
 interface FormState {
   fullName: string
   phoneNumber: string
-  productName: string
   productId: string
+  productName: string
   state: string
   stateNumber: number | ""
   city: string
@@ -41,15 +39,22 @@ interface FormState {
   totalPrice: number
   quantity: number
   selectedVariantItem: { price: number; value: string }
+  selectedPerfumes: any
+  selectedCapacity: any
 }
 
-interface FormComponentProps {
+interface PackFormComponentProps {
   product: Product
   form: FormState
   setForm: (form: FormState) => void
+  setPerfumeSelectionError: (error: string) => void
 }
 
-const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
+const PackFormComponent = ({
+  form,
+  setForm,
+  setPerfumeSelectionError
+}: PackFormComponentProps) => {
   // const { id } = useParams()
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
@@ -57,7 +62,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const [errors, setErrors] = useState<FormErrors>({})
 
   useEffect(() => {
-    if (form.stateNumber && form.shippingMethod && form.selectedVariantItem) {
+    if (form.stateNumber && form.shippingMethod && form.selectedCapacity) {
       // @ts-ignore
       setForm((prev: FormState) => ({
         ...prev,
@@ -67,7 +72,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           tarifs[Number(form.stateNumber) - 1][form.shippingMethod]
         ),
         totalPrice:
-          Number(form.selectedVariantItem.price) * prev.quantity +
+          calculateTotalPrice() +
           // @ts-ignore
           Number(tarifs[Number(form.stateNumber) - 1][form.shippingMethod])
       }))
@@ -75,13 +80,48 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   }, [
     form.stateNumber,
     form.shippingMethod,
-    form.selectedVariantItem,
+    form.selectedCapacity,
+    form.selectedPerfumes,
     form.quantity
   ])
 
   useEffect(() => {
     setErrors({}) // Clear errors when variant changes
   }, [form.selectedVariantItem])
+
+  const generateProductName = () => {
+    const names = form.selectedPerfumes
+      .filter((p: any) => p !== null)
+      .map((p: any) => p.title)
+
+    if (names.length === 0) return ""
+
+    return `${names.join(" x ")} (${form.selectedCapacity})`
+  }
+
+  const calculateTotalPrice = () => {
+    let total = 0
+
+    form.selectedPerfumes.forEach((perfume: any) => {
+      if (!perfume) return
+
+      // find the 'capacity' variant
+      const capacityVariant = perfume.variants?.find(
+        (v: any) => v.title.toLowerCase() === "capacity"
+      )
+      if (!capacityVariant) return
+
+      // find the correct variant item (100ml, 50ml, 30ml...)
+      const variantItem = capacityVariant.variantItems?.find(
+        (item: any) => item.value === form.selectedCapacity
+      )
+      if (!variantItem) return
+
+      total += variantItem.price
+    })
+
+    return total
+  }
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -139,8 +179,10 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     const res = await createOrder({
       ...form,
       // @ts-ignore
-      productId: product?.id,
-      variant: form.selectedVariantItem.value,
+      productId: form.selectedPerfumes[0].id,
+      variant: form.selectedCapacity,
+      productName: generateProductName(),
+      price: form.selectedPerfumes[0].price,
       FBclid: fbclid,
       FBp: fbp,
       FBc: fbc,
@@ -154,7 +196,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       dispatch(
         setIsSuccessModalOpen({
           isSuccessModalOpen: true,
-          orderedProductTitle: product.title
+          orderedProductTitle: generateProductName()
         })
       )
       // if (window.fbq) {
@@ -187,6 +229,14 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
   const validateForm = () => {
     const newErrors: FormErrors = {}
+
+    // Check selected perfumes
+    if (form.selectedPerfumes[0] === null) {
+      setPerfumeSelectionError("يجب عليك اختيار عطر واحد على الأقل")
+      newErrors.selectedPerfumes = "يجب عليك اختيار عطر واحد على الأقل"
+    } else {
+      setPerfumeSelectionError("")
+    }
 
     // Check for fullName
     if (!form.fullName || !form.fullName.trim()) {
@@ -226,8 +276,11 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2 rtl">
-      <Variants form={form} setForm={setForm} />
+    <form
+      onSubmit={handleSubmit}
+      className="w-full flex flex-col gap-2 rtl max-w-lg"
+    >
+      {/* <Variants form={form} setForm={setForm} /> */}
       <div className="flex flex-col gap-2">
         <label htmlFor="fullName">الاسم الكامل :</label>
         <div className="relative w-full">
@@ -353,8 +406,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         )}
       </div>
 
-      <QauntityComponent form={form} setForm={setForm} />
-
       <ShippingForm form={form} setForm={setForm} tarifs={tarifs} />
       {errors.shippingMethod && (
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
@@ -381,4 +432,4 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   )
 }
 
-export default FormComponent
+export default PackFormComponent

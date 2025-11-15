@@ -10,7 +10,7 @@ export const productsApi = createApi({
       // @ts-ignore
       query: ({ page, tag }) => {
         const params = new URLSearchParams()
-        params.set("page", page.toString())
+        params.set("page", page?.toString())
         if (tag) params.set("tag", tag)
         return `?${params.toString()}`
       }
