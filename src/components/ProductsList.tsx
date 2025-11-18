@@ -55,11 +55,13 @@ const ProductsList = ({ tag }: ProductListProps) => {
                 navigate("/product/" + id)
               }}
             >
-              <img
-                src={`${images[0].url}`}
-                alt={title}
-                className="hover:scale-110 transition duration-300 rounded border-gray-200 border shadow-2xl aspect-square"
-              />
+              <div className="aspect-[3/4] w-full overflow-hidden rounded border border-gray-200 shadow-2xl">
+                <img
+                  src={images[0].url}
+                  alt={title}
+                  className="w-full h-full object-cover hover:scale-110 transition duration-300"
+                />
+              </div>
             </div>
             <h3 className="text-center font-semibold text-base mt-2">
               {title}
