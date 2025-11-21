@@ -6,6 +6,7 @@ import SuccessModal from "./SuccessModal"
 import { useEffect } from "react"
 import MetaPixel from "./MetaPixel"
 import SearchModal from "./SearchModal"
+import { Toaster } from "@/components/ui/sonner"
 
 const Layout = () => {
   const location = useLocation()
@@ -28,6 +29,7 @@ const Layout = () => {
       <Sidebar />
       <Navbar />
       <Outlet />
+      <Toaster />
       <Footer />
     </>
   )

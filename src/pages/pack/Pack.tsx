@@ -35,6 +35,7 @@ interface PackFormState {
 }
 
 const Pack = () => {
+  const [ordersLeft, setOrdersLeft] = useState(87)
   const [form, setForm] = useState<PackFormState>({
     shopName: "lk-parfumo",
     fullName: "",
@@ -76,9 +77,12 @@ const Pack = () => {
       <h2 className="text-3xl font-bold text-center text-gray-800">
         Choisissez Votre Pack
       </h2>
-      <p className="text-center text-gray-500 max-w-md">
+      <p className="text-center text-gray-700 max-w-md">
         Sélectionnez 3 parfums que vous voulez et choisissez la capacité pour
         tous.
+      </p>
+      <p className="text-center text-gray-700 font-semibold max-w-md animate-bounce">
+        Les commades restantes {ordersLeft}.
       </p>
 
       {/* Perfume selectors */}
@@ -134,6 +138,7 @@ const Pack = () => {
         // @ts-ignore
         setForm={setForm}
         setPerfumeSelectionError={setPerfumeSelectionError}
+        setOrdersLeft={setOrdersLeft}
       />
     </div>
   )

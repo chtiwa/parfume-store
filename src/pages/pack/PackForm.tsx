@@ -10,6 +10,7 @@ import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
+import { toast } from "sonner"
 
 interface FormErrors {
   fullName?: string
@@ -47,12 +48,14 @@ interface PackFormComponentProps {
   product: Product
   form: FormState
   setForm: (form: FormState) => void
+  setOrdersLeft: (orders: any) => void
   setPerfumeSelectionError: (error: string) => void
 }
 
 const PackFormComponent = ({
   form,
   setForm,
+  setOrdersLeft,
   setPerfumeSelectionError
 }: PackFormComponentProps) => {
   // const { id } = useParams()
@@ -60,6 +63,7 @@ const PackFormComponent = ({
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
 
   const [errors, setErrors] = useState<FormErrors>({})
+  const [discountPrice, setDiscountPrice] = useState(0)
 
   useEffect(() => {
     if (form.stateNumber && form.shippingMethod && form.selectedCapacity) {
@@ -99,9 +103,15 @@ const PackFormComponent = ({
     return `${names.join(" x ")} (${form.selectedCapacity})`
   }
 
+  const reductions = {
+    "30ml": [0, 150, 300],
+    "50ml": [0, 250, 500],
+    "100ml": [0, 500, 1000]
+  }
+
   const calculateTotalPrice = () => {
     let total = 0
-
+    let index = 0
     form.selectedPerfumes.forEach((perfume: any) => {
       if (!perfume) return
 
@@ -117,10 +127,17 @@ const PackFormComponent = ({
       )
       if (!variantItem) return
 
+      index++
+
       total += variantItem.price
     })
 
-    return total
+    const reductionPrice =
+      // @ts-ignore
+      reductions[`${form.selectedCapacity}`][index - 1]
+    setDiscountPrice(reductionPrice)
+
+    return total - reductionPrice
   }
 
   const handleChange = (
@@ -150,7 +167,7 @@ const PackFormComponent = ({
     // Check last order timestamp in localStorage
     const lastOrderTime = localStorage.getItem("lastOrderTime")
     const now = Date.now()
-    const oneDayInMs = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+    const oneDayInMs = 6 * 60 * 60 * 1000 // 6 hours in milliseconds
 
     if (lastOrderTime && now - parseInt(lastOrderTime) < oneDayInMs) {
       const timeLeft = Math.ceil(
@@ -160,6 +177,7 @@ const PackFormComponent = ({
         ...prev,
         orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       }))
+      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
       return
     }
 
@@ -193,6 +211,7 @@ const PackFormComponent = ({
       // Store current timestamp in localStorage
       const now = Date.now()
       localStorage.setItem("lastOrderTime", now.toString())
+      setOrdersLeft((prev: any) => prev - 1)
       dispatch(
         setIsSuccessModalOpen({
           isSuccessModalOpen: true,
@@ -410,6 +429,11 @@ const PackFormComponent = ({
       {errors.shippingMethod && (
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
+
+      <div className="flex items-center justify-between gap-2 w-full pt-4">
+        <span className="">تخفيض :</span>
+        <span>{discountPrice} د.ج</span>
+      </div>
 
       <div className="flex items-center justify-between gap-2 w-full pt-4">
         <span className="">المجموع :</span>
