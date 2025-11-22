@@ -35,7 +35,7 @@ interface FormState {
   productName: string
   productId: string
   state: string
-  stateNumber: number | ""
+  stateNumber: string | ""
   city: string
   shippingMethod: string
   shippingPrice: number
@@ -98,7 +98,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: Number(stateNumber) || ""
+        stateNumber: stateNumber || ""
       }))
     } else {
       //  @ts-ignore

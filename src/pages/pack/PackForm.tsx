@@ -33,7 +33,7 @@ interface FormState {
   productId: string
   productName: string
   state: string
-  stateNumber: number | ""
+  stateNumber: string | ""
   city: string
   shippingMethod: string
   shippingPrice: number
@@ -76,7 +76,7 @@ const PackFormComponent = ({
         totalPrice:
           calculateTotalPrice() +
           // @ts-ignore
-          Number(tarifs[Number(form.stateNumber) - 1][form.shippingMethod])
+          Number(tarifs[form.stateNumber - 1][form.shippingMethod])
       }))
     }
   }, [
@@ -152,7 +152,7 @@ const PackFormComponent = ({
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: Number(stateNumber) || ""
+        stateNumber: stateNumber || ""
       }))
     } else {
       //  @ts-ignore
@@ -191,6 +191,8 @@ const PackFormComponent = ({
     let source = "organic"
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
+
+    console.log(form)
 
     const res = await createOrder({
       ...form,

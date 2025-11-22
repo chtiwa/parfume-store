@@ -22,7 +22,7 @@ const Product = () => {
     fullName: "",
     phoneNumber: "",
     state: "Alger",
-    stateNumber: 16,
+    stateNumber: "16",
     city: "",
     // @ts-ignore
     price: 0,
