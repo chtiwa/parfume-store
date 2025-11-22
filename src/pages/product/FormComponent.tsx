@@ -13,6 +13,7 @@ import Variants from "../product/Variants.tsx"
 // import { useParams } from "react-router-dom"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
+import { toast } from "sonner"
 
 interface FormErrors {
   fullName?: string
@@ -120,6 +121,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         ...prev,
         orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       }))
+      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
       return
     }
 
@@ -360,7 +362,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
 
-      <div className="flex items-center justify-between gap-2 w-full pt-4">
+      <div className="flex items-center justify-between gap-2 w-full pt-4 text-lg">
         <span className="">المجموع :</span>
         <span>{form.totalPrice} د.ج</span>
       </div>

@@ -31,7 +31,7 @@ interface PackFormState {
   quantity: number
   selectedPerfumes: (Perfume | null)[]
   capacities: string[]
-  selectedCapacity: "100ml" | "50ml" | "30ml"
+  selectedCapacity: "30ml" | "50ml" | "100ml"
 }
 
 const Pack = () => {
@@ -46,9 +46,9 @@ const Pack = () => {
     shippingMethod: "Domicile",
     shippingPrice: 500,
     quantity: 1,
-    capacities: ["100ml", "50ml", "30ml"],
+    capacities: ["30ml", "50ml", "100ml"],
     selectedPerfumes: [null, null, null],
-    selectedCapacity: "100ml"
+    selectedCapacity: "30ml"
   })
 
   const handleSelectPerfume = (index: number, perfume: Perfume) => {
@@ -93,6 +93,7 @@ const Pack = () => {
               Parfum {index + 1}:
             </span>
             <SearchInput
+              form={form}
               // @ts-ignore
               selected={form.selectedPerfumes[index]}
               // @ts-ignore

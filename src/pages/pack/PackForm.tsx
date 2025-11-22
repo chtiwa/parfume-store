@@ -430,14 +430,24 @@ const PackFormComponent = ({
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
 
-      <div className="flex items-center justify-between gap-2 w-full pt-4">
-        <span className="">تخفيض :</span>
-        <span>{discountPrice} د.ج</span>
-      </div>
+      <div className="flex flex-col gap-2 w-full pt-4 text-lg">
+        <div className="flex items-center justify-between">
+          <span>السعر قبل التخفيض :</span>
+          <span className="line-through text-red-500">
+            {form.totalPrice + discountPrice} د.ج
+          </span>
+        </div>
 
-      <div className="flex items-center justify-between gap-2 w-full pt-4">
-        <span className="">المجموع :</span>
-        <span>{form.totalPrice} د.ج</span>
+        <div className="flex items-center justify-between">
+          <span>التخفيض :</span>
+          <span>{discountPrice} د.ج</span>
+        </div>
+
+        <div className="flex items-center justify-between font-semibold pt-2">
+          <span>المجموع :</span>
+          {/* the total price is the price with the discount */}
+          <span>{form.totalPrice} د.ج</span>
+        </div>
       </div>
 
       {error && <span className="text-red-500">Internal Server Error</span>}

@@ -9,15 +9,17 @@ interface Perfume {
 }
 
 interface SearchInputProps {
+  form: any
   selected: Perfume | null
   onSelect: (perfume: Perfume | null) => void
 }
 
-const SearchInput = ({ selected, onSelect }: SearchInputProps) => {
+const SearchInput = ({ form, selected, onSelect }: SearchInputProps) => {
   const [trigger, { data, isLoading }] = useLazyGetProductsBySearchQuery()
   const [search, setSearch] = useState(selected?.title || "")
   const [debouncedSearch, setDebouncedSearch] = useState(search)
   const [showDropdown, setShowDropdown] = useState(false)
+  const [price, setPrice] = useState("2300")
 
   const results = data?.data || []
 
@@ -47,7 +49,41 @@ const SearchInput = ({ selected, onSelect }: SearchInputProps) => {
     }
   }, [debouncedSearch, search, selected, trigger])
 
+  // When capacity changes, update variant + price
+  useEffect(() => {
+    if (!selected) return
+
+    // find the 'capacity' variant
+    // @ts-ignore
+    const capacityVariant = selected.variants?.find(
+      (v: any) => v.title.toLowerCase() === "capacity"
+    )
+    if (!capacityVariant) return
+
+    // find correct variant item
+    const item = capacityVariant.variantItems?.find(
+      (item: any) => item.value === form.selectedCapacity
+    )
+    if (!item) return
+
+    setPrice(item.price)
+  }, [form.selectedCapacity, selected])
+
   const handleSelect = (perfume: Perfume) => {
+    // find the 'capacity' variant
+    // @ts-ignore
+    const capacityVariant = perfume.variants?.find(
+      (v: any) => v.title.toLowerCase() === "capacity"
+    )
+    if (!capacityVariant) return
+
+    // find the correct variant item (100ml, 50ml, 30ml...)
+    const variantItem = capacityVariant.variantItems?.find(
+      (item: any) => item.value === form.selectedCapacity
+    )
+    if (!variantItem) return
+
+    setPrice(variantItem.price)
     onSelect(perfume)
     setSearch(perfume.title)
     setShowDropdown(false)
@@ -110,22 +146,40 @@ const SearchInput = ({ selected, onSelect }: SearchInputProps) => {
 
           {!isLoading &&
             results.length > 0 &&
-            results.map((p: Perfume) => (
-              <div
-                key={p.id}
-                onClick={() => handleSelect(p)}
-                className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-gray-100 transition"
-              >
-                <img
-                  src={p.images[0].url}
-                  alt={p.title}
-                  className="w-12 h-12 object-cover rounded-md"
-                />
-                <div className="flex flex-col text-sm">
-                  <span className="font-medium">{p.title}</span>
+            results.map((p: Perfume) => {
+              // find capacity variant
+              // @ts-ignore
+              const capacityVariant = p.variants?.find(
+                (v: any) => v.title.toLowerCase() === "capacity"
+              )
+
+              // find correct variant item price
+              const itemPrice =
+                capacityVariant?.variantItems?.find(
+                  (item: any) => item.value === form.selectedCapacity
+                )?.price || "—"
+
+              return (
+                <div
+                  key={p.id}
+                  onClick={() => handleSelect(p)}
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-gray-100 transition"
+                >
+                  <img
+                    src={p.images[0].url}
+                    alt={p.title}
+                    className="w-12 h-12 object-cover rounded-md"
+                  />
+
+                  <div className="flex flex-col text-sm">
+                    <span className="font-medium">{p.title}</span>
+                    <span className="text-gray-700 font-semibold">
+                      {itemPrice}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
         </div>
       )}
 
@@ -139,6 +193,7 @@ const SearchInput = ({ selected, onSelect }: SearchInputProps) => {
           />
           <div>
             <p className="font-semibold">{selected.title}</p>
+            <p className="font-semibold">{price}</p>
           </div>
         </div>
       )}
