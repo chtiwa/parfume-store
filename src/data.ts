@@ -7708,406 +7708,406 @@ export const cities = [
 
 export const tarifs = [
   {
-    IDWilaya: 1,
+    IDWilaya: "01",
     Wilaya: "Adrar",
     Domicile: "1400",
     Stopdesk: "1000",
     Annuler: "200"
   },
   {
-    IDWilaya: 2,
+    IDWilaya: "02",
     Wilaya: "Chlef",
     Domicile: "650",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 3,
+    IDWilaya: "03",
     Wilaya: "Laghouat",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 4,
+    IDWilaya: "04",
     Wilaya: "Oum El Bouaghi",
     Domicile: "650",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 5,
+    IDWilaya: "05",
     Wilaya: "Batna",
     Domicile: "650",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 6,
+    IDWilaya: "06",
     Wilaya: "Bejaia",
     Domicile: "650",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 7,
+    IDWilaya: "07",
     Wilaya: "Biskra",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 8,
+    IDWilaya: "08",
     Wilaya: "Bechar",
     Domicile: "1100",
     Stopdesk: "700",
     Annuler: "150"
   },
   {
-    IDWilaya: 9,
+    IDWilaya: "09",
     Wilaya: "Blida",
     Domicile: "500",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 10,
+    IDWilaya: "10",
     Wilaya: "Bouira",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 11,
+    IDWilaya: "11",
     Wilaya: "Tamanrasset",
     Domicile: "1600",
     Stopdesk: "1100",
     Annuler: "250"
   },
   {
-    IDWilaya: 12,
+    IDWilaya: "12",
     Wilaya: "Tebessa",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 13,
+    IDWilaya: "13",
     Wilaya: "Tlemcen",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 14,
+    IDWilaya: "14",
     Wilaya: "Tiaret",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 15,
+    IDWilaya: "15",
     Wilaya: "Tizi Ouzou",
     Domicile: "500",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 16,
+    IDWilaya: "16",
     Wilaya: "Alger",
     Domicile: "350",
     Stopdesk: "150",
     Annuler: "150"
   },
   {
-    IDWilaya: 17,
+    IDWilaya: "17",
     Wilaya: "Djelfa",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 18,
+    IDWilaya: "18",
     Wilaya: "Jijel",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 19,
+    IDWilaya: "19",
     Wilaya: "Setif",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 20,
+    IDWilaya: "20",
     Wilaya: "Saida",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 21,
+    IDWilaya: "21",
     Wilaya: "Skikda",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 22,
+    IDWilaya: "22",
     Wilaya: "Sidi Bel Abbes",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 23,
+    IDWilaya: "23",
     Wilaya: "Annaba",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 24,
+    IDWilaya: "24",
     Wilaya: "Guelma",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 25,
+    IDWilaya: "25",
     Wilaya: "Constantine",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 26,
+    IDWilaya: "26",
     Wilaya: "Medea",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 27,
+    IDWilaya: "27",
     Wilaya: "Mostaganem",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 28,
+    IDWilaya: "28",
     Wilaya: "M'Sila",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 29,
+    IDWilaya: "29",
     Wilaya: "Mascara",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 30,
+    IDWilaya: "30",
     Wilaya: "Ouargla",
     Domicile: "700",
     Stopdesk: "300",
     Annuler: "150"
   },
   {
-    IDWilaya: 31,
+    IDWilaya: "31",
     Wilaya: "Oran",
     Domicile: "600",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 32,
+    IDWilaya: "32",
     Wilaya: "El Bayadh",
     Domicile: "1100",
     Stopdesk: "450",
     Annuler: "150"
   },
   {
-    IDWilaya: 33,
+    IDWilaya: "33",
     Wilaya: "Illizi",
     Domicile: "0",
     Stopdesk: "0",
     Annuler: "0"
   },
   {
-    IDWilaya: 34,
+    IDWilaya: "34",
     Wilaya: "Bordj Bou Arreridj",
     Domicile: "700",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 35,
+    IDWilaya: "35",
     Wilaya: "Boumerdes",
     Domicile: "450",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 36,
+    IDWilaya: "36",
     Wilaya: "El Tarf",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 37,
+    IDWilaya: "37",
     Wilaya: "Tindouf",
     Domicile: "0",
     Stopdesk: "0",
     Annuler: "0"
   },
   {
-    IDWilaya: 38,
+    IDWilaya: "38",
     Wilaya: "Tissemsilt",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 39,
+    IDWilaya: "39",
     Wilaya: "El Oued",
     Domicile: "650",
     Stopdesk: "300",
     Annuler: "150"
   },
   {
-    IDWilaya: 40,
+    IDWilaya: "40",
     Wilaya: "Khenchela",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 41,
+    IDWilaya: "41",
     Wilaya: "Souk Ahras",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 42,
+    IDWilaya: "42",
     Wilaya: "Tipaza",
     Domicile: "450",
     Stopdesk: "200",
     Annuler: "150"
   },
   {
-    IDWilaya: 43,
+    IDWilaya: "43",
     Wilaya: "Mila",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 44,
+    IDWilaya: "44",
     Wilaya: "Ain Defla",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 45,
+    IDWilaya: "45",
     Wilaya: "Naama",
     Domicile: "1100",
     Stopdesk: "600",
     Annuler: "150"
   },
   {
-    IDWilaya: 46,
+    IDWilaya: "46",
     Wilaya: "Ain Temouchent",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 47,
+    IDWilaya: "47",
     Wilaya: "Ghardaia",
     Domicile: "650",
     Stopdesk: "300",
     Annuler: "150"
   },
   {
-    IDWilaya: 48,
+    IDWilaya: "48",
     Wilaya: "Relizane",
     Domicile: "650",
     Stopdesk: "250",
     Annuler: "150"
   },
   {
-    IDWilaya: 49,
+    IDWilaya: "49",
     Wilaya: "Timimoun",
     Domicile: "1400",
     Stopdesk: "0",
     Annuler: "200"
   },
   {
-    IDWilaya: 50,
+    IDWilaya: "50",
     Wilaya: "Bordj Badji Mokhtar",
     Domicile: "0",
     Stopdesk: "0",
     Annuler: "0"
   },
   {
-    IDWilaya: 51,
+    IDWilaya: "51",
     Wilaya: "Ouled Djellal",
     Domicile: "900",
     Stopdesk: "300",
     Annuler: "150"
   },
   {
-    IDWilaya: 52,
+    IDWilaya: "52",
     Wilaya: "Béni Abbès",
     Domicile: "1100",
     Stopdesk: "900",
     Annuler: "150"
   },
   {
-    IDWilaya: 53,
+    IDWilaya: "53",
     Wilaya: "In Salah",
     Domicile: "1600",
     Stopdesk: "0",
     Annuler: "250"
   },
   {
-    IDWilaya: 54,
+    IDWilaya: "54",
     Wilaya: "In Guezzam",
     Domicile: "1600",
     Stopdesk: "0",
     Annuler: "250"
   },
   {
-    IDWilaya: 55,
+    IDWilaya: "55",
     Wilaya: "Touggourt",
     Domicile: "900",
     Stopdesk: "300",
     Annuler: "150"
   },
   {
-    IDWilaya: 56,
+    IDWilaya: "56",
     Wilaya: "Djanet",
     Domicile: "0",
     Stopdesk: "0",
     Annuler: "0"
   },
   {
-    IDWilaya: 57,
+    IDWilaya: "57",
     Wilaya: "M'Ghair",
     Domicile: "900",
     Stopdesk: "0",
     Annuler: "150"
   },
   {
-    IDWilaya: 58,
+    IDWilaya: "58",
     Wilaya: "Meniaa",
     Domicile: "1000",
     Stopdesk: "0",
