@@ -48,14 +48,12 @@ interface PackFormComponentProps {
   product: Product
   form: FormState
   setForm: (form: FormState) => void
-  setOrdersLeft: (orders: any) => void
   setPerfumeSelectionError: (error: string) => void
 }
 
 const PackFormComponent = ({
   form,
   setForm,
-  setOrdersLeft,
   setPerfumeSelectionError
 }: PackFormComponentProps) => {
   // const { id } = useParams()
@@ -211,7 +209,6 @@ const PackFormComponent = ({
       // Store current timestamp in localStorage
       const now = Date.now()
       localStorage.setItem("lastOrderTime", now.toString())
-      setOrdersLeft((prev: any) => prev - 1)
       dispatch(
         setIsSuccessModalOpen({
           isSuccessModalOpen: true,

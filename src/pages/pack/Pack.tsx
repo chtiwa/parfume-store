@@ -1,6 +1,7 @@
 import { useState } from "react"
 import SearchInput from "./SearchInput"
 import PackFormComponent from "./PackForm"
+import { useGetPromoRemainingQuery } from "@/services/productsService"
 
 export interface VariantItem {
   value: string
@@ -35,7 +36,7 @@ interface PackFormState {
 }
 
 const Pack = () => {
-  const [ordersLeft, setOrdersLeft] = useState(87)
+  const { isLoading, data } = useGetPromoRemainingQuery({})
   const [form, setForm] = useState<PackFormState>({
     shopName: "lk-parfumo",
     fullName: "",
@@ -82,7 +83,7 @@ const Pack = () => {
         tous.
       </p>
       <p className="text-center text-gray-700 font-semibold max-w-md animate-bounce">
-        Les commades restantes {ordersLeft}.
+        Les commades restantes {isLoading ? "En attente..." : data?.remaining}.
       </p>
 
       {/* Perfume selectors */}
@@ -139,7 +140,6 @@ const Pack = () => {
         // @ts-ignore
         setForm={setForm}
         setPerfumeSelectionError={setPerfumeSelectionError}
-        setOrdersLeft={setOrdersLeft}
       />
     </div>
   )

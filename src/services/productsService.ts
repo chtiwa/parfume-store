@@ -15,6 +15,9 @@ export const productsApi = createApi({
         return `?${params.toString()}`
       }
     }),
+    getPromoRemaining: builder.query({
+      query: () => `/promo`
+    }),
     getProduct: builder.query({
       query: (id: string) => `/${id}`
     }),
@@ -27,6 +30,7 @@ export const productsApi = createApi({
 // @ts-ignore
 export const {
   useLazyGetProductsQuery,
+  useGetPromoRemainingQuery,
   useGetProductsQuery,
   useGetProductQuery,
   useLazyGetProductsBySearchQuery
