@@ -102,9 +102,9 @@ const PackFormComponent = ({
   }
 
   const reductions = {
-    "30ml": [0, 150, 300],
-    "50ml": [0, 250, 500],
-    "100ml": [0, 500, 1000]
+    "30ml": [0, 200, 400],
+    "50ml": [0, 300, 600],
+    "100ml": [0, 800, 1500]
   }
 
   const calculateTotalPrice = () => {
