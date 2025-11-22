@@ -215,26 +215,6 @@ const PackFormComponent = ({
           orderedProductTitle: generateProductName()
         })
       )
-      // if (window.fbq) {
-      //   window.fbq("track", "Purchase", {
-      //     value: form.totalPrice,
-      //     currency: "DZA",
-      //   });
-      // }
-      // if (window.ttq) {
-      //   // @ts-ignore
-      //   window.ttq.track("Purchase", {
-      //     contents: [
-      //       {
-      //         content_id: id,
-      //         content_type: "product",
-      //         content_name: product.title,
-      //       },
-      //     ],
-      //     value: form.totalPrice,
-      //     currency: "DZA",
-      //   })
-      // }
     }
   }
 
