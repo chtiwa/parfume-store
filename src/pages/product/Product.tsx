@@ -18,6 +18,7 @@ const Product = () => {
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
     productName: "",
+    productId: "",
     fullName: "",
     phoneNumber: "",
     state: "Alger",
@@ -49,6 +50,7 @@ const Product = () => {
           setForm((prev) => ({
             ...prev,
             productName: data.data.title,
+            productId: data.data.productId,
             variants: variants,
             selectedVariantItem: foundVariant,
             price: foundVariant.price,

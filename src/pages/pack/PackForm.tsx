@@ -134,7 +134,7 @@ const PackFormComponent = ({
 
     const reductionPrice =
       // @ts-ignore
-      reductions[`${form.selectedCapacity}`][index - 1]
+      reductions[`${form.selectedCapacity}`][index - 1 > 0 ? index - 1 : 0]
     setDiscountPrice(reductionPrice)
 
     return total - reductionPrice
