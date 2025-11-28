@@ -5,6 +5,7 @@ import { IoMdStar } from "react-icons/io"
 import { useGetProductQuery } from "../../services/productsService"
 import ProductSkeleton from "./ProductSkeleton"
 import { useEffect, useState } from "react"
+import HTMLParser from "html-react-parser"
 
 const Product = () => {
   const { id } = useParams()
@@ -124,7 +125,7 @@ const Product = () => {
               </span>
 
               <p className="text-sm sm:text-base text-gray-700">
-                {data?.data.description}{" "}
+                {HTMLParser(data?.data.description)}
               </p>
               {/*  @ts-ignore */}
               <FormComponent product={data} form={form} setForm={setForm} />
