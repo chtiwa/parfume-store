@@ -18,6 +18,7 @@ const Product = () => {
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
     productName: "",
+    brand: "",
     productId: "",
     fullName: "",
     phoneNumber: "",
@@ -37,6 +38,13 @@ const Product = () => {
 
   useEffect(() => {
     if (!isLoading && data?.success) {
+      if (window.fbq) {
+        window.fbq("track", "ViewContent", {
+          content_name: data.data.title,
+          value: data.data.price,
+          currency: "DZD"
+        })
+      }
       const variants = data.data?.variants || []
       if (variants.length > 0 && Array.isArray(variants[0].variantItems)) {
         const variantItems = variants[0].variantItems
@@ -50,6 +58,7 @@ const Product = () => {
           setForm((prev) => ({
             ...prev,
             productName: data.data.title,
+            brand: data.data.brand,
             productId: data.data.productId,
             variants: variants,
             selectedVariantItem: foundVariant,
@@ -66,22 +75,6 @@ const Product = () => {
       }
     }
   }, [isLoading, data])
-
-  useEffect(() => {
-    window.ttq &&
-      // @ts-ignore
-      window.ttq.track("ViewContent", {
-        contents: [
-          {
-            content_id: id,
-            content_type: "product",
-            content_name: "product"
-          }
-        ],
-        value: "1900",
-        currency: "DZA"
-      })
-  }, [id])
 
   if (isLoading) return <ProductSkeleton />
 
@@ -109,7 +102,7 @@ const Product = () => {
                 {data?.data.title}{" "}
               </h3>
 
-              <div className="flex items-center text-yellow-500">
+              <div className="flex items-center text-yellow-500 mb-1">
                 <IoMdStar className="hover:scale-150 transition duration-200" />
                 <IoMdStar className="hover:scale-150 transition duration-200" />
                 <IoMdStar className="hover:scale-150 transition duration-200" />
@@ -120,6 +113,10 @@ const Product = () => {
               <div className="flex items-center gap-2 text-sm">
                 <span className="font-semibold">Tags :</span>
                 <span>Parfum </span>
+              </div>
+              <div className="flex items-center gap-2 text-sm">
+                <span className="font-semibold">Brand :</span>
+                <span>{form?.brand}</span>
               </div>
               <span className="text-red-900 font-bold text-xl sm:text-2xl">
                 {/* @ts-ignore */}

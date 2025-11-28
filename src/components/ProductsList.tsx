@@ -42,7 +42,7 @@ const ProductsList = ({ tag }: ProductListProps) => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 py-4">
       {data.data.map((product: any) => {
-        const { id, title, price, images } = product
+        const { id, title, price, images, brand } = product
         return (
           <div
             className="flex flex-col items-center justify-start p-4 "
@@ -66,6 +66,7 @@ const ProductsList = ({ tag }: ProductListProps) => {
             <h3 className="text-center font-semibold text-base mt-2">
               {title}
             </h3>
+            <h3 className="text-center font-semibold text-sm mb-1">{brand}</h3>
             <div className="flex items-center justify-center text-yellow-500">
               {[...Array(5)].map((_, idx) => (
                 <IoMdStar

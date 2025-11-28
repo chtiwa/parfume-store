@@ -10,10 +10,8 @@ import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "../product/QauntityComponent.tsx"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import Variants from "../product/Variants.tsx"
-// import { useParams } from "react-router-dom"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
-import { toast } from "sonner"
 
 interface FormErrors {
   fullName?: string
@@ -25,19 +23,16 @@ interface FormErrors {
 
 interface Product {
   title: string
-  brand: string
   images: string[]
   price: number
 }
 
 interface FormState {
   fullName: string
-  phoneNumber: string
-  productName: string
-  brand: string
   productId: string
+  phoneNumber: string
   state: string
-  stateNumber: string | ""
+  stateNumber: number | ""
   city: string
   shippingMethod: string
   shippingPrice: number
@@ -53,14 +48,13 @@ interface FormComponentProps {
 }
 
 const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
-  // const { id } = useParams()
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
 
   const [errors, setErrors] = useState<FormErrors>({})
 
   useEffect(() => {
-    if (form.stateNumber && form.shippingMethod && form.selectedVariantItem) {
+    if (form?.stateNumber && form.shippingMethod && form.selectedVariantItem) {
       // @ts-ignore
       setForm((prev: FormState) => ({
         ...prev,
@@ -100,7 +94,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: stateNumber || ""
+        stateNumber: Number(stateNumber) || ""
       }))
     } else {
       //  @ts-ignore
@@ -123,7 +117,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         ...prev,
         orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       }))
-      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
       return
     }
 
@@ -210,8 +203,19 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2 rtl">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full max-w-xl px-4 flex flex-col gap-2 rtl"
+      id="landing-page-form"
+    >
+      <span className="text-red-900 font-bold text-xl sm:text-2xl">
+        {/* @ts-ignore */}
+        {form?.selectedVariantItem?.price + " د.ج"}
+      </span>
       <Variants form={form} setForm={setForm} />
+      <div className="flex flex-col gap-2">
+        يرجى ملء النموذج أدناه لتسجيل طلبك
+      </div>
       <div className="flex flex-col gap-2">
         <label htmlFor="fullName">الاسم الكامل :</label>
         <div className="relative w-full">
@@ -230,7 +234,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.fullName}</span>
         )}
       </div>
-
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="phoneNumber">رقم الهاتف :</label>
         <div className="relative w-full">
@@ -249,7 +252,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.phoneNumber}</span>
         )}
       </div>
-
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="state">الولاية :</label>
         <div className="relative w-full">
@@ -281,7 +283,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.state}</span>
         )}
       </div>
-
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="city">البلدية :</label>
         <div className="relative w-full">
@@ -336,21 +337,16 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.city}</span>
         )}
       </div>
-
       <QauntityComponent form={form} setForm={setForm} />
-
       <ShippingForm form={form} setForm={setForm} tarifs={tarifs} />
       {errors.shippingMethod && (
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
-
-      <div className="flex items-center justify-between gap-2 w-full pt-4 text-lg">
+      <div className="flex items-center justify-between gap-2 w-full pt-4">
         <span className="">المجموع :</span>
         <span>{form.totalPrice} د.ج</span>
       </div>
-
       {error && <span className="text-red-500">Internal Server Error</span>}
-
       <button
         className="flex items-center justify-center px-8 pt-2 pb-2.5 border border-gray-500 font-bold text-xl text-white bg-black hover:scale-105 hover:border-green-500 animate-bounce transition duration-300 cursor-pointer mt-8 rounded"
         type="submit"
