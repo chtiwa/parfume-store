@@ -13,21 +13,25 @@ import ShippingPolicy from "./pages/termsOfService/ShippingPolicy"
 import ReturnRefund from "./pages/termsOfService/ReturnRefund"
 import PrivacyPolicy from "./pages/termsOfService/PrivacyPolicy"
 import Pack from "./pages/pack/Pack"
+import LandingPage from "./pages/landingPage/LandingPage"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Layout />}>
-      <Route path="/" element={<Home />} />
-      <Route path="/homme" element={<Products tag="homme" />} />
-      <Route path="/femme" element={<Products tag="femme" />} />
-      <Route path="/collection" element={<Products tag="collection" />} />
-      <Route path="/pack" element={<Pack />} />
-      <Route path="/product/:id" element={<Product />} />
-      <Route path="/terms-of-service" element={<TermsOfService />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      <Route path="/shipping-policy" element={<ShippingPolicy />} />
-      <Route path="/refund-return" element={<ReturnRefund />} />
-      <Route path="*" element={<Home />} />
+    <Route>
+      <Route path="/landing-page/:id" element={<LandingPage />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/homme" element={<Products tag="homme" />} />
+        <Route path="/femme" element={<Products tag="femme" />} />
+        <Route path="/collection" element={<Products tag="collection" />} />
+        <Route path="/pack" element={<Pack />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/shipping-policy" element={<ShippingPolicy />} />
+        <Route path="/refund-return" element={<ReturnRefund />} />
+        <Route path="*" element={<Home />} />
+      </Route>
     </Route>
   )
 )

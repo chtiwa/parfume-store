@@ -94,7 +94,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: Number(stateNumber) || ""
+        stateNumber: stateNumber || ""
       }))
     } else {
       //  @ts-ignore
@@ -135,6 +135,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
     const res = await createOrder({
       ...form,
+      stateNumber: `${form.stateNumber}`,
       // @ts-ignore
       productId: product?.id,
       variant: form.selectedVariantItem.value,
@@ -213,9 +214,9 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         {form?.selectedVariantItem?.price + " د.ج"}
       </span>
       <Variants form={form} setForm={setForm} />
-      <div className="flex flex-col gap-2">
-        يرجى ملء النموذج أدناه لتسجيل طلبك
-      </div>
+      <span className="mt-2">
+        {"يرجى التأكد من تعبئة جميع الحقول الإلزامية في النموذج أدناه."}
+      </span>
       <div className="flex flex-col gap-2">
         <label htmlFor="fullName">الاسم الكامل :</label>
         <div className="relative w-full">
