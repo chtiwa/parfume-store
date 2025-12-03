@@ -21,7 +21,7 @@ const Product = () => {
     productName: "",
     brand: "",
     productId: "",
-    tags: "",
+    tags: [],
     fullName: "",
     phoneNumber: "",
     state: "Alger",
@@ -116,8 +116,10 @@ const Product = () => {
               <div className="flex items-center gap-2 text-sm">
                 <span className="font-semibold">Tags :</span>
                 <span>
-                  {form?.tags[0]}{" "}
-                  {form?.tags[1] !== undefined && `, ${form?.tags[1]}`}
+                  {/* {form?.tags[0]}{" "}
+                  {form?.tags[1] !== undefined && `, ${form?.tags[1]}`} */}
+                  {form.tags?.[0] ?? ""}
+                  {form.tags?.[1] && `, ${form.tags[1]}`}
                 </span>
               </div>
               <div className="flex items-center gap-2 text-sm">

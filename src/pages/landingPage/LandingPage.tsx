@@ -21,7 +21,7 @@ const LandingPage = () => {
   }, [location])
 
   const [form, setForm] = useState({
-    shopName: "riva-home",
+    shopName: "lk-parfumo",
     productName: "",
     fullName: "",
     phoneNumber: "",
