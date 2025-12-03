@@ -51,7 +51,7 @@ const SearchModal = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full border rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-green-400"
-            placeholder="Search for products..."
+            placeholder="Rechercher des parfums..."
             maxLength={50}
           />
           <IoSearchOutline

@@ -77,7 +77,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col gap-4 items-center justify-center pb-8 relative">
         <ScrollButton />
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col mb-2">
           {data.data.images.map((image: any) => {
             const { url, id } = image
             return (
