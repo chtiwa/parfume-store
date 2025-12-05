@@ -14,11 +14,20 @@ import ReturnRefund from "./pages/termsOfService/ReturnRefund"
 import PrivacyPolicy from "./pages/termsOfService/PrivacyPolicy"
 import Pack from "./pages/pack/Pack"
 import LandingPage from "./pages/landingPage/LandingPage"
+import MetaPixel from "./components/MetaPixel"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/landing-page/:id" element={<LandingPage />} />
+      <Route
+        path="/landing-page/:id"
+        element={
+          <>
+            <MetaPixel />
+            <LandingPage />
+          </>
+        }
+      />
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/homme" element={<Products tag="homme" />} />
