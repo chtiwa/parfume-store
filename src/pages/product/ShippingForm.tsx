@@ -31,9 +31,9 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
               />
               <FaCheck className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black opacity-0 peer-checked:opacity-100 pointer-events-none" />
             </div>
-            <span className="mb-1">{"إلى المكتب"}</span>
+            <span className="mb-1 font-semibold">{"إلى المكتب"}</span>
           </div>
-          <span>
+          <span className="font-semibold">
             {form.stateNumber &&
               tarifs[Number(form?.stateNumber) - 1]["Stopdesk"]}{" "}
             د.ج
@@ -59,9 +59,9 @@ const ShippingForm = ({ form, setForm, tarifs }: ShippingFormInterface) => {
               />
               <FaCheck className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black opacity-0 peer-checked:opacity-100 pointer-events-none" />
             </div>
-            <span className="mb-1">{"إلى المنزل"}</span>
+            <span className="mb-1 font-semibold">{"إلى المنزل"}</span>
           </div>
-          <span>
+          <span className="font-semibold">
             {form.stateNumber &&
               tarifs[Number(form?.stateNumber) - 1]["Domicile"]}{" "}
             د.ج

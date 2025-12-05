@@ -209,10 +209,15 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       className="w-full max-w-xl px-4 flex flex-col gap-2 rtl"
       id="landing-page-form"
     >
-      <span className="text-red-900 font-bold text-xl sm:text-2xl">
-        {/* @ts-ignore */}
-        {form?.selectedVariantItem?.price + " د.ج"}
-      </span>
+      <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
+        <span className="text-4xl sm:text-5xl font-extrabold text-green-900 leading-none">
+          {form?.selectedVariantItem?.price}
+        </span>
+        <span className="text-green-900 font-semibold text-lg sm:text-xl">
+          د.ج
+        </span>
+      </div>
+
       <Variants form={form} setForm={setForm} />
       <span className="mt-2">
         {"يرجى التأكد من تعبئة جميع الحقول الإلزامية في النموذج أدناه."}
@@ -343,7 +348,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       {errors.shippingMethod && (
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
-      <div className="flex items-center justify-between gap-2 w-full pt-4">
+      <div className="flex items-center justify-between gap-2 w-full pt-4 font-semibold text-lg sm:text-xl">
         <span className="">المجموع :</span>
         <span>{form.totalPrice} د.ج</span>
       </div>
