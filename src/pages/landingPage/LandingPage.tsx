@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import FormComponent from "./FormComponent"
 import { useEffect, useState } from "react"
 import LandingPageSkeleton from "./LandingPageSkeleton"
@@ -9,16 +9,16 @@ import { useGetLandingPageQuery } from "@/services/landingPagesService"
 
 const LandingPage = () => {
   // get the landing page by id
-  const location = useLocation()
+  // const location = useLocation()
   const { id } = useParams()
   // @ts-ignore
   const { data, isLoading, error } = useGetLandingPageQuery(id)
 
-  useEffect(() => {
-    if (window.fbq) {
-      window.fbq("track", "PageView")
-    }
-  }, [location])
+  // useEffect(() => {
+  //   if (window.fbq) {
+  //     window.fbq("track", "PageView")
+  //   }
+  // }, [location])
 
   const [form, setForm] = useState({
     shopName: "lk-parfumo",

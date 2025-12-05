@@ -40,13 +40,13 @@ const Product = () => {
 
   useEffect(() => {
     if (!isLoading && data?.success) {
-      if (window.fbq) {
-        window.fbq("track", "ViewContent", {
-          content_name: data.data.title,
-          value: data.data.price,
-          currency: "DZD"
-        })
-      }
+      // if (window.fbq) {
+      //   window.fbq("track", "ViewContent", {
+      //     content_name: data.data.title,
+      //     value: data.data.price,
+      //     currency: "DZD"
+      //   })
+      // }
       const variants = data.data?.variants || []
       if (variants.length > 0 && Array.isArray(variants[0].variantItems)) {
         const variantItems = variants[0].variantItems
