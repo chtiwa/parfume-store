@@ -17,8 +17,11 @@ const MetaPixel = () => {
     s = b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t, s);
   })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+  fbq('set', 'autoConfig', false, '1771229143790504');
+  fbq('set', 'allowAutomaticEvents', false);
   fbq("init", "1771229143790504");
-  fbq("track", "PageView");`
+  fbq("track", "PageView");
+  `
 
   const tiktokPixelCode = `!function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
