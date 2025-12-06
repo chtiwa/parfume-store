@@ -133,6 +133,8 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
 
+    console.log(source)
+
     const res = await createOrder({
       ...form,
       stateNumber: `${form.stateNumber}`,
