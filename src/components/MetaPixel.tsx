@@ -17,8 +17,8 @@ const MetaPixel = () => {
     s = b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t, s);
   })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-  fbq('set', 'autoConfig', false, '1771229143790504');
-  fbq('set', 'allowAutomaticEvents', false);
+  fbq("set", "autoConfig", false, "1771229143790504");
+  fbq("set", "allowAutomaticEvents", false);
   fbq("init", "1771229143790504");
   fbq("track", "PageView");
   `
