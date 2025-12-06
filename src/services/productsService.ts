@@ -12,7 +12,7 @@ export const productsApi = createApi({
         const params = new URLSearchParams()
         params.set("page", page?.toString())
         if (tag) params.set("tag", tag)
-        return `?${params.toString()}`
+        return `/client?${params.toString()}`
       }
     }),
     getPromoRemaining: builder.query({
