@@ -3,11 +3,12 @@ import { useEffect, useState } from "react"
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(true)
 
-  // hide button when near the bottom
+  // hide button only when at the very bottom
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.innerHeight + window.scrollY
-      const bottomThreshold = document.body.offsetHeight - 100 // adjust 100px threshold
+      const bottomThreshold = document.body.offsetHeight - 100 // full height
+      console.log(scrollPosition, bottomThreshold)
       setIsVisible(scrollPosition < bottomThreshold)
     }
 

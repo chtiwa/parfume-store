@@ -8,17 +8,9 @@ import MetaPixel from "../../components/MetaPixel"
 import { useGetLandingPageQuery } from "@/services/landingPagesService"
 
 const LandingPage = () => {
-  // get the landing page by id
-  // const location = useLocation()
   const { id } = useParams()
   // @ts-ignore
-  const { data, isLoading, error } = useGetLandingPageQuery(id)
-
-  // useEffect(() => {
-  //   if (window.fbq) {
-  //     window.fbq("track", "PageView")
-  //   }
-  // }, [location])
+  const { data, isLoading } = useGetLandingPageQuery(id)
 
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
