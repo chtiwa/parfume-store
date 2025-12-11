@@ -3,12 +3,10 @@ import { useEffect, useState } from "react"
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(true)
 
-  // hide button only when at the very bottom
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.innerHeight + window.scrollY
-      const bottomThreshold = document.body.offsetHeight - 100 // full height
-      console.log(scrollPosition, bottomThreshold)
+      const bottomThreshold = document.body.offsetHeight - 100
       setIsVisible(scrollPosition < bottomThreshold)
     }
 
@@ -16,12 +14,12 @@ const ScrollButton = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // scroll to form section
+  // scroll to bottom
   const scrollToForm = () => {
-    const form = document.getElementById("landing-page-form") // your form’s ID
-    if (form) {
-      form.scrollIntoView({ behavior: "smooth" })
-    }
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    })
   }
 
   if (!isVisible) return null

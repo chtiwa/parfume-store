@@ -29,6 +29,7 @@ interface Product {
 
 interface FormState {
   fullName: string
+  productName: string
   productId: string
   phoneNumber: string
   state: string
@@ -211,6 +212,11 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       className="w-full max-w-xl px-4 flex flex-col gap-2 rtl"
       id="landing-page-form"
     >
+      <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
+        <span className="text-4xl sm:text-5xl font-extrabold text-green-900 leading-none">
+          {form?.productName}
+        </span>
+      </div>
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
         <span className="text-4xl sm:text-5xl font-extrabold text-green-900 leading-none">
           {form?.selectedVariantItem?.price}
