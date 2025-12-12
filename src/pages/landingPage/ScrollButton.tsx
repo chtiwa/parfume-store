@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-sconst ScrollButton = () => {
+const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
