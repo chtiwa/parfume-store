@@ -25,6 +25,7 @@ interface Product {
   title: string
   images: string[]
   price: number
+  oldPrice: number
 }
 
 interface FormState {
@@ -213,12 +214,20 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       id="landing-page-form"
     >
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
-        <span className="text-4xl sm:text-5xl font-extrabold text-green-900 leading-none">
+        <span className="text-3xl sm:text-4xl font-extrabold text-black leading-none w-full px-2 sm:px-4">
           {form?.productName}
         </span>
       </div>
+
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
-        <span className="text-4xl sm:text-5xl font-extrabold text-green-900 leading-none">
+        <span className="text-3xl sm:text-4xl font-semibold text-red-500 line-through">
+          {/* {product?.oldPrice} {" د.ج"} */}
+          {"3900"} {" د.ج"}
+        </span>
+      </div>
+
+      <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
+        <span className="text-4xl sm:text-5xl font-extrabold text-green-800 leading-none">
           {form?.selectedVariantItem?.price}
         </span>
         <span className="text-green-900 font-semibold text-lg sm:text-xl">
