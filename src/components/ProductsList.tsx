@@ -9,11 +9,12 @@ import { useAppDispatch, useAppSelector } from "../features/hooks"
 import { setTotalPages } from "../features/productsSlice"
 
 interface ProductListProps {
-  tag: string
+  tag?: string
+  brand?: string
 }
 
 // @ts-ignore
-const ProductsList = ({ tag }: ProductListProps) => {
+const ProductsList = ({ tag, brand }: ProductListProps) => {
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
   const [getProducts, { data, isLoading, error }] = useLazyGetProductsQuery()
@@ -25,7 +26,7 @@ const ProductsList = ({ tag }: ProductListProps) => {
 
   const fetchProducts = async () => {
     try {
-      const res = await getProducts({ page, tag }).unwrap()
+      const res = await getProducts({ page, tag, brand }).unwrap()
       dispatch(setTotalPages(res?.pagination?.totalPages))
     } catch (error) {
       console.log(error)

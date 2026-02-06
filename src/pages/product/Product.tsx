@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import FormComponent from "./FormComponent"
 import ImageContainer from "./ImageContainer"
 import { IoMdStar } from "react-icons/io"
@@ -124,7 +124,9 @@ const Product = () => {
               </div>
               <div className="flex items-center gap-2 text-sm">
                 <span className="font-semibold">Brand :</span>
-                <span>{form?.brand}</span>
+                <Link to={`/collection?brand=${form?.brand}`}>
+                  <span>{form?.brand}</span>
+                </Link>
               </div>
               <span className="text-red-900 font-bold text-xl sm:text-2xl">
                 {/* @ts-ignore */}

@@ -8,10 +8,11 @@ export const productsApi = createApi({
   endpoints: (builder) => ({
     getProducts: builder.query({
       // @ts-ignore
-      query: ({ page, tag }) => {
+      query: ({ page, tag, brand }) => {
         const params = new URLSearchParams()
-        params.set("page", page?.toString())
+        if (page) params.set("page", page?.toString())
         if (tag) params.set("tag", tag)
+        if (brand) params.set("brand", brand)
         return `/client?${params.toString()}`
       }
     }),

@@ -48,7 +48,7 @@ const ImageContainer = ({ images }: ImageContainerI) => {
     <div className="relative flex flex-col-reverse items-center justify-center gap-5 px-4 py-6 md:max-w-6xl mx-auto">
       {/* Thumbnails */}
       {images.length > 1 && (
-        <div className="flex flex-row md:gap-3 gap-2 justify-center items-center ">
+        <div className="flex flex-row md:gap-3 gap-2 justify-center items-center flex-wrap">
           {images.slice(0, MAX_THUMBNAILS).map((img, i) => (
             <button
               key={i}

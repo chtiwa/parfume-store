@@ -120,10 +120,10 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       }))
       return
-    }
-
-    if (validateForm()) {
-      handleCreateOrder()
+    } else {
+      if (validateForm()) {
+        handleCreateOrder()
+      }
     }
   }
 

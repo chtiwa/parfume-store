@@ -1,11 +1,17 @@
 import ProductsList from "../../components/ProductsList"
 import PaginationComponent from "../../components/Pagination"
+import { useSearchParams } from "react-router-dom"
 
 interface ProductsProps {
   tag: string
 }
 
 const Products = ({ tag }: ProductsProps) => {
+  // if there's no tag then get the search query
+  // /products?brand=louis vuitton
+  const [searchParams] = useSearchParams()
+  const brand = searchParams.get("brand") || "" // "Louis Vuitton"
+
   return (
     <div className="flex flex-col gap-4 pb-16">
       <div
@@ -19,7 +25,7 @@ const Products = ({ tag }: ProductsProps) => {
         </h3>
       </div>
       <h3 className="pl-8 mt-8 altfont text-xl underline">Parfums {tag} :</h3>
-      <ProductsList tag={tag} />
+      <ProductsList tag={tag} brand={brand} />
       <PaginationComponent />
     </div>
   )
