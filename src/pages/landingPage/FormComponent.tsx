@@ -141,7 +141,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       ...form,
       stateNumber: `${form.stateNumber}`,
       // @ts-ignore
-      productId: product?.id,
+      productId: product?.data?.id,
       variant: form.selectedVariantItem.value,
       FBclid: fbclid,
       FBp: fbp,

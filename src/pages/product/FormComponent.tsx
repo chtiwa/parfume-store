@@ -35,7 +35,7 @@ interface FormState {
   phoneNumber: string
   productName: string
   brand: string
-  productId: string
+  // productId: string
   state: string
   stateNumber: string | ""
   city: string
@@ -140,10 +140,12 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
 
+    // console.log(product.data.id)
     const res = await createOrder({
       ...form,
+      stateNumber: `${form.stateNumber}`,
       // @ts-ignore
-      productId: product?.id,
+      productId: product?.data?.id,
       variant: form.selectedVariantItem.value,
       FBclid: fbclid,
       FBp: fbp,
@@ -260,10 +262,15 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
             onChange={handleChange}
           >
             {tarifs?.map((tarif, i) => {
-              const { IDWilaya, Wilaya, Domicile } = tarif
+              const { IDWilaya, Wilaya, Domicile, id } = tarif
               if (Domicile !== "0") {
                 return (
-                  <option value={Wilaya} key={i} data-idwilaya={IDWilaya}>
+                  <option
+                    value={Wilaya}
+                    key={i}
+                    data-idwilaya={IDWilaya}
+                    data-id={id}
+                  >
                     {IDWilaya}-{Wilaya}
                   </option>
                 )
