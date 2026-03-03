@@ -221,8 +221,8 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
         <span className="text-3xl sm:text-4xl font-semibold text-red-500 line-through">
-          {/* {product?.oldPrice} {" د.ج"} */}
-          {"3900"} {" د.ج"}
+          {product?.oldPrice} {" د.ج"}
+          {/* {"3900"} {" د.ج"} */}
         </span>
       </div>
 
