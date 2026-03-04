@@ -15,6 +15,7 @@ const LandingPage = () => {
   const [form, setForm] = useState({
     shopName: "lk-parfumo",
     productName: "",
+    productId: "",
     fullName: "",
     phoneNumber: "",
     state: "Alger",
@@ -44,6 +45,7 @@ const LandingPage = () => {
           setForm((prev) => ({
             ...prev,
             productName: data.data.title,
+            productId: data.data.id,
             variants: variants,
             selectedVariantItem: foundVariant,
             price: foundVariant.price,
