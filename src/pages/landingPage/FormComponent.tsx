@@ -12,6 +12,7 @@ import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import Variants from "../product/Variants.tsx"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
+import { toast } from "sonner"
 
 interface FormErrors {
   fullName?: string
@@ -30,12 +31,15 @@ interface Product {
 
 interface FormState {
   fullName: string
-  productName: string
-  productId: string
   phoneNumber: string
+  productName: string
+  brand: string
+  productId: string
   state: string
-  stateNumber: number | ""
+  stateId: string
+  stateNumber: string | ""
   city: string
+  cityId: string
   shippingMethod: string
   shippingPrice: number
   totalPrice: number
@@ -91,13 +95,21 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       //  @ts-ignore
       const selectedOptions = e.target.selectedOptions[0]
       const stateNumber = selectedOptions.getAttribute("data-idwilaya")
+      const stateId = selectedOptions.getAttribute("data-id")
 
       //  @ts-ignore
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: stateNumber || ""
+        stateNumber: stateNumber || "",
+        stateId: stateId || ""
       }))
+    } else if (name === "city") {
+      //  @ts-ignore
+      const selectedOptions = e.target.selectedOptions[0]
+      const cityId = selectedOptions.getAttribute("data-itemId")
+      //  @ts-ignore
+      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId: cityId }))
     } else {
       //  @ts-ignore
       setForm((prev: FormState) => ({ ...prev, [name]: value }))
@@ -119,6 +131,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         ...prev,
         orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       }))
+      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
       return
     } else {
       if (validateForm()) {
@@ -135,13 +148,9 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
 
-    console.log(source)
-
     const res = await createOrder({
       ...form,
       stateNumber: `${form.stateNumber}`,
-      // @ts-ignore
-      // productId: product?.data?.id,
       variant: form.selectedVariantItem.value,
       FBclid: fbclid,
       FBp: fbp,
@@ -285,10 +294,15 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
             onChange={handleChange}
           >
             {tarifs?.map((tarif, i) => {
-              const { IDWilaya, Wilaya, Domicile } = tarif
+              const { IDWilaya, Wilaya, Domicile, id } = tarif
               if (Domicile !== "0") {
                 return (
-                  <option value={Wilaya} key={i} data-idwilaya={IDWilaya}>
+                  <option
+                    value={Wilaya}
+                    key={i}
+                    data-idwilaya={IDWilaya}
+                    data-id={id}
+                  >
                     {IDWilaya}-{Wilaya}
                   </option>
                 )
@@ -322,7 +336,11 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
                     (c) => Number(c.wilaya_code) === Number(form.stateNumber)
                   )
                   ?.map((c, i) => (
-                    <option value={c.commune_name_ascii} key={i}>
+                    <option
+                      value={c.commune_name_ascii}
+                      data-itemId={c.itemId}
+                      key={i}
+                    >
                       {c.commune_name_ascii}
                     </option>
                   ))}

@@ -62,10 +62,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const [errors, setErrors] = useState<FormErrors>({})
 
   useEffect(() => {
-    console.log("stated id: ", form.stateId, "city id: ", form.cityId)
-  }, [form.cityId, form.stateId])
-
-  useEffect(() => {
     if (form.stateNumber && form.shippingMethod && form.selectedVariantItem) {
       // @ts-ignore
       setForm((prev: FormState) => ({
@@ -158,8 +154,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     const res = await createOrder({
       ...form,
       stateNumber: `${form.stateNumber}`,
-      // @ts-ignore
-      productId: product?.data?.id,
       variant: form.selectedVariantItem.value,
       FBclid: fbclid,
       FBp: fbp,

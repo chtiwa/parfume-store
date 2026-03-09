@@ -3,19 +3,19 @@ export const cities = [
     id: 22,
     commune_name_ascii: "Timekten",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "6c6149d5-b34c-4e0f-af57-4b56b6179082"
   },
   {
     id: 6,
     commune_name_ascii: "Bouda",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "b67de4b6-09f8-4fd6-a39b-6f117e006e33"
   },
   {
     id: 13,
     commune_name_ascii: "Ouled Ahmed Timmi",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "a55f84eb-c1a9-4970-bbcb-c1bf62c4d78d"
   },
   {
     id: 1,
@@ -27,145 +27,145 @@ export const cities = [
     id: 9,
     commune_name_ascii: "Fenoughil",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "4aa7999a-4b16-4f0b-8f13-8a0eeec1c344"
   },
   {
     id: 10,
     commune_name_ascii: "In Zghmir",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "6d89d4e3-10ea-4a9d-90a5-be53b3a2b1cb"
   },
   {
     id: 16,
     commune_name_ascii: "Reggane",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "6616ee32-c281-4e7e-954a-ec295e97b888"
   },
   {
     id: 17,
     commune_name_ascii: "Sali",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "97629e30-cb74-483c-a773-b4f6a0022448"
   },
   {
     id: 18,
     commune_name_ascii: "Sebaa",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "5f95be30-bd1c-41fd-b631-937846cd7efc"
   },
   {
     id: 27,
     commune_name_ascii: "Tsabit",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "669d3f83-601b-4521-99a5-e03d2d4b8404"
   },
   {
     id: 21,
     commune_name_ascii: "Tamest",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "cf9be3f1-0377-40bc-9b10-0826c61d8a61"
   },
   {
     id: 20,
     commune_name_ascii: "Tamantit",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "3175242c-720d-4487-99e1-579d87f0e9ea"
   },
   {
     id: 26,
     commune_name_ascii: "Tit",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "0cd63e5b-3055-45a8-81c9-df07b0128540"
   },
   {
     id: 28,
     commune_name_ascii: "Zaouiet Kounta",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "09f82491-7fda-489d-88e8-f5c07386ca8d"
   },
   {
     id: 2,
     commune_name_ascii: "Akabli",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "bd9a789f-ea2b-40fd-9c79-ea9d6c62f264"
   },
   {
     id: 4,
     commune_name_ascii: "Aoulef",
     wilaya_code: "1",
-    itemId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+    itemId: "cdb1b09b-d3cf-4c7a-979a-cb6a16ae0737"
   },
   {
     id: 60,
     commune_name_ascii: "Talassa",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "9ea10c9d-30a5-43aa-ab2c-2f0365399e7d"
   },
   {
     id: 63,
     commune_name_ascii: "Zeboudja",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "95e259c9-f2fe-4569-b741-7e4b5a14896b"
   },
   {
     id: 41,
     commune_name_ascii: "El Hadjadj",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "6de43d4d-338a-4cb0-a68e-e2d635d8f0ab"
   },
   {
     id: 52,
     commune_name_ascii: "Ouled Ben Abdelkader",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "910e38a2-6552-4a8c-b12a-bfce6ba8e607"
   },
   {
     id: 30,
     commune_name_ascii: "Ain Merane",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "11919c5f-d73d-459b-a01f-75818d49814f"
   },
   {
     id: 37,
     commune_name_ascii: "Breira",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "359c4465-4608-4c04-b3a7-ca3193c2b3f2"
   },
   {
     id: 51,
     commune_name_ascii: "Ouled Abbes",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "09995504-3bb4-4929-8551-3be9ed34c8a3"
   },
   {
     id: 48,
     commune_name_ascii: "Oued Fodda",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "adec6ba3-0e4a-4ff4-b90a-335f94cbb85e"
   },
   {
     id: 34,
     commune_name_ascii: "Beni Rached",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "3dc54b12-c898-4b61-8acc-bc3c6e5d7d26"
   },
   {
     id: 45,
     commune_name_ascii: "Herenfa",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "0d056318-f761-482c-938c-0c3326c63e80"
   },
   {
     id: 59,
     commune_name_ascii: "Tadjena",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "289df37c-c3e2-45f4-811d-6308dda00ad3"
   },
   {
     id: 43,
     commune_name_ascii: "El Marsa",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "c0d06b1b-1bfc-47ac-83e1-315b18d0fe2f"
   },
   {
     id: 39,
@@ -177,205 +177,205 @@ export const cities = [
     id: 54,
     commune_name_ascii: "Oum Drou",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "397a4ba3-4713-44f8-88c5-71653b3e8e33"
   },
   {
     id: 55,
     commune_name_ascii: "Sendjas",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "255d3721-0cdb-4f72-8d18-c1d7b552629f"
   },
   {
     id: 56,
     commune_name_ascii: "Sidi Abderrahmane",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "da7620f2-efbf-44d6-99e4-53f7de29e1ca"
   },
   {
     id: 57,
     commune_name_ascii: "Sidi Akkacha",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "8f5cbc9a-59e2-49c4-b0e9-b812ab4fe8c4"
   },
   {
     id: 62,
     commune_name_ascii: "Tenes",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "8f556564-064c-4bd8-a720-234fb16251c8"
   },
   {
     id: 32,
     commune_name_ascii: "Beni  Bouattab",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "6b142d38-22f9-4e4a-a0d3-be7491ccc63d"
   },
   {
     id: 42,
     commune_name_ascii: "El Karimia",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "c405f087-4eb6-409a-9977-ef43a6219a4c"
   },
   {
     id: 44,
     commune_name_ascii: "Harchoun",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "3a824969-9ffb-49ac-9722-bfb325073c19"
   },
   {
     id: 36,
     commune_name_ascii: "Bouzeghaia",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "d4b26a15-0f6c-4cba-b0dd-bd434db51526"
   },
   {
     id: 61,
     commune_name_ascii: "Taougrit",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "845c89e0-f04a-496f-a87c-8273affa7611"
   },
   {
     id: 33,
     commune_name_ascii: "Beni Haoua",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "32660d04-6a57-4524-aff3-baf43ee6bc31"
   },
   {
     id: 29,
     commune_name_ascii: "Abou El Hassane",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "3e3e67ed-63a8-42e4-8ab0-b9f4f5c4e046"
   },
   {
     id: 49,
     commune_name_ascii: "Oued Goussine",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "fc12e8bb-399c-4fde-b82a-21467e3a4abf"
   },
   {
     id: 38,
     commune_name_ascii: "Chettia",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "dc44eb7c-2ace-4b63-b15a-34f493bde8d8"
   },
   {
     id: 47,
     commune_name_ascii: "Moussadek",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "0693b196-8177-4b0a-b6cf-0951f7531177"
   },
   {
     id: 53,
     commune_name_ascii: "Ouled Fares",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "6ba259fb-c054-4ac5-8b21-ac50961db13c"
   },
   {
     id: 35,
     commune_name_ascii: "Boukadir",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "622a68f1-473b-406f-9268-2456dd9b7671"
   },
   {
     id: 50,
     commune_name_ascii: "Oued Sly",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "50d15975-0d39-4c57-969f-7e9d2ada74e3"
   },
   {
     id: 58,
     commune_name_ascii: "Sobha",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "103f2081-934f-4a95-8610-511dd1385299"
   },
   {
     id: 31,
     commune_name_ascii: "Benairia",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "6a3435f2-b577-4fed-acc5-524c598ebb80"
   },
   {
     id: 46,
     commune_name_ascii: "Labiod Medjadja",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "320dd6a2-d8ae-49a1-9832-82b03505d687"
   },
   {
     id: 40,
     commune_name_ascii: "Dahra",
     wilaya_code: "2",
-    itemId: "981f136a-996f-463e-a536-8e643daab193"
+    itemId: "df5bb079-a2b8-41b5-80fa-e621bfe61690"
   },
   {
     id: 67,
     commune_name_ascii: "El Beidha",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "4d84fa8c-ff4d-46c4-87d9-c4a0d9b7edfa"
   },
   {
     id: 73,
     commune_name_ascii: "Gueltat Sidi Saad",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "23b26c4b-6c06-43cf-a2fc-2fcc6ea0805f"
   },
   {
     id: 69,
     commune_name_ascii: "Brida",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "7ebd963e-9ba3-4a97-82f2-f0df29b1718d"
   },
   {
     id: 66,
     commune_name_ascii: "Ain Sidi Ali",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "d7964522-52f8-45b9-ac97-2b9346b9de0c"
   },
   {
     id: 85,
     commune_name_ascii: "Tadjemout",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "832fb1aa-7241-489e-9909-ac97942e339f"
   },
   {
     id: 74,
     commune_name_ascii: "Hadj Mechri",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "92ad069a-6696-499c-b35a-5915b05a9645"
   },
   {
     id: 87,
     commune_name_ascii: "Taouiala",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "69f4464d-a157-44d6-8ba8-365af224a844"
   },
   {
     id: 71,
     commune_name_ascii: "El Ghicha",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "7ae49d98-85b5-4bac-8be4-9a84254da4d8"
   },
   {
     id: 86,
     commune_name_ascii: "Tadjrouna",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "deb80a97-1251-494e-9ac1-e197152d62a6"
   },
   {
     id: 82,
     commune_name_ascii: "Sebgag",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "478c4de4-a1dc-4bc4-b6b5-a651e9514a23"
   },
   {
     id: 83,
     commune_name_ascii: "Sidi Bouzid",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "2403c760-d0fa-454f-abed-b7b0511dfeba"
   },
   {
     id: 80,
     commune_name_ascii: "Oued Morra",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "8cc7e2e0-f103-4186-bf51-be00e78af529"
   },
   {
     id: 79,
@@ -387,127 +387,127 @@ export const cities = [
     id: 81,
     commune_name_ascii: "Oued M'zi",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "f272cc93-9cfe-4763-b58a-a07432fe722c"
   },
   {
     id: 78,
     commune_name_ascii: "Ksar El Hirane",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "7d745351-6ee4-4a44-8891-56c1109afb53"
   },
   {
     id: 70,
     commune_name_ascii: "El Assafia",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "5390da7e-90e9-40e0-8051-3b2ab64b79af"
   },
   {
     id: 84,
     commune_name_ascii: "Sidi Makhlouf",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "55d77aa1-909b-4dbd-99fd-d69316b2651a"
   },
   {
     id: 75,
     commune_name_ascii: "Hassi Delaa",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "3d051cd5-38c5-4042-b73a-9635ea2126a7"
   },
   {
     id: 76,
     commune_name_ascii: "Hassi R'mel",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "ac24a80b-4caa-48ef-97ce-9ad54c5cfa32"
   },
   {
     id: 65,
     commune_name_ascii: "Ain Madhi",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "06903f83-151e-44c7-9d32-a27a038f4d36"
   },
   {
     id: 72,
     commune_name_ascii: "El Haouaita",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "022d2789-04dc-46ab-8dbb-3444e5cfe4ea"
   },
   {
     id: 77,
     commune_name_ascii: "Kheneg",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "8e5d56ff-97e6-4297-a350-8c95c4c9cfc1"
   },
   {
     id: 68,
     commune_name_ascii: "Benacer Benchohra",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "1efa04e0-a97b-4491-a49c-2c9c202b1d2b"
   },
   {
     id: 64,
     commune_name_ascii: "Aflou",
     wilaya_code: "3",
-    itemId: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b"
+    itemId: "634e772e-7717-4e57-a495-ef60d5507aa4"
   },
   {
     id: 104,
     commune_name_ascii: "Fkirina",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "fc6385b7-7681-44be-aeae-8d387d2edb06"
   },
   {
     id: 102,
     commune_name_ascii: "El Fedjoudj Boughrara Sa",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "0a3e00ec-2cb9-4493-a3a0-c5193115c406"
   },
   {
     id: 91,
     commune_name_ascii: "Ain Fekroun",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "5e20a3f2-23d7-4c6b-add3-06d1c068b1e2"
   },
   {
     id: 113,
     commune_name_ascii: "Rahia",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "4f9caecf-8879-4a45-baa9-8d3b896b93a4"
   },
   {
     id: 107,
     commune_name_ascii: "Meskiana",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "fb09fbf1-7a25-430e-8bc7-2dfd9ab17ab1"
   },
   {
     id: 100,
     commune_name_ascii: "El Belala",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "e0353951-f88a-44ac-9e72-4e35d6a15dbe"
   },
   {
     id: 95,
     commune_name_ascii: "Behir Chergui",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "f2e399a5-ca3d-4d3a-bf5c-dd4bc9b1da24"
   },
   {
     id: 106,
     commune_name_ascii: "Ksar Sbahi",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "add35d14-e74d-4c12-920e-c394d25f66b6"
   },
   {
     id: 115,
     commune_name_ascii: "Souk Naamane",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "ff5a8323-5712-4e80-baef-172238d93daa"
   },
   {
     id: 111,
     commune_name_ascii: "Ouled Zouai",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "2b05c952-e28b-410c-8254-e3b8d62a224b"
   },
   {
     id: 112,
@@ -519,181 +519,181 @@ export const cities = [
     id: 88,
     commune_name_ascii: "Ain Babouche",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "f7dc5a01-2ca3-4443-bcda-6d570fe85913"
   },
   {
     id: 94,
     commune_name_ascii: "Ain Zitoun",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "7185bafa-8b32-4c56-a3da-9ec78177654e"
   },
   {
     id: 97,
     commune_name_ascii: "Bir Chouhada",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "368adda5-2a58-4582-942a-d2db72a21820"
   },
   {
     id: 89,
     commune_name_ascii: "Ain Beida",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "6e743974-1d6d-44d2-9d65-475debc85350"
   },
   {
     id: 96,
     commune_name_ascii: "Berriche",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "d21d54fa-942e-4e5b-905a-cda21658a5fe"
   },
   {
     id: 116,
     commune_name_ascii: "Zorg",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "c66489d2-7133-4342-9bf3-9a325e11fa4a"
   },
   {
     id: 93,
     commune_name_ascii: "Ain M'lila",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "eb3ee5ff-1bdb-4e5f-b54b-4fe0a83b6e9a"
   },
   {
     id: 109,
     commune_name_ascii: "Ouled Gacem",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "cdeffd46-b8ad-42c6-ae12-9014dfcffb0f"
   },
   {
     id: 110,
     commune_name_ascii: "Ouled Hamla",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "adb87515-9b05-40e1-a0e4-087eb74da1f7"
   },
   {
     id: 99,
     commune_name_ascii: "El Amiria",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "08de6d4e-18da-4874-95af-cbfedec14009"
   },
   {
     id: 114,
     commune_name_ascii: "Sigus",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "e4203248-90be-48f6-ba97-dd3290521704"
   },
   {
     id: 108,
     commune_name_ascii: "Oued Nini",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "7bb21ec1-d02a-458c-8cc2-a63a3a817feb"
   },
   {
     id: 90,
     commune_name_ascii: "Ain Diss",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "fc9c30a5-8324-4db1-8562-f0ed366a1277"
   },
   {
     id: 98,
     commune_name_ascii: "Dhalaa",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "81947893-494a-4fda-8ff7-7ba1b30e5eb0"
   },
   {
     id: 101,
     commune_name_ascii: "El Djazia",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "bb5cf597-ca98-4939-ac83-2f0900733f46"
   },
   {
     id: 92,
     commune_name_ascii: "Ain Kercha",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "7d6c04e3-712b-4271-b6a9-9e26d5128c9a"
   },
   {
     id: 103,
     commune_name_ascii: "El Harmilia",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "f63f567c-52fa-436c-835e-4f57cf28f3f7"
   },
   {
     id: 105,
     commune_name_ascii: "Hanchir Toumghani",
     wilaya_code: "4",
-    itemId: "37c70742-df6b-4019-981a-a16a29a14748"
+    itemId: "25472508-3030-42ab-a3d0-ddd340650411"
   },
   {
     id: 150,
     commune_name_ascii: "Maafa",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "3b85c669-2964-473a-af3c-b293cb41bc8d"
   },
   {
     id: 139,
     commune_name_ascii: "Gosbat",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c858d926-c468-48b7-9586-cb0a89613435"
   },
   {
     id: 176,
     commune_name_ascii: "Timgad",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "61ec30d0-6282-4414-ad32-ef3ce6930e02"
   },
   {
     id: 170,
     commune_name_ascii: "Taxlent",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "2d0a598a-48f5-4d33-9339-742931bbfa20"
   },
   {
     id: 161,
     commune_name_ascii: "Ouled Si Slimane",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c37ab15c-36eb-4de6-a30f-5dd3ba6deb91"
   },
   {
     id: 148,
     commune_name_ascii: "Lemcene",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "e2b45f68-5320-4314-8651-ddeaa31afdef"
   },
   {
     id: 169,
     commune_name_ascii: "Talkhamt",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d57aa0ea-f2ad-4ee5-bdf2-c1178121de68"
   },
   {
     id: 164,
     commune_name_ascii: "Ras El Aioun",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "db3730bb-e70d-4a1d-ae18-356fefe438fc"
   },
   {
     id: 163,
     commune_name_ascii: "Rahbat",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "7c1c3d54-96c3-43de-ab2a-8989dcf4ae2d"
   },
   {
     id: 160,
     commune_name_ascii: "Ouled Sellem",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "0fd19bde-6f66-431e-9cf5-e441e05da35f"
   },
   {
     id: 140,
     commune_name_ascii: "Guigba",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "ed700470-baea-4be8-8300-d0e7a5b6a264"
   },
   {
     id: 172,
     commune_name_ascii: "Teniet El Abed",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "ef5a2b18-fb3c-4688-9093-7192fac5bf58"
   },
   {
     id: 123,
@@ -705,361 +705,361 @@ export const cities = [
     id: 136,
     commune_name_ascii: "Fesdis",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "77a6aa13-14f3-4155-875e-c6cde844c304"
   },
   {
     id: 154,
     commune_name_ascii: "Oued Chaaba",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d04454c7-c0c1-4b42-b5a5-411770966d6a"
   },
   {
     id: 141,
     commune_name_ascii: "Hidoussa",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "40049720-ec07-4ac9-b53d-99bd4ca2f4e7"
   },
   {
     id: 145,
     commune_name_ascii: "Ksar Bellezma",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "f4a818f0-4785-452c-a835-a2c690665138"
   },
   {
     id: 152,
     commune_name_ascii: "Merouana",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "7a103eae-df22-4357-8ffa-ab4f5e8016c9"
   },
   {
     id: 155,
     commune_name_ascii: "Oued El Ma",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "be9a4021-9840-4c82-808a-ca07290879c7"
   },
   {
     id: 147,
     commune_name_ascii: "Lazrou",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "4d535fda-4016-4424-be8f-237f68034845"
   },
   {
     id: 167,
     commune_name_ascii: "Seriana",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "5ff5adff-66e3-48eb-87b0-f1fd9f0de6cf"
   },
   {
     id: 177,
     commune_name_ascii: "Zanet El Beida",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "e29317dc-5276-449f-953b-85b5dceeb0e7"
   },
   {
     id: 151,
     commune_name_ascii: "Menaa",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "74ff93ef-f07d-4e95-a8b9-0811398467fc"
   },
   {
     id: 174,
     commune_name_ascii: "Tigharghar",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "7f95e48e-6007-4ede-86b1-8d62d5f4f290"
   },
   {
     id: 119,
     commune_name_ascii: "Ain Yagout",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "e80f3ce6-376e-48f6-b293-fee67b763955"
   },
   {
     id: 128,
     commune_name_ascii: "Boumia",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d9008737-2cc3-48a0-b861-af38f05f34ed"
   },
   {
     id: 132,
     commune_name_ascii: "Djerma",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "592885b2-7cfe-445d-a4dd-6bcc40075d92"
   },
   {
     id: 135,
     commune_name_ascii: "El Madher",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "81766aac-bf6b-4312-9b3a-36d1bfc8c370"
   },
   {
     id: 162,
     commune_name_ascii: "Ouyoun El Assafir",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c3c9a43f-0073-4f37-8932-41d7e9b75c45"
   },
   {
     id: 171,
     commune_name_ascii: "Tazoult",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c142c6af-63de-49d2-9987-d07385502b29"
   },
   {
     id: 127,
     commune_name_ascii: "Boumagueur",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "7831b984-a920-4131-82a9-dabf661f4504"
   },
   {
     id: 153,
     commune_name_ascii: "N Gaous",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c105f0df-f10d-4cb4-ad3a-0820af51f751"
   },
   {
     id: 165,
     commune_name_ascii: "Sefiane",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "02e6ad51-adb7-4fd7-8541-cddc29487e37"
   },
   {
     id: 120,
     commune_name_ascii: "Arris",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "0048d3b8-92ea-4322-be54-902fc4bd1c72"
   },
   {
     id: 173,
     commune_name_ascii: "Tighanimine",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d53f0c25-7d36-46d7-a80e-10ac6a8860af"
   },
   {
     id: 117,
     commune_name_ascii: "Ain Djasser",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "35f9ddc2-97db-402b-b287-af4952c7addc"
   },
   {
     id: 134,
     commune_name_ascii: "El Hassi",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "891d4701-f5c5-4f5a-afc0-bfe2fc3a9ea4"
   },
   {
     id: 166,
     commune_name_ascii: "Seggana",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "93f42882-c1f9-4d23-acf0-e82cd774b99f"
   },
   {
     id: 175,
     commune_name_ascii: "Tilatou",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c49c6245-e54a-4832-92d4-1c180fc5ff25"
   },
   {
     id: 137,
     commune_name_ascii: "Foum Toub",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "66ab2668-769b-48b0-8416-c5168458f09e"
   },
   {
     id: 142,
     commune_name_ascii: "Ichemoul",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "4424ea26-451a-4ece-be43-a10cedb06f40"
   },
   {
     id: 143,
     commune_name_ascii: "Inoughissen",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d8944c3f-5f44-4d4e-81d4-3a7797e7bed7"
   },
   {
     id: 129,
     commune_name_ascii: "Bouzina",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "fff3127a-494f-4bed-a99f-a7076b7c0a6f"
   },
   {
     id: 146,
     commune_name_ascii: "Larbaa",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "b1053caa-6b7d-429c-b40e-fec2419928ec"
   },
   {
     id: 126,
     commune_name_ascii: "Boulhilat",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "ef7a6a53-dd64-42b6-bac3-85d139f37092"
   },
   {
     id: 130,
     commune_name_ascii: "Chemora",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "f1a62d37-07d8-499b-8014-e0711d2e193e"
   },
   {
     id: 122,
     commune_name_ascii: "Barika",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "dfc5084e-d106-40ce-8fa0-e9f468ea29f5"
   },
   {
     id: 125,
     commune_name_ascii: "Bitam",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "eb68ab6c-dd69-4cd0-aa0e-ba72ea789ca4"
   },
   {
     id: 149,
     commune_name_ascii: "M Doukal",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c71870ad-6c77-4411-aae5-ff764e15e7b5"
   },
   {
     id: 121,
     commune_name_ascii: "Azil Abedelkader",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d3fb1ccb-33d5-4997-b63f-6e3d18eff211"
   },
   {
     id: 133,
     commune_name_ascii: "Djezzar",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "51f42947-0c6b-422c-a5c5-abdbde155cc4"
   },
   {
     id: 157,
     commune_name_ascii: "Ouled Ammar",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "fbb0b705-ed9f-461c-a748-bf4a3a2e7a48"
   },
   {
     id: 138,
     commune_name_ascii: "Ghassira",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "381ff92a-6b4f-4f8c-8dde-4f3529762592"
   },
   {
     id: 144,
     commune_name_ascii: "Kimmel",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "2d472b15-e03a-46fe-ad30-3e0910252508"
   },
   {
     id: 168,
     commune_name_ascii: "T Kout",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "c6075fe7-4c1d-4581-b4c3-2e3792f1672e"
   },
   {
     id: 118,
     commune_name_ascii: "Ain Touta",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "85b9d2da-987a-476c-8556-e728b7dad412"
   },
   {
     id: 124,
     commune_name_ascii: "Beni Foudhala El Hakania",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "d009393b-1744-4131-8583-bd789bc9f67d"
   },
   {
     id: 159,
     commune_name_ascii: "Ouled Fadel",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "7f5b4284-c595-40ac-8807-e10b8c2b7743"
   },
   {
     id: 158,
     commune_name_ascii: "Ouled Aouf",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "f14c5532-4e25-4a20-b5a8-5b2453d76772"
   },
   {
     id: 131,
     commune_name_ascii: "Chir",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "1f0a58dc-722d-4462-93f5-ad93d5ce937b"
   },
   {
     id: 156,
     commune_name_ascii: "Oued Taga",
     wilaya_code: "5",
-    itemId: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b"
+    itemId: "6dbf77e8-094c-41e6-870f-f24a94e661e8"
   },
   {
     id: 212,
     commune_name_ascii: "Sidi Ayad",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "3afe3204-3851-4667-beeb-94482f658fb6"
   },
   {
     id: 186,
     commune_name_ascii: "Barbacha",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "6c99fce4-8b85-4e4b-a340-6da2cb37aa7d"
   },
   {
     id: 199,
     commune_name_ascii: "Leflaye",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "93cd279e-b1ac-4bf2-ad38-724f3ddaa986"
   },
   {
     id: 206,
     commune_name_ascii: "Kendira",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "92b79288-2250-43d2-a225-81204885da94"
   },
   {
     id: 213,
     commune_name_ascii: "Sidi-Aich",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "16a639ed-ef03-4716-b966-11c2d5d12f6a"
   },
   {
     id: 225,
     commune_name_ascii: "Tifra",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "a732eb12-ac57-4c3b-8a12-106a17cf1b47"
   },
   {
     id: 227,
     commune_name_ascii: "Tinebdar",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "51c46222-d00a-417a-b9ef-dfe8391e1c0c"
   },
   {
     id: 200,
     commune_name_ascii: "El Kseur",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "d50f9a0a-7f5a-466f-ba92-0c48c1b85a99"
   },
   {
     id: 201,
     commune_name_ascii: "Fenaia Il Maten",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "d1dda21a-faa8-4627-8af9-f809fc76edc0"
   },
   {
     id: 229,
     commune_name_ascii: "Toudja",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "44887e63-0534-45f8-b18a-9f77e0356e96"
   },
   {
     id: 198,
     commune_name_ascii: "Dra El Caid",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "61ca4682-dd5a-445a-b611-a41940c47221"
   },
   {
     id: 207,
     commune_name_ascii: "Kherrata",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "6e77e44c-5e48-45d2-836a-ddda11feaae6"
   },
   {
     id: 187,
@@ -1071,307 +1071,307 @@ export const cities = [
     id: 210,
     commune_name_ascii: "Oued Ghir",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "40b386f5-c352-473f-abbd-cc0337a743aa"
   },
   {
     id: 191,
     commune_name_ascii: "Benimaouche",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "8392bac4-d3d5-4465-ab49-753a26d505b5"
   },
   {
     id: 188,
     commune_name_ascii: "Beni Djellil",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "e0a71cbd-38ec-44ab-b994-cde9f638c5dc"
   },
   {
     id: 202,
     commune_name_ascii: "Feraoun",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "ca429526-1714-49f6-ab59-5aaffc25fc29"
   },
   {
     id: 214,
     commune_name_ascii: "Smaoun",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "69999bdf-a404-4329-ad6e-87f8ca5c433b"
   },
   {
     id: 226,
     commune_name_ascii: "Timezrit",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "b8c0dd06-b04c-4a18-a397-b97b5921a2de"
   },
   {
     id: 209,
     commune_name_ascii: "Melbou",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "7f6a348f-e4ce-41b5-9f5d-03cceb5c4dc6"
   },
   {
     id: 215,
     commune_name_ascii: "Souk El Tenine",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "d37d5514-3da5-458b-b18c-2899d9685a21"
   },
   {
     id: 219,
     commune_name_ascii: "Tamridjet",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "388685ff-bbe6-4fff-a869-be80103bfefd"
   },
   {
     id: 194,
     commune_name_ascii: "Boukhelifa",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "8a7b1e73-ee62-4ea5-b25c-9a1e9b4435a3"
   },
   {
     id: 217,
     commune_name_ascii: "Tala Hamza",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "62a012c8-f3b4-4390-a2af-1edc7d69ad6f"
   },
   {
     id: 224,
     commune_name_ascii: "Tichy",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "31287f86-0513-4233-94cb-c99d88be5518"
   },
   {
     id: 179,
     commune_name_ascii: "Ait R'zine",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "e937f2d8-8b7c-41b2-b45d-fed9d81650bd"
   },
   {
     id: 204,
     commune_name_ascii: "Ighil-Ali",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "c08a0789-a464-4910-870a-4b7bb5cf113f"
   },
   {
     id: 180,
     commune_name_ascii: "Ait-Smail",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "b61da9c9-ece2-43fc-9dba-b3f9ea04a1f9"
   },
   {
     id: 197,
     commune_name_ascii: "Darguina",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "120a8af5-5749-4804-956a-a5f270168af2"
   },
   {
     id: 221,
     commune_name_ascii: "Taskriout",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "ea85b215-6276-47d8-b47a-23bcbd896c6a"
   },
   {
     id: 185,
     commune_name_ascii: "Aokas",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "fe7c7318-bc11-42fe-93a0-224c5a68a393"
   },
   {
     id: 228,
     commune_name_ascii: "Tizi-N'berber",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "f59e4239-a76d-4387-973c-89f6afd829f4"
   },
   {
     id: 178,
     commune_name_ascii: "Adekar",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "4e5bb389-73a6-4378-a44d-c6e08dc7a1ce"
   },
   {
     id: 189,
     commune_name_ascii: "Beni K'sila",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "48a1a613-b521-4702-bc9f-fce586aba992"
   },
   {
     id: 220,
     commune_name_ascii: "Taourit Ighil",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "3f3a1a6f-cff3-4f78-a2dc-b5b5aa5751da"
   },
   {
     id: 181,
     commune_name_ascii: "Akbou",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "5d964794-b12a-4cd2-8793-78d192723e96"
   },
   {
     id: 195,
     commune_name_ascii: "Chellata",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "6b65c9cd-86b7-4fd4-a3b5-e770ea8a147f"
   },
   {
     id: 205,
     commune_name_ascii: "Ighram",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "f8be9a73-9af7-4dda-b2d3-59d7eeac58ed"
   },
   {
     id: 218,
     commune_name_ascii: "Tamokra",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "c374198d-4e96-4878-917a-ccb653b06e2f"
   },
   {
     id: 183,
     commune_name_ascii: "Amalou",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "7d3a3c7a-3c1a-4bcc-b3ce-cf8b53df6051"
   },
   {
     id: 193,
     commune_name_ascii: "Bouhamza",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "bba025fe-98ce-4cb6-a765-73afa0d419c1"
   },
   {
     id: 208,
     commune_name_ascii: "M'cisna",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "6733c856-e804-422c-ae0e-45cb070f841f"
   },
   {
     id: 211,
     commune_name_ascii: "Seddouk",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "c052d1d0-f1d0-486d-a7d1-5da923f20b7c"
   },
   {
     id: 190,
     commune_name_ascii: "Beni-Mallikeche",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "5abfac39-ccdf-4d3e-ad8b-99f09051912e"
   },
   {
     id: 192,
     commune_name_ascii: "Boudjellil",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "5446923c-c7a6-405e-b168-8c06cb860ea6"
   },
   {
     id: 222,
     commune_name_ascii: "Tazmalt",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "f725deee-c076-4a42-aba3-16e6f1661793"
   },
   {
     id: 182,
     commune_name_ascii: "Akfadou",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "d043663e-7d13-4d3f-927e-ca28744de574"
   },
   {
     id: 196,
     commune_name_ascii: "Chemini",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "6e52d885-ab7d-4bed-9489-e62fc5a2911a"
   },
   {
     id: 216,
     commune_name_ascii: "Souk Oufella",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "12116dd6-a258-4009-aada-aaf07d1f890b"
   },
   {
     id: 223,
     commune_name_ascii: "Tibane",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "c886da60-9c55-4b4c-bf7f-e776b2df417e"
   },
   {
     id: 203,
     commune_name_ascii: "Ouzellaguen",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "ee54755b-fa20-4bfc-98b5-eb2da1c6e1d0"
   },
   {
     id: 184,
     commune_name_ascii: "Amizour",
     wilaya_code: "6",
-    itemId: "295585ad-4cf4-4b7e-b276-9bb62d019749"
+    itemId: "5f44157b-0250-4345-b7d5-a79c9569a74c"
   },
   {
     id: 241,
     commune_name_ascii: "El Feidh",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "3937ef8d-963f-4584-8e98-fc911759bef0"
   },
   {
     id: 249,
     commune_name_ascii: "Lichana",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "3ff23d85-b5aa-4e22-851d-0a767bfe3638"
   },
   {
     id: 235,
     commune_name_ascii: "Bouchakroun",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "97e3ef29-f469-4a6c-b626-1c03593a175d"
   },
   {
     id: 252,
     commune_name_ascii: "Mekhadma",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "875c3baa-1a13-4d85-9bc7-44a004625393"
   },
   {
     id: 239,
     commune_name_ascii: "Djemorah",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "141f37d0-f0c8-4de8-9bb4-8800cc74749d"
   },
   {
     id: 236,
     commune_name_ascii: "Branis",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "1b0d9b05-d437-474b-b214-47f56f345b38"
   },
   {
     id: 246,
     commune_name_ascii: "El Outaya",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "7e05fb5d-781b-423a-96fc-c699ffdc4c8c"
   },
   {
     id: 245,
     commune_name_ascii: "El Kantara",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "37d0aade-3b27-4ad7-ae08-1b75cbeb6577"
   },
   {
     id: 248,
     commune_name_ascii: "Khenguet Sidi Nadji",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "9067092f-db70-45b2-8413-2432751e7110"
   },
   {
     id: 231,
     commune_name_ascii: "Ain Zaatout",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "9491a98a-ebe4-4a86-acab-6eb7eec18816"
   },
   {
     id: 262,
     commune_name_ascii: "Zeribet El Oued",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "f676bc07-7656-4479-858c-e38b29db3f41"
   },
   {
     id: 253,
     commune_name_ascii: "Meziraa",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "50f5fd44-e9d6-4de6-acef-80b0117a1082"
   },
   {
     id: 233,
@@ -1383,85 +1383,85 @@ export const cities = [
     id: 243,
     commune_name_ascii: "El Hadjab",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "ded1b1c8-10b5-47dc-8a7c-c8b752cdab3e"
   },
   {
     id: 254,
     commune_name_ascii: "M'lili",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "d5276558-ff2b-4146-b6b5-3d50ddaa3580"
   },
   {
     id: 247,
     commune_name_ascii: "Foughala",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "b82240e6-bb6d-48e0-8f6f-9f609f978946"
   },
   {
     id: 242,
     commune_name_ascii: "El Ghrous",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "65d536a7-1276-4681-a6ff-49df423ac44d"
   },
   {
     id: 234,
     commune_name_ascii: "Bordj Ben Azzouz",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "73e4a2f8-deae-4bb6-834e-bb9249a49224"
   },
   {
     id: 257,
     commune_name_ascii: "Ourlal",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "de09cf47-bc0e-47ab-94f0-587e5130a675"
   },
   {
     id: 256,
     commune_name_ascii: "Oumache",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "15d41e6b-fa6d-4f7e-9076-ee712714226a"
   },
   {
     id: 230,
     commune_name_ascii: "Ain Naga",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "72bfc682-3a31-4f11-aa05-c0dbcbded326"
   },
   {
     id: 238,
     commune_name_ascii: "Chetma",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "e4c02d48-8a04-4127-81e7-c2f8e8909f16"
   },
   {
     id: 244,
     commune_name_ascii: "El Haouch",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "d2a0ea8e-167b-4e2f-8781-c18dc4a5485f"
   },
   {
     id: 260,
     commune_name_ascii: "Sidi Okba",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "82de2232-2543-45a1-85c3-7e82c81e8ece"
   },
   {
     id: 251,
     commune_name_ascii: "M'chouneche",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "f67ae22d-eba3-49b5-95b8-67c2c53e1eb2"
   },
   {
     id: 250,
     commune_name_ascii: "Lioua",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "820efd36-3218-47c9-9d8c-aedf1d6c01ce"
   },
   {
     id: 261,
     commune_name_ascii: "Tolga",
     wilaya_code: "7",
-    itemId: "796e70df-1102-44da-9582-2da66ead2ba6"
+    itemId: "f48544d0-8d0d-4362-9f2a-fff1f8991e9a"
   },
   {
     id: 264,
@@ -1473,211 +1473,211 @@ export const cities = [
     id: 268,
     commune_name_ascii: "Boukais",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "740b44fa-b240-45ab-a576-1d6230306633"
   },
   {
     id: 275,
     commune_name_ascii: "Lahmar",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "0136e51f-f1c3-4d05-baf9-43307d3e6fb6"
   },
   {
     id: 278,
     commune_name_ascii: "Mogheul",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "c541c47c-b24e-4552-b512-c38b883bc4c3"
   },
   {
     id: 277,
     commune_name_ascii: "Meridja",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "810d660f-1ce3-4129-8971-553ddf18c8f1"
   },
   {
     id: 281,
     commune_name_ascii: "Taghit",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "7f3f10ef-15f5-4f05-9844-db00999d9c8b"
   },
   {
     id: 263,
     commune_name_ascii: "Abadla",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "2712e0f6-787d-4ee6-9eae-d843c3888985"
   },
   {
     id: 270,
     commune_name_ascii: "Erg-Ferradj",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "5211ad4a-a21d-4840-9370-81f1b1ffbd62"
   },
   {
     id: 276,
     commune_name_ascii: "Machraa-Houari-Boumediene",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "17c7eee9-1fe2-44c0-baed-4f42ba02a209"
   },
   {
     id: 267,
     commune_name_ascii: "Beni-Ounif",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "90ffa0c0-a045-4a93-9b6d-fcc35be02c23"
   },
   {
     id: 280,
     commune_name_ascii: "Tabelbala",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "c98bb44e-bb3e-4621-a285-008875b47323"
   },
   {
     id: 272,
     commune_name_ascii: "Kenadsa",
     wilaya_code: "8",
-    itemId: "e740c188-2bbc-4206-8999-302b17dc0e4b"
+    itemId: "f6d90bf8-dc73-449e-89e0-09149c914122"
   },
   {
     id: 285,
     commune_name_ascii: "Beni Mered",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "5f1db7bb-5d56-4a4e-9357-914be6495358"
   },
   {
     id: 305,
     commune_name_ascii: "Ouled Slama",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "72675e4c-d871-4a8b-8d39-746c8e3d7254"
   },
   {
     id: 302,
     commune_name_ascii: "Mouzaia",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "ca13ad49-0831-4129-9667-e7fc0163407b"
   },
   {
     id: 299,
     commune_name_ascii: "Hammam Elouane",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "c7c251f6-d64b-4bd0-9227-8b9a1aabcf43"
   },
   {
     id: 291,
     commune_name_ascii: "Bougara",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "a4246326-eb05-4cc1-b7c3-2ce76949f3e8"
   },
   {
     id: 307,
     commune_name_ascii: "Souhane",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "6b9536c6-9715-4022-9ad9-e2aa8a181f74"
   },
   {
     id: 300,
     commune_name_ascii: "Larbaa",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "b1053caa-6b7d-429c-b40e-fec2419928ec"
   },
   {
     id: 308,
     commune_name_ascii: "Soumaa",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "e2df13dc-1635-4226-a6d1-77e6cd0ab536"
   },
   {
     id: 298,
     commune_name_ascii: "Guerrouaou",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "cbdf9adc-a15e-497c-86fe-5c0a8ddaf7fb"
   },
   {
     id: 290,
     commune_name_ascii: "Boufarik",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "860a1bdd-3104-4bae-9317-d7a69e129a85"
   },
   {
     id: 301,
     commune_name_ascii: "Meftah",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "1d70c1c9-1bed-46c8-977a-bdd64915793f"
   },
   {
     id: 294,
     commune_name_ascii: "Chiffa",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "364bd59d-2173-44fd-9ade-44527d4b87ed"
   },
   {
     id: 284,
     commune_name_ascii: "Ain Romana",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "d36a5648-d4e2-494a-9c23-8d4b9edb3057"
   },
   {
     id: 303,
     commune_name_ascii: "Oued  Djer",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "7e8c6e89-e161-4257-8e90-de24023a247f"
   },
   {
     id: 297,
     commune_name_ascii: "El-Affroun",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "7beb4d37-592f-48f9-ad54-a7b2835bc724"
   },
   {
     id: 306,
     commune_name_ascii: "Ouled Yaich",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "08a1631f-1949-462b-94a6-01f212d869e1"
   },
   {
     id: 295,
     commune_name_ascii: "Chrea",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "2ed440e3-e266-4471-a853-0c3b2b1d27d2"
   },
   {
     id: 296,
     commune_name_ascii: "Djebabra",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "aed06435-462a-475d-82f5-63bf39d2fafa"
   },
   {
     id: 304,
     commune_name_ascii: "Oued El Alleug",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "ed9c7e3d-c24b-4098-b904-88005082563d"
   },
   {
     id: 287,
     commune_name_ascii: "Benkhelil",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "c733fc61-3f6b-4782-9fef-672d18647b0f"
   },
   {
     id: 286,
     commune_name_ascii: "Beni-Tamou",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "2c44eee8-ff68-4494-ba68-47164d0e4fdc"
   },
   {
     id: 293,
     commune_name_ascii: "Chebli",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "bb2a3701-8620-4a01-a4fe-3715ec8d72df"
   },
   {
     id: 292,
     commune_name_ascii: "Bouinan",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "6460f5c7-299f-4fa7-bcd3-6c539eba39a8"
   },
   {
     id: 289,
     commune_name_ascii: "Bouarfa",
     wilaya_code: "9",
-    itemId: "a7e764cf-e9ca-4c1f-8232-89852d102aec"
+    itemId: "83cfe6cf-5379-48e5-b604-c00f3820263d"
   },
   {
     id: 288,
@@ -1689,157 +1689,157 @@ export const cities = [
     id: 312,
     commune_name_ascii: "Ain Laloui",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "4d6652b1-5dca-461f-bb20-e12e7a015118"
   },
   {
     id: 334,
     commune_name_ascii: "Hadjera Zerga",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "9bb00777-c251-4f0d-9ae9-05ca959a14ae"
   },
   {
     id: 342,
     commune_name_ascii: "Mezdour",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "fda6f3b7-057b-4b48-9a6f-8336dbfadb21"
   },
   {
     id: 351,
     commune_name_ascii: "Taguedite",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "dfeca2e5-e8e4-44c9-a5cb-a6b0dae2865c"
   },
   {
     id: 346,
     commune_name_ascii: "Ridane",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "deec885e-547e-4681-8d60-488a0f289d8b"
   },
   {
     id: 341,
     commune_name_ascii: "Maamora",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "b0ccd655-88d1-4744-948b-21e4d9d1e59b"
   },
   {
     id: 331,
     commune_name_ascii: "El-Hakimia",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "4fef306d-6fee-40ad-ae13-47f544907456"
   },
   {
     id: 310,
     commune_name_ascii: "Ahl El Ksar",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "6fb99ff8-cebf-4ff4-ab28-8e1e6111ff58"
   },
   {
     id: 325,
     commune_name_ascii: "Dirah",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "6f78eebb-2011-4ad9-acfa-e9be8d81d17c"
   },
   {
     id: 324,
     commune_name_ascii: "Dechmia",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "f6c725a7-2333-42e5-956b-824ce2477c1d"
   },
   {
     id: 317,
     commune_name_ascii: "Bechloul",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "a4bab5b1-7e6e-479d-b9a7-548a8061b3a6"
   },
   {
     id: 352,
     commune_name_ascii: "Ath Mansour",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "2552fc56-f620-4d00-9673-48bb1739f790"
   },
   {
     id: 347,
     commune_name_ascii: "Saharidj",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "2e13ba5a-cf90-435c-8f58-897eb054fef5"
   },
   {
     id: 327,
     commune_name_ascii: "El Adjiba",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "0dcf2773-4dc9-468d-aa7a-b98d382a7fcc"
   },
   {
     id: 328,
     commune_name_ascii: "El Asnam",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "44575b5a-b66b-4929-adf3-df46054bd5ce"
   },
   {
     id: 339,
     commune_name_ascii: "M Chedallah",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "f88e2ff0-631e-4109-9309-211b4e5cc745"
   },
   {
     id: 319,
     commune_name_ascii: "Bordj Okhriss",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "6cb8f239-eb5b-4b21-bb50-90b6c5227326"
   },
   {
     id: 349,
     commune_name_ascii: "Sour El Ghozlane",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "be896a97-dbc1-41aa-95c7-6242b3b18726"
   },
   {
     id: 336,
     commune_name_ascii: "Hanif",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "1f787a6e-baf6-4bbc-b935-a8d9f2b347e3"
   },
   {
     id: 323,
     commune_name_ascii: "Chorfa",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "8c4751ef-24f0-45db-bf06-3c52e861980f"
   },
   {
     id: 344,
     commune_name_ascii: "Ouled Rached",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "70a4711f-29e1-4b2b-8300-72d0a83a694a"
   },
   {
     id: 311,
     commune_name_ascii: "Ain El Hadjar",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "6177ae10-cd9b-4d65-9711-3aa1d263c373"
   },
   {
     id: 309,
     commune_name_ascii: "Aghbalou",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "68f4ae1c-56ba-4072-a85a-6ecb295cdaaa"
   },
   {
     id: 345,
     commune_name_ascii: "Raouraoua",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "39933a9f-e41d-40b9-89a2-832fc0eda6af"
   },
   {
     id: 330,
     commune_name_ascii: "El Khabouzia",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "55af365d-939c-4375-8614-8290997d9252"
   },
   {
     id: 318,
     commune_name_ascii: "Bir Ghbalou",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "50f27247-b73e-41dc-8892-824c5be993a5"
   },
   {
     id: 321,
@@ -1851,121 +1851,121 @@ export const cities = [
     id: 313,
     commune_name_ascii: "Ain Turk",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "540ed93f-4b1b-47cb-8f11-0535ce439949"
   },
   {
     id: 315,
     commune_name_ascii: "Ait Laaziz",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "f2571236-f041-4afc-baa9-b731c9fa65d4"
   },
   {
     id: 314,
     commune_name_ascii: "Ain-Bessem",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "62741818-2e2b-4043-9838-646be5dfae8f"
   },
   {
     id: 332,
     commune_name_ascii: "El-Mokrani",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "04ef3825-eb71-4fb1-aec6-0851fe9d9439"
   },
   {
     id: 348,
     commune_name_ascii: "Souk El Khemis",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "9edc228e-14aa-46ad-ba26-8aa5410c35f4"
   },
   {
     id: 316,
     commune_name_ascii: "Aomar",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "a738fc1b-86dd-4a70-a005-09ead7f5187e"
   },
   {
     id: 326,
     commune_name_ascii: "Djebahia",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "2d701837-60cf-4a9c-93d2-f0a3ee1ded1e"
   },
   {
     id: 329,
     commune_name_ascii: "El Hachimia",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "ace40929-9c9f-4c78-92ec-7b323edf11e5"
   },
   {
     id: 335,
     commune_name_ascii: "Haizer",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "0dde4967-ba92-4542-9a1e-fa36c7db26ca"
   },
   {
     id: 350,
     commune_name_ascii: "Taghzout",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "5354b782-3ae3-4769-89d2-71ef2207402a"
   },
   {
     id: 320,
     commune_name_ascii: "Bouderbala",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "9a9da4d5-e695-49af-b34a-ad0b2f726bfb"
   },
   {
     id: 322,
     commune_name_ascii: "Boukram",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "389fa2b8-c411-4e1b-a45e-b60285bf960b"
   },
   {
     id: 333,
     commune_name_ascii: "Guerrouma",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "8a6ff68e-d773-4d94-a3e2-5a8082698484"
   },
   {
     id: 338,
     commune_name_ascii: "Lakhdaria",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "f8539881-4462-4610-bf40-c54a1dbb3ec4"
   },
   {
     id: 340,
     commune_name_ascii: "Maala",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "d5ae8fea-8539-45d1-957a-801fbc8fb68f"
   },
   {
     id: 337,
     commune_name_ascii: "Kadiria",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "8e001eca-1a69-4183-95bf-4bfb8dcbce46"
   },
   {
     id: 353,
     commune_name_ascii: "Z'barbar (El Isseri )",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "19fb8bc6-24f1-45c4-b0e6-d78f2062d585"
   },
   {
     id: 343,
     commune_name_ascii: "Oued El Berdi",
     wilaya_code: "10",
-    itemId: "a1f0229c-4f34-40aa-9238-fadde6757cba"
+    itemId: "58f31412-0288-4890-a567-de548f3ec459"
   },
   {
     id: 362,
     commune_name_ascii: "Tazrouk",
     wilaya_code: "11",
-    itemId: "38560f06-e049-4fd2-9664-a655e552b517"
+    itemId: "48e266da-4e42-48b0-b8ea-87aae5fecd53"
   },
   {
     id: 354,
     commune_name_ascii: "Abelsa",
     wilaya_code: "11",
-    itemId: "38560f06-e049-4fd2-9664-a655e552b517"
+    itemId: "f57f2bb0-bdcc-45cb-a609-9b6a9eddfa8a"
   },
   {
     id: 361,
@@ -1977,163 +1977,163 @@ export const cities = [
     id: 355,
     commune_name_ascii: "Ain Amguel",
     wilaya_code: "11",
-    itemId: "38560f06-e049-4fd2-9664-a655e552b517"
+    itemId: "2623cfcb-78da-43bc-9733-0953b1c2a896"
   },
   {
     id: 359,
     commune_name_ascii: "Idles",
     wilaya_code: "11",
-    itemId: "38560f06-e049-4fd2-9664-a655e552b517"
+    itemId: "70380bfe-f435-437b-a623-b0a53cfaecb4"
   },
   {
     id: 380,
     commune_name_ascii: "El-Houidjbet",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "467eb646-4dcc-4d00-976c-5c2af2d674c3"
   },
   {
     id: 379,
     commune_name_ascii: "El-Aouinet",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "5fe11740-cc14-4987-b44e-9ea860851bda"
   },
   {
     id: 381,
     commune_name_ascii: "Ferkane",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "91ac38fd-147e-42e0-b5ce-dedf226e7c0d"
   },
   {
     id: 385,
     commune_name_ascii: "Negrine",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "df2486d2-53d6-4489-aeee-00cdee010751"
   },
   {
     id: 368,
     commune_name_ascii: "Bir Mokkadem",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "4dee2a3b-66c5-486f-b1a3-8686b35cfa81"
   },
   {
     id: 367,
     commune_name_ascii: "Bir Dheheb",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "afa5f187-ef1a-46d6-bf36-275dab96dcef"
   },
   {
     id: 388,
     commune_name_ascii: "Saf Saf El Ouesra",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "20d34425-f650-4b04-8eb9-7c017f5eae7c"
   },
   {
     id: 382,
     commune_name_ascii: "Guorriguer",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "47d7ef41-31b0-4760-9d6c-36ddf618ae02"
   },
   {
     id: 366,
     commune_name_ascii: "Bekkaria",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "c52f77a5-1af3-4ef2-830d-00eac292308a"
   },
   {
     id: 371,
     commune_name_ascii: "Boulhaf Dyr",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "bfa2968c-f257-42c3-a765-b309864dc3ed"
   },
   {
     id: 387,
     commune_name_ascii: "Oum Ali",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "a05cb28c-98eb-47e6-b0c3-5ee7f3f7d34e"
   },
   {
     id: 370,
     commune_name_ascii: "Boukhadra",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "b61b992a-88a4-43e7-95e8-54c20cf5ede9"
   },
   {
     id: 374,
     commune_name_ascii: "El Malabiod",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "669ad8bb-28ae-4597-9055-fa91aad5061c"
   },
   {
     id: 386,
     commune_name_ascii: "Ouenza",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "b86dc46b-a9b2-4da8-8336-5c17047a7834"
   },
   {
     id: 375,
     commune_name_ascii: "El Meridj",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "4a3d7cfe-4b9f-4209-96e0-8280018227df"
   },
   {
     id: 364,
     commune_name_ascii: "Ain Zerga",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "0bcf48b9-02f4-4ebc-aa3c-f6a4e504e1da"
   },
   {
     id: 389,
     commune_name_ascii: "Stah Guentis",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "6d5f9bc8-08a7-4f86-be3e-c65bac4a369e"
   },
   {
     id: 377,
     commune_name_ascii: "El Ogla",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "0d643bd0-070e-4f57-bc90-afbec2053c48"
   },
   {
     id: 376,
     commune_name_ascii: "El Mezeraa",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "9471af94-f9f7-4a5c-919f-b497b53f1d5a"
   },
   {
     id: 365,
     commune_name_ascii: "Bedjene",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "262d2d99-8285-4b1f-9ab2-5b835178040e"
   },
   {
     id: 384,
     commune_name_ascii: "Morsott",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "ee305435-78c5-4f82-966e-681ec7645494"
   },
   {
     id: 391,
     commune_name_ascii: "Telidjen",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "b4b4fbd3-532f-41ff-ba56-ec447d002d59"
   },
   {
     id: 372,
     commune_name_ascii: "Cheria",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "19f1ba69-9fcb-415c-8aef-d0ee77bb3424"
   },
   {
     id: 378,
     commune_name_ascii: "El Ogla El Malha",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "3e1a6f65-385e-4b7c-ae88-0ba3e6fbef22"
   },
   {
     id: 369,
     commune_name_ascii: "Bir-El-Ater",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "95ef0717-3a3f-4d9f-a6e7-f693dd1b4a7e"
   },
   {
     id: 390,
@@ -2145,205 +2145,205 @@ export const cities = [
     id: 383,
     commune_name_ascii: "Hammamet",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "1a538787-1f22-4637-a458-30f844ee2309"
   },
   {
     id: 373,
     commune_name_ascii: "El Kouif",
     wilaya_code: "12",
-    itemId: "5afdfab6-e505-4691-abc7-5e8bd79afad5"
+    itemId: "bf9c3595-3479-45b0-87f4-ef69761b314f"
   },
   {
     id: 400,
     commune_name_ascii: "Bab El Assa",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "8d0b6cd9-7712-47d2-9ea4-460246494c32"
   },
   {
     id: 441,
     commune_name_ascii: "Terny Beni Hediel",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "de91b71d-1a6f-486d-b1d4-37a399367667"
   },
   {
     id: 424,
     commune_name_ascii: "Mansourah",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "cd4baaa2-fd46-4e1d-94b6-50ac300441e1"
   },
   {
     id: 404,
     commune_name_ascii: "Beni Mester",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "676d55cc-8cec-4870-ba4f-926b71d32bcb"
   },
   {
     id: 394,
     commune_name_ascii: "Ain Ghoraba",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "a2a6f0e0-649e-419b-866d-568c6be72091"
   },
   {
     id: 411,
     commune_name_ascii: "Chetouane",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "85e5fbe6-e0a9-4fe1-aa62-6271eb83edb7"
   },
   {
     id: 399,
     commune_name_ascii: "Amieur",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "aaaee354-2bb6-491e-baa7-4fab5fcf5042"
   },
   {
     id: 393,
     commune_name_ascii: "Ain Fezza",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "e81f5b39-ef03-4ae8-b785-95a31c6dca6b"
   },
   {
     id: 422,
     commune_name_ascii: "Honnaine",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "2ff90eb8-ce31-4736-aaa5-580392536620"
   },
   {
     id: 403,
     commune_name_ascii: "Beni Khellad",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "9c1ab33e-b0cb-46f8-8ce4-4bedc420f854"
   },
   {
     id: 436,
     commune_name_ascii: "Sidi Djillali",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "179403b8-2702-49f6-8640-0852ce1af57c"
   },
   {
     id: 410,
     commune_name_ascii: "Bouihi",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "b7853cd7-a6a6-42ec-bd92-aa83523fdd66"
   },
   {
     id: 427,
     commune_name_ascii: "Nedroma",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "ff611340-215e-48ad-a3d6-2ca830735c27"
   },
   {
     id: 426,
     commune_name_ascii: "M'sirda Fouaga",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "a0634d93-21a0-49d2-886b-cf056a3f1fc3"
   },
   {
     id: 425,
     commune_name_ascii: "Marsa Ben M'hidi",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "94cd30eb-12c8-4212-a195-45399cf476a9"
   },
   {
     id: 437,
     commune_name_ascii: "Sidi Medjahed",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "449c49e3-9ab6-4378-b9e0-8809d7d6f4f3"
   },
   {
     id: 402,
     commune_name_ascii: "Beni Boussaid",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "3faba91c-8232-44a4-8258-73ba8a998f33"
   },
   {
     id: 434,
     commune_name_ascii: "Sebdou",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "99d574ec-238a-4269-bfa8-57f909ee1987"
   },
   {
     id: 417,
     commune_name_ascii: "El Gor",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "72383385-ec4d-49eb-b65f-b678eced78c9"
   },
   {
     id: 414,
     commune_name_ascii: "El Aricha",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "a76cfc96-e3c5-41bd-8154-c82bbb7764fb"
   },
   {
     id: 409,
     commune_name_ascii: "Bouhlou",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "9e23ff32-5416-43ff-af94-49d4bdee49c3"
   },
   {
     id: 423,
     commune_name_ascii: "Maghnia",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "845792eb-d72d-4e81-8d37-bdc409a1fb9f"
   },
   {
     id: 420,
     commune_name_ascii: "Hammam Boughrara",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "fe1ce9bb-cb62-4192-b271-08a05a85f160"
   },
   {
     id: 444,
     commune_name_ascii: "Zenata",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "a3d97c75-1ce9-44c6-b210-fa6381ce2665"
   },
   {
     id: 430,
     commune_name_ascii: "Ouled Riyah",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "9316140e-a2f8-4ae8-a514-a5b078a0e1f6"
   },
   {
     id: 421,
     commune_name_ascii: "Hennaya",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "64d78abc-f6d4-4250-a909-6fb80ce2dbef"
   },
   {
     id: 435,
     commune_name_ascii: "Sidi Abdelli",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "7abae998-0d79-4281-907a-e63c2ea3f691"
   },
   {
     id: 440,
     commune_name_ascii: "Souk Tleta",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "9de82afe-5066-42ea-80d8-7835e05c5a40"
   },
   {
     id: 408,
     commune_name_ascii: "Bensekrane",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "3afc226f-66f8-4202-953e-3f235ec0ca66"
   },
   {
     id: 418,
     commune_name_ascii: "Fellaoucene",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "b1a9b6e3-3400-4f99-b0af-c874f2fd9eac"
   },
   {
     id: 395,
     commune_name_ascii: "Ain Kebira",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "231cad69-894d-46d2-bd63-e2b9b6d791c6"
   },
   {
     id: 392,
     commune_name_ascii: "Ain Fetah",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "72832049-1813-4bdf-8664-d8360dd83bc4"
   },
   {
     id: 443,
@@ -2355,313 +2355,313 @@ export const cities = [
     id: 396,
     commune_name_ascii: "Ain Nehala",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "118d58dd-7a97-4426-aba5-d3c82490c754"
   },
   {
     id: 397,
     commune_name_ascii: "Ain Tellout",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "23763cea-650f-4966-b67b-35c1c4088f33"
   },
   {
     id: 398,
     commune_name_ascii: "Ain Youcef",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "ad669bf7-20dc-46f1-ad3a-c6f1f4d1f310"
   },
   {
     id: 405,
     commune_name_ascii: "Beni Ouarsous",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "55e7d1b1-96be-471b-afc4-9755e43b4b0b"
   },
   {
     id: 416,
     commune_name_ascii: "El Fehoul",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "47cc8431-1a9e-434a-96b3-4726eda9bca3"
   },
   {
     id: 431,
     commune_name_ascii: "Remchi",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "6373e97b-79e5-4ae3-8ee5-1b8606d32fdd"
   },
   {
     id: 433,
     commune_name_ascii: "Sebbaa Chioukh",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "e97b2cfa-aca0-4cd6-9591-64973609bc80"
   },
   {
     id: 439,
     commune_name_ascii: "Souani",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "6f0232e6-042a-4e73-9717-04b990a60943"
   },
   {
     id: 432,
     commune_name_ascii: "Sabra",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "5175315a-6f30-46df-a40f-45deeaa3a6b4"
   },
   {
     id: 412,
     commune_name_ascii: "Dar Yaghmoracen",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "7cdf618f-cf6c-45a4-a6f1-8de2a76a936c"
   },
   {
     id: 419,
     commune_name_ascii: "Ghazaouet",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "cdf2c1a8-8c72-4b14-8cef-91e95cfaaec4"
   },
   {
     id: 438,
     commune_name_ascii: "Souahlia",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "0bf6176f-5cf1-461a-908b-cb6393b919a2"
   },
   {
     id: 442,
     commune_name_ascii: "Tianet",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "a1042aeb-7ff5-4e2b-a331-f5b2a5b18f42"
   },
   {
     id: 406,
     commune_name_ascii: "Beni Smiel",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "f7cc97fa-5e95-4185-8851-c9c63852dcb2"
   },
   {
     id: 428,
     commune_name_ascii: "Oued Lakhdar",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "5dd55656-caf1-4e4a-bd04-f9eb28b80c2f"
   },
   {
     id: 429,
     commune_name_ascii: "Ouled Mimoun",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "f9451d90-f1ef-4a3a-b76c-1160e35c7806"
   },
   {
     id: 401,
     commune_name_ascii: "Beni Bahdel",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "c9719809-60c1-4c0f-b376-4552e0ae4c3e"
   },
   {
     id: 407,
     commune_name_ascii: "Beni Snous",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "727724f2-48bc-4912-96f1-0bc7f1e1739d"
   },
   {
     id: 415,
     commune_name_ascii: "Azail",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "00b6827b-2784-4535-b3fe-c1bda626e69d"
   },
   {
     id: 413,
     commune_name_ascii: "Djebala",
     wilaya_code: "13",
-    itemId: "53c9e062-9c4e-4c77-8b71-55eabf887f83"
+    itemId: "9b4626bc-5327-4098-aa78-b2540696b50c"
   },
   {
     id: 461,
     commune_name_ascii: "Mahdia",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "660dcf93-5d29-4c58-a60f-5cb32f4a7e03"
   },
   {
     id: 447,
     commune_name_ascii: "Ain Dzarit",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "f80a61f4-ca7a-4a6d-ba47-1e83bcc24bf6"
   },
   {
     id: 472,
     commune_name_ascii: "Sebaine",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "518b3d6f-eb9d-4ece-879e-514411980b0c"
   },
   {
     id: 455,
     commune_name_ascii: "Faidja",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "8b68923d-13f0-4795-a484-9ea0471554fa"
   },
   {
     id: 475,
     commune_name_ascii: "Si Abdelghani",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "9d08107b-90b2-4d01-ad92-12aa24d5d0a8"
   },
   {
     id: 480,
     commune_name_ascii: "Sougueur",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "4e77a3e0-a17c-44d3-851c-795f44aaea4d"
   },
   {
     id: 485,
     commune_name_ascii: "Tousnina",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "55a107ec-8b82-490e-b18c-25c6a14ba1b4"
   },
   {
     id: 465,
     commune_name_ascii: "Meghila",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "18884efd-5e0e-43ec-a176-186a43ac0bac"
   },
   {
     id: 473,
     commune_name_ascii: "Sebt",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "68ad083b-f385-42ee-97f0-0be88a4320d0"
   },
   {
     id: 479,
     commune_name_ascii: "Sidi Hosni",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "26d8fc17-ae8d-4449-80c4-bdb72cffef54"
   },
   {
     id: 448,
     commune_name_ascii: "Ain El Hadid",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "4485e241-5fc0-49c6-9ba5-ba91efc07c08"
   },
   {
     id: 456,
     commune_name_ascii: "Frenda",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "3b0b9eb3-e566-475d-8480-032ea0031a02"
   },
   {
     id: 482,
     commune_name_ascii: "Takhemaret",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "97ad1714-de49-4f22-92a4-cb154d6a5dd5"
   },
   {
     id: 449,
     commune_name_ascii: "Ain Kermes",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "4bd7b96d-d3c9-47e7-86df-b605de327ea2"
   },
   {
     id: 453,
     commune_name_ascii: "Djebilet Rosfa",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "c6762f65-270f-4b64-a128-e406851cd7e8"
   },
   {
     id: 460,
     commune_name_ascii: "Madna",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "132998e9-2217-4bad-bf37-fcb5251551ba"
   },
   {
     id: 463,
     commune_name_ascii: "Medrissa",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "3486bf04-59b9-4807-b597-22ad410eb506"
   },
   {
     id: 476,
     commune_name_ascii: "Sidi Abderrahmane",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "da7620f2-efbf-44d6-99e4-53f7de29e1ca"
   },
   {
     id: 459,
     commune_name_ascii: "Ksar Chellala",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "9911e2ac-a631-4b58-a76b-2365a661b179"
   },
   {
     id: 457,
     commune_name_ascii: "Guertoufa",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "e349a9f3-f027-4e61-9daa-1e3ee54ae624"
   },
   {
     id: 474,
     commune_name_ascii: "Serghine",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "19bdc5ba-0da7-4914-bc6c-500d4a41a2a2"
   },
   {
     id: 486,
     commune_name_ascii: "Zmalet El Emir Abdelkade",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "d005c810-2230-4d71-bebd-027a7d2978aa"
   },
   {
     id: 469,
     commune_name_ascii: "Oued Lilli",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "53983d69-ad8c-4192-8ad9-cb59bac05ff1"
   },
   {
     id: 477,
     commune_name_ascii: "Sidi Ali Mellal",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "e8a3f02c-b4d2-4bab-beca-2a126566e198"
   },
   {
     id: 454,
     commune_name_ascii: "Djillali Ben Amar",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "fc702495-c277-4821-815b-64b9240e77fa"
   },
   {
     id: 462,
     commune_name_ascii: "Mechraa Safa",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "1ca9760f-89ca-4422-9357-d59fc5fcc0e6"
   },
   {
     id: 481,
     commune_name_ascii: "Tagdempt",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "5038ef48-50c7-4392-9d55-613b482c1b33"
   },
   {
     id: 450,
     commune_name_ascii: "Bougara",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "a4246326-eb05-4cc1-b7c3-2ce76949f3e8"
   },
   {
     id: 458,
     commune_name_ascii: "Hamadia",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "c39f7417-70b5-40c4-ba71-e14366eda6a4"
   },
   {
     id: 471,
     commune_name_ascii: "Rechaiga",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "5e783153-802b-4874-83e6-c2be9b260dbb"
   },
   {
     id: 484,
     commune_name_ascii: "Tidda",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "64157c35-1b1f-46db-a822-3c8953181553"
   },
   {
     id: 467,
     commune_name_ascii: "Nadorah",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "b8a1bdf8-8fbc-425a-a3a1-34667223214e"
   },
   {
     id: 483,
@@ -2673,247 +2673,247 @@ export const cities = [
     id: 464,
     commune_name_ascii: "Medroussa",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "48fb2f23-3c17-4e32-a10e-65db5163f596"
   },
   {
     id: 466,
     commune_name_ascii: "Mellakou",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "090962c1-7e2d-4699-ac42-4151e0c825e1"
   },
   {
     id: 478,
     commune_name_ascii: "Sidi Bakhti",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "73d5e864-f9c4-4ac8-9779-ccbb0be3abff"
   },
   {
     id: 446,
     commune_name_ascii: "Ain Deheb",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "bfcbe612-d129-423d-bccb-aaab5bb0bb41"
   },
   {
     id: 451,
     commune_name_ascii: "Chehaima",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "fccfdd88-5468-4176-adfa-b801446b75fe"
   },
   {
     id: 468,
     commune_name_ascii: "Naima",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "92fcf433-4cce-4089-b56e-199baed95410"
   },
   {
     id: 445,
     commune_name_ascii: "Ain Bouchekif",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "a44b0253-516a-475a-bf92-aa8733539408"
   },
   {
     id: 452,
     commune_name_ascii: "Dahmouni",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "028b82e7-3502-41ab-afd1-5fa382ae24bf"
   },
   {
     id: 470,
     commune_name_ascii: "Rahouia",
     wilaya_code: "14",
-    itemId: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6"
+    itemId: "1aa6599c-2559-414f-9aa4-7e1e8bbb6492"
   },
   {
     id: 535,
     commune_name_ascii: "Mizrana",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "705abddd-59e6-4358-a75f-15958619e7c9"
   },
   {
     id: 522,
     commune_name_ascii: "Idjeur",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "24582ba6-5772-4f5b-ac5b-d358f6764071"
   },
   {
     id: 510,
     commune_name_ascii: "Beni-Douala",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "6a85ad11-875d-4efa-bb61-89404be8d926"
   },
   {
     id: 512,
     commune_name_ascii: "Beni-Zikki",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "348c29bd-fb06-4f75-8160-dcef2489d303"
   },
   {
     id: 527,
     commune_name_ascii: "Illoula Oumalou",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "dacf107e-3542-4ee4-8587-76aea25ded28"
   },
   {
     id: 489,
     commune_name_ascii: "Agouni-Gueghrane",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "3d9458cb-118b-448c-b3f2-3c70fb8a4c3f"
   },
   {
     id: 493,
     commune_name_ascii: "Ait Bouaddou",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "ddcdc30d-9429-44c1-bcd2-91ee1c6eaf4c"
   },
   {
     id: 538,
     commune_name_ascii: "Ouadhias",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "b45401a2-ff02-4772-b3a2-01f71fe5634f"
   },
   {
     id: 547,
     commune_name_ascii: "Tizi N'tleta",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "a048d32a-84ab-4e16-a8f4-094f6c33e977"
   },
   {
     id: 488,
     commune_name_ascii: "Aghribs",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "8c25e353-23ff-40d4-a4e5-52bb0df1b3d2"
   },
   {
     id: 498,
     commune_name_ascii: "Ait-Chafaa",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "198ac4a1-6bb6-4f24-81ed-78a3bc4ca7ea"
   },
   {
     id: 504,
     commune_name_ascii: "Akerrou",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "5d481060-ce3b-40b2-aec9-4295f5150fab"
   },
   {
     id: 507,
     commune_name_ascii: "Azeffoun",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "4156ca4f-91bd-4450-9d23-51f9d966dd34"
   },
   {
     id: 525,
     commune_name_ascii: "Iflissen",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "76ba6b08-0faa-463d-a126-908abfde147a"
   },
   {
     id: 544,
     commune_name_ascii: "Tigzirt",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "768860b3-ea69-47ec-a04e-033c6c1aa953"
   },
   {
     id: 505,
     commune_name_ascii: "Assi-Youcef",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "44fb5617-6c97-4f32-ace5-b52fcf6916c8"
   },
   {
     id: 513,
     commune_name_ascii: "Boghni",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "c7d8326f-74ec-4932-bb39-2bcbacacaab8"
   },
   {
     id: 515,
     commune_name_ascii: "Bounouh",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "00c30f68-86f6-45f7-8976-f7f5a179f885"
   },
   {
     id: 533,
     commune_name_ascii: "Mechtras",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "abc65fa8-e4dd-4c2f-81d5-da79abcf5f40"
   },
   {
     id: 517,
     commune_name_ascii: "Draa-Ben-Khedda",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "31b8958a-22cb-4285-a073-945a575cad8f"
   },
   {
     id: 540,
     commune_name_ascii: "Sidi Namane",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "31a80903-36d8-420e-bffd-22fdc6372ade"
   },
   {
     id: 543,
     commune_name_ascii: "Tadmait",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "d850517d-2bb2-4bae-be3f-dd408e1a8220"
   },
   {
     id: 546,
     commune_name_ascii: "Tirmitine",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "5dd5c4fb-ea2f-4dec-88af-2969ee4de49e"
   },
   {
     id: 494,
     commune_name_ascii: "Ait Boumahdi",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "3b5d32d3-c3fe-4cad-92b5-ba99aeff7c4f"
   },
   {
     id: 501,
     commune_name_ascii: "Ait-Toudert",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "45e8bc48-003a-41a4-9b45-2167ac0974f2"
   },
   {
     id: 509,
     commune_name_ascii: "Beni-Aissi",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "13661d09-57fd-43bc-bdc5-84114aa210b6"
   },
   {
     id: 537,
     commune_name_ascii: "Ouacif",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "8f8e35a8-bdb3-4cdb-b9dd-c0755078665e"
   },
   {
     id: 495,
     commune_name_ascii: "Ait Khellili",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "95d346cd-4c52-4792-bcce-1db80d4567a1"
   },
   {
     id: 534,
     commune_name_ascii: "Mekla",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "81e41522-61c0-4140-912c-59a8c5206091"
   },
   {
     id: 541,
     commune_name_ascii: "Souama",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "bfb70cb7-9cd7-4f69-85a2-d9dde4ef7f3e"
   },
   {
     id: 511,
     commune_name_ascii: "Beni-Yenni",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "4de10b07-a2cb-494a-9db2-d876e47eb16d"
   },
   {
     id: 521,
     commune_name_ascii: "Iboudrarene",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "12542af1-fc1c-454e-af26-2d7cdb2eadc7"
   },
   {
     id: 549,
@@ -2925,661 +2925,661 @@ export const cities = [
     id: 487,
     commune_name_ascii: "Abi-Youcef",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "f8f75c19-3d2e-4961-af94-9b8413f23095"
   },
   {
     id: 490,
     commune_name_ascii: "Ain-El-Hammam",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "4611bc0b-338d-493b-8338-db81a3d0fc6e"
   },
   {
     id: 502,
     commune_name_ascii: "Ait-Yahia",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "5a77e57a-5af7-4a13-bcdf-f420c1dae435"
   },
   {
     id: 503,
     commune_name_ascii: "Akbil",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "d870a80d-f349-4dfd-b3bf-5c4e467e4858"
   },
   {
     id: 514,
     commune_name_ascii: "Boudjima",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "261f0c52-8653-48b6-b453-13e32be09a11"
   },
   {
     id: 532,
     commune_name_ascii: "Makouda",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "d028ce6f-d080-46d4-b352-a3601b00d490"
   },
   {
     id: 491,
     commune_name_ascii: "Ain-Zaouia",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "57b880a6-de08-46a0-96da-f9963578a61a"
   },
   {
     id: 496,
     commune_name_ascii: "Ait Yahia Moussa",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "7e5cc9b2-0006-4420-8c95-2e33536898bb"
   },
   {
     id: 518,
     commune_name_ascii: "Draa-El-Mizan",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "dd3af9bb-e7ec-4462-abd2-2e645a1fe216"
   },
   {
     id: 520,
     commune_name_ascii: "Frikat",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "83b4c392-17dc-4728-a98a-6a5165eee88b"
   },
   {
     id: 536,
     commune_name_ascii: "M'kira",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "0b39c2a9-4d50-4246-81c1-349cc112932d"
   },
   {
     id: 548,
     commune_name_ascii: "Tizi-Gheniff",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "645bebb6-849e-4727-9f39-a97af106e845"
   },
   {
     id: 552,
     commune_name_ascii: "Yatafene",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "73d1afc4-d901-4f5e-9ec9-5e0e596d47c8"
   },
   {
     id: 526,
     commune_name_ascii: "Illilten",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "1615bb64-592e-4a88-bb31-406bfcb29637"
   },
   {
     id: 528,
     commune_name_ascii: "Imsouhal",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "e823458c-8b96-4762-aaec-c301963191c8"
   },
   {
     id: 506,
     commune_name_ascii: "Azazga",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "8c5c394a-d951-4a3f-bcb7-720aff5144bd"
   },
   {
     id: 519,
     commune_name_ascii: "Freha",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "1b08a5b2-aaa6-4f5b-838e-761a88c97680"
   },
   {
     id: 524,
     commune_name_ascii: "Ifigha",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "86ea600f-d841-4a83-8d23-f97310aca00a"
   },
   {
     id: 551,
     commune_name_ascii: "Yakourene",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "45505e84-2261-43c8-8009-13ee28c56ff3"
   },
   {
     id: 553,
     commune_name_ascii: "Zekri",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "871e6983-baef-4135-876a-ad7d975c246b"
   },
   {
     id: 492,
     commune_name_ascii: "Ait Aggouacha",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "537b51dc-9292-451b-b046-1d3ee5b4d657"
   },
   {
     id: 529,
     commune_name_ascii: "Irdjen",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "8243b33f-4b71-40a2-a512-ac0fa638aab1"
   },
   {
     id: 530,
     commune_name_ascii: "Larbaa Nath Irathen",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "af9aba9c-a1f7-4ce1-80b1-880fb518709c"
   },
   {
     id: 500,
     commune_name_ascii: "Ait-Oumalou",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "39d1f955-48bd-412b-96c5-53cf85dcd596"
   },
   {
     id: 550,
     commune_name_ascii: "Tizi-Rached",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "0c7acb35-fa5c-484c-98bd-a2e8554846db"
   },
   {
     id: 497,
     commune_name_ascii: "Ait-Aissa-Mimoun",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "e88c9247-4afa-493e-9d87-6d6623ac028f"
   },
   {
     id: 539,
     commune_name_ascii: "Ouaguenoun",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "2dafda2c-fe5a-4c0a-9033-08775296efa5"
   },
   {
     id: 545,
     commune_name_ascii: "Timizart",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "7411f919-15e2-48d1-b3c0-a53af1a3fab1"
   },
   {
     id: 531,
     commune_name_ascii: "Maatkas",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "7db9d3c3-dfa1-4264-8156-1083c9d03c44"
   },
   {
     id: 542,
     commune_name_ascii: "Souk-El-Tenine",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "d37d5514-3da5-458b-b18c-2899d9685a21"
   },
   {
     id: 499,
     commune_name_ascii: "Ait-Mahmoud",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "4b1ed109-6313-4930-807e-9597196bb3b9"
   },
   {
     id: 508,
     commune_name_ascii: "Beni Zmenzer",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "35990b21-d309-4408-a4b5-b60dea82be89"
   },
   {
     id: 523,
     commune_name_ascii: "Iferhounene",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "8df159d0-b06a-4e4e-af5e-3440125561e8"
   },
   {
     id: 516,
     commune_name_ascii: "Bouzeguene",
     wilaya_code: "15",
-    itemId: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e"
+    itemId: "5cff1f32-d20d-493e-ac77-702951cd3c99"
   },
   {
     id: 588,
     commune_name_ascii: "Hussein Dey",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "43027cb3-b424-46e7-841b-cf2908783fde"
   },
   {
     id: 592,
     commune_name_ascii: "Les Eucalyptus",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "68a7377a-1fa3-427a-b136-f5c1842cffc2"
   },
   {
     id: 606,
     commune_name_ascii: "Sidi Moussa",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "33dc9591-6563-4842-ae19-1f0867b02c61"
   },
   {
     id: 591,
     commune_name_ascii: "Kouba",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "b8dab885-69ce-4651-b04f-eb3b33f15792"
   },
   {
     id: 594,
     commune_name_ascii: "Mohamed Belouzdad",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "43e2fb24-4e8c-4f41-991f-5b34a848bcb2"
   },
   {
     id: 555,
     commune_name_ascii: "Ain Taya",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "844298a3-9355-459a-a12c-3e95e0d6abd6"
   },
   {
     id: 558,
     commune_name_ascii: "Bab Ezzouar",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "398eca7c-75bf-409e-ba27-9d93e21b0cf3"
   },
   {
     id: 569,
     commune_name_ascii: "Bordj El Kiffan",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "d8be2c16-186e-4d85-bd70-9676b18b61e2"
   },
   {
     id: 574,
     commune_name_ascii: "Dar El Beida",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "5bcbb04a-6ecc-4644-9adc-11154333976d"
   },
   {
     id: 584,
     commune_name_ascii: "El Marsa",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "c0d06b1b-1bfc-47ac-83e1-315b18d0fe2f"
   },
   {
     id: 595,
     commune_name_ascii: "Mohammadia",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "1adde934-fc18-48a1-805f-728569f44e18"
   },
   {
     id: 566,
     commune_name_ascii: "Bir Touta",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "17b37af7-497c-49b1-bf39-5e4630d266ce"
   },
   {
     id: 598,
     commune_name_ascii: "Ouled Chebel",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "72eb3395-7595-49e0-86aa-836fd234eb37"
   },
   {
     id: 609,
     commune_name_ascii: "Tessala El Merdja",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "75896e17-87b6-415c-a965-038e6f9c3809"
   },
   {
     id: 587,
     commune_name_ascii: "Herraoua",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "adaabd18-c76c-4b41-bcd0-40de6e9beee7"
   },
   {
     id: 602,
     commune_name_ascii: "Reghaia",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "ff17d058-ac0d-4d6f-bfcf-7d38ba1124dd"
   },
   {
     id: 603,
     commune_name_ascii: "Rouiba",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "f55ea1df-b887-4af5-84d8-5840e1835894"
   },
   {
     id: 593,
     commune_name_ascii: "Maalma",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "8e66a587-82ea-47a8-8400-92f2458ada94"
   },
   {
     id: 600,
     commune_name_ascii: "Rahmania",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "1a1af3e3-f3b4-4e48-bb4f-340958baa407"
   },
   {
     id: 607,
     commune_name_ascii: "Souidania",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "93b352eb-a63c-4239-8eb6-624a5f371d14"
   },
   {
     id: 608,
     commune_name_ascii: "Staoueli",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "a2f3a538-1294-470f-9bd2-7be31d049269"
   },
   {
     id: 610,
     commune_name_ascii: "Zeralda",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "832d63fd-5509-4f3b-b1c5-8e4d2898f36f"
   },
   {
     id: 559,
     commune_name_ascii: "Baba Hassen",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "99423e96-2073-4513-9a71-221cad6ca182"
   },
   {
     id: 577,
     commune_name_ascii: "Douira",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "8fdb99d2-d678-4d93-9074-36540c89e8b8"
   },
   {
     id: 578,
     commune_name_ascii: "Draria",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "960c775f-793f-4457-9588-aea1718a3853"
   },
   {
     id: 579,
     commune_name_ascii: "El Achour",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "d769a6b7-3691-4c1e-b062-6d7e33a9d2f2"
   },
   {
     id: 590,
     commune_name_ascii: "Khraissia",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "303afb7a-d02e-459d-96f5-9aff719b7f19"
   },
   {
     id: 554,
     commune_name_ascii: "Ain Benian",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "6bc1447c-ebef-4806-8c16-bd5f3ebbedc8"
   },
   {
     id: 573,
     commune_name_ascii: "Cheraga",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "50a7b05d-dad7-4d8a-9424-2ba0ee796eee"
   },
   {
     id: 575,
     commune_name_ascii: "Dely Ibrahim",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "05540a76-bb99-4bb6-8d72-5bf763625ea3"
   },
   {
     id: 586,
     commune_name_ascii: "Hammamet",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "1a538787-1f22-4637-a458-30f844ee2309"
   },
   {
     id: 599,
     commune_name_ascii: "Ouled Fayet",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "16749b16-884c-4562-8c69-87186c0c4792"
   },
   {
     id: 556,
     commune_name_ascii: "Alger Centre",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "8c97a133-681b-4da4-8466-2f6110557fa2"
   },
   {
     id: 582,
     commune_name_ascii: "El Madania",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "609795e8-6203-41d3-a585-a036c1fed07b"
   },
   {
     id: 585,
     commune_name_ascii: "El Mouradia",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "bdcaad23-4736-400e-997c-5b23537147b0"
   },
   {
     id: 605,
     commune_name_ascii: "Sidi M'hamed",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "0b93d266-f7d8-4e87-98dc-9ea01cf8ed9c"
   },
   {
     id: 604,
     commune_name_ascii: "Sehaoula",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "af44d58b-5f59-4538-84ee-6f5574d40d30"
   },
   {
     id: 567,
     commune_name_ascii: "Bologhine Ibnou Ziri",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "6e658712-a791-4e73-8468-d8b8ca73c1d7"
   },
   {
     id: 572,
     commune_name_ascii: "Casbah",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "bab87ee4-353a-4098-99c3-9a572945f682"
   },
   {
     id: 596,
     commune_name_ascii: "Oued Koriche",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "2c0d14de-f01b-4652-8c8a-7fc31f58d7b0"
   },
   {
     id: 601,
     commune_name_ascii: "Rais Hamidou",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "22c19663-7cf5-4547-9d53-e197e898ccf3"
   },
   {
     id: 564,
     commune_name_ascii: "Bir Mourad Rais",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "195a5cf5-dd2b-4bca-80e5-e5dd3f9fb3f3"
   },
   {
     id: 565,
     commune_name_ascii: "Birkhadem",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "85fa42cc-3d00-4984-8da9-b192351a8ee1"
   },
   {
     id: 576,
     commune_name_ascii: "Djasr Kasentina",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "9726f197-b080-4d72-9f07-b27ec16f0f78"
   },
   {
     id: 589,
     commune_name_ascii: "Hydra",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "54ce3f0f-f3e4-4374-acf1-4c3e490cd794"
   },
   {
     id: 583,
     commune_name_ascii: "El Magharia",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "a321dd4d-5867-465e-83cb-4c89db65c7d9"
   },
   {
     id: 562,
     commune_name_ascii: "Ben Aknoun",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "e999d03d-9cc6-46ef-a4e1-f75c92a1315e"
   },
   {
     id: 563,
     commune_name_ascii: "Beni Messous",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "47bb6b7e-05a8-4e13-9c64-3e43cb1a5dcb"
   },
   {
     id: 571,
     commune_name_ascii: "Bouzareah",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "51285c76-9c0e-4314-b5da-6f023e113543"
   },
   {
     id: 580,
     commune_name_ascii: "El Biar",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "a9ac4059-259e-4b0b-bb7c-6927583df361"
   },
   {
     id: 560,
     commune_name_ascii: "Bachedjerah",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "d75877e4-1e21-4525-b5f4-3ed551d67c3e"
   },
   {
     id: 570,
     commune_name_ascii: "Bourouba",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "3bcc7209-e42e-4178-ba39-d763aa9807d1"
   },
   {
     id: 581,
     commune_name_ascii: "El Harrach",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "99f0bcae-ba98-4a6a-adc7-695de1e077f8"
   },
   {
     id: 597,
     commune_name_ascii: "Oued Smar",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "c857f256-2d10-4278-8d9c-1560a8fef68e"
   },
   {
     id: 561,
     commune_name_ascii: "Baraki",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "192e4026-0e46-43e0-9685-02122af81f80"
   },
   {
     id: 568,
     commune_name_ascii: "Bordj El Bahri",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "7a925e67-4508-49ad-adca-40496cd95cc8"
   },
   {
     id: 557,
     commune_name_ascii: "Bab El Oued",
     wilaya_code: "16",
-    itemId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4"
+    itemId: "efd8d844-f39d-45eb-bf12-58bfb64c52e5"
   },
   {
     id: 634,
     commune_name_ascii: "Hassi El Euch",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "a2da2244-979f-445f-905b-409a04587ae5"
   },
   {
     id: 612,
     commune_name_ascii: "Ain El Ibel",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "4773dfb9-f709-4eda-901a-425342948842"
   },
   {
     id: 626,
     commune_name_ascii: "El Guedid",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "cd4613ca-5197-464d-98ff-405797099356"
   },
   {
     id: 621,
     commune_name_ascii: "Charef",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "87242bb1-1459-4133-ae4a-03283cb317b8"
   },
   {
     id: 618,
     commune_name_ascii: "Benyagoub",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "92763540-78dc-4772-b328-5db76d2fbbf7"
   },
   {
     id: 642,
     commune_name_ascii: "Sidi Baizid",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "f6eb05c0-4d69-4139-9ce8-55e0f7585bc9"
   },
   {
     id: 637,
     commune_name_ascii: "M'liliha",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "8536796f-1371-4cb5-9656-c618c1df05ea"
   },
   {
     id: 622,
     commune_name_ascii: "Dar Chioukh",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "f9d26ad9-3dd2-4617-9f35-165c2bb47c96"
   },
   {
     id: 644,
     commune_name_ascii: "Taadmit",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "869d81c5-fe4a-424c-8539-6180246b3326"
   },
   {
     id: 632,
     commune_name_ascii: "Had Sahary",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "b3b91d2e-14b2-4745-ae3a-4f1fd019d1a9"
   },
   {
     id: 620,
     commune_name_ascii: "Bouira Lahdab",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "1e26af75-5696-4663-8594-810717e4459c"
   },
   {
     id: 613,
     commune_name_ascii: "Ain Fekka",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "b64649a7-28a2-44ac-affd-b0535e2ea9c4"
   },
   {
     id: 643,
     commune_name_ascii: "Sidi Laadjel",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "8d976991-64f7-4114-9814-cb1fb82c9326"
   },
   {
     id: 635,
     commune_name_ascii: "Hassi Fedoul",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "fbe3edc5-8cd6-4fbe-9c54-596817cf3dc5"
   },
   {
     id: 628,
     commune_name_ascii: "El Khemis",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "7bf2a1f0-5ff3-4097-b479-8da59132def9"
   },
   {
     id: 641,
     commune_name_ascii: "Selmana",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "1b487f47-f977-48fd-804b-405825775980"
   },
   {
     id: 640,
     commune_name_ascii: "Sed Rahal",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "bd302611-b078-4d60-b26d-87b3d32cf68a"
   },
   {
     id: 636,
     commune_name_ascii: "Messaad",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "4342da4b-3869-4c4c-ba51-e6483eba778d"
   },
   {
     id: 631,
     commune_name_ascii: "Guettara",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "dd3d6284-e3d6-4fe4-b58d-6e47db32cffc"
   },
   {
     id: 623,
@@ -3591,25 +3591,25 @@ export const cities = [
     id: 646,
     commune_name_ascii: "Zaccar",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "749cf9aa-5332-4e89-95e2-0db8b7b9a870"
   },
   {
     id: 625,
     commune_name_ascii: "Douis",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "d8fa63ab-b187-4100-afd7-2db5da97cf70"
   },
   {
     id: 627,
     commune_name_ascii: "El Idrissia",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "1c009513-e4d7-4de3-a109-8bea76104f94"
   },
   {
     id: 611,
     commune_name_ascii: "Ain Chouhada",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "3057fed3-e947-454e-857f-3d092b57f890"
   },
   {
     id: 624,
@@ -3621,67 +3621,67 @@ export const cities = [
     id: 619,
     commune_name_ascii: "Birine",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "1f8d405c-3b15-43f3-a3a5-c71b10ed1cfb"
   },
   {
     id: 639,
     commune_name_ascii: "Oum Laadham",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "1e2981c0-d88e-4266-a1c8-b8eb5ceb3db9"
   },
   {
     id: 629,
     commune_name_ascii: "Faidh El Botma",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "5bf79468-e223-4f5d-ab31-e3c4490eaae7"
   },
   {
     id: 616,
     commune_name_ascii: "Amourah",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "35cee308-14f6-41f7-83fd-d768b8109b00"
   },
   {
     id: 645,
     commune_name_ascii: "Zaafrane",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "86545337-257d-4723-b269-2830ec064d49"
   },
   {
     id: 630,
     commune_name_ascii: "Guernini",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "232fdd71-1259-456d-a157-d0914d52d52d"
   },
   {
     id: 615,
     commune_name_ascii: "Ain Oussera",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "7a8642bf-567f-4a9c-a356-caaf5b13db89"
   },
   {
     id: 617,
     commune_name_ascii: "Benhar",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "71403d4c-8957-45b2-82a5-26cfbf5d085c"
   },
   {
     id: 614,
     commune_name_ascii: "Ain Maabed",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "53603004-e032-4d37-8298-d7c2edc58939"
   },
   {
     id: 633,
     commune_name_ascii: "Hassi Bahbah",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "28ff9434-3b0f-441f-8e2c-7caeaec19d27"
   },
   {
     id: 638,
     commune_name_ascii: "Moudjebara",
     wilaya_code: "17",
-    itemId: "9ee8eac2-77e5-4d70-ac49-bde455d06bee"
+    itemId: "bc348d89-60c2-4cef-ae8e-1de738e2eff4"
   },
   {
     id: 662,
@@ -3693,355 +3693,355 @@ export const cities = [
     id: 656,
     commune_name_ascii: "El Aouana",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "088a5fd1-d278-49e9-a604-70a38cadd871"
   },
   {
     id: 668,
     commune_name_ascii: "Selma Benziada",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "91ce57fd-4b7b-4f06-8983-6d48b7b35360"
   },
   {
     id: 660,
     commune_name_ascii: "Erraguene Souissi",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "f76479b1-6bbb-4b5f-8bde-89e607b9b5e8"
   },
   {
     id: 650,
     commune_name_ascii: "Boussif Ouled Askeur",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "47cfac95-2963-4187-851b-d3df78c733d6"
   },
   {
     id: 674,
     commune_name_ascii: "Ziama Mansouriah",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "292a00d3-c29a-4ce6-8bb8-c04ea8a64503"
   },
   {
     id: 651,
     commune_name_ascii: "Chahna",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "ef7cbc72-a2a2-4e01-b06e-19924e7fe889"
   },
   {
     id: 659,
     commune_name_ascii: "Emir Abdelkader",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "8d67a81d-250d-43fa-ae22-09effc6b5506"
   },
   {
     id: 665,
     commune_name_ascii: "Oudjana",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "f20b0192-cdf8-4a3e-a0b9-863cfb3bb21a"
   },
   {
     id: 672,
     commune_name_ascii: "Taher",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "e1dd5ed6-4a25-4cce-80e9-70a1fa705cfd"
   },
   {
     id: 652,
     commune_name_ascii: "Chekfa",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "4dd40022-50e1-481a-a5e9-abaf0fd99cb8"
   },
   {
     id: 657,
     commune_name_ascii: "El Kennar Nouchfi",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "efd56215-c5be-4856-b27f-547f5807a350"
   },
   {
     id: 670,
     commune_name_ascii: "Sidi Abdelaziz",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "0b9ad6a5-32a6-4ade-aeed-d9ac1cdb68cc"
   },
   {
     id: 658,
     commune_name_ascii: "El Milia",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "de818328-8722-46ac-a74a-631a7e8ebc81"
   },
   {
     id: 667,
     commune_name_ascii: "Ouled Yahia Khadrouch",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "3407c4e0-d66d-43d0-98e2-0d4709e2f011"
   },
   {
     id: 666,
     commune_name_ascii: "Ouled Rabah",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "81803f7a-e41b-4068-959f-f301f21b4b15"
   },
   {
     id: 671,
     commune_name_ascii: "Sidi Marouf",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "10724d00-e01b-4be8-b348-4b4f18578cf4"
   },
   {
     id: 661,
     commune_name_ascii: "Ghebala",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "5e9e1418-773b-44a9-b726-fa99aaa3d3e4"
   },
   {
     id: 669,
     commune_name_ascii: "Settara",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "2911dae3-34e6-45bd-8694-1e0b6c75ace9"
   },
   {
     id: 649,
     commune_name_ascii: "Bouraoui Belhadef",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "b0c0af5b-d447-4fec-abf0-21212fe13619"
   },
   {
     id: 655,
     commune_name_ascii: "El Ancer",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "f92a0b30-e913-4a19-9a78-5a572c54689b"
   },
   {
     id: 664,
     commune_name_ascii: "Khiri Oued Adjoul",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "02024e1d-3abd-4251-985d-ee77bf69aafd"
   },
   {
     id: 654,
     commune_name_ascii: "Djimla",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "6e6eddae-ea10-4706-895e-8f33f2195630"
   },
   {
     id: 663,
     commune_name_ascii: "Kaous",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "8923fe53-621a-4764-a818-c58134a17d3d"
   },
   {
     id: 673,
     commune_name_ascii: "Texenna",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "7b4853e6-5aa9-4b97-8491-60543c5869a8"
   },
   {
     id: 647,
     commune_name_ascii: "Bordj T'har",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "87f4da58-1c60-412a-a8eb-2da51170620e"
   },
   {
     id: 648,
     commune_name_ascii: "Boudria Beniyadjis",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "9291deba-296b-451b-967e-9ea180b872bc"
   },
   {
     id: 653,
     commune_name_ascii: "Djemaa Beni Habibi",
     wilaya_code: "18",
-    itemId: "dc851e52-55b2-4beb-a7f1-79d4e73e9458"
+    itemId: "f1ba7ff4-2835-4851-ba40-090876e812a6"
   },
   {
     id: 726,
     commune_name_ascii: "Rosfa",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "3149fecc-b7de-458a-8fff-101b6c7f0253"
   },
   {
     id: 721,
     commune_name_ascii: "Oued El Bared",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "0facbea3-3f6e-44e9-a6c2-bccec1446c13"
   },
   {
     id: 734,
     commune_name_ascii: "Tizi N'bechar",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "c8a0c710-e237-4d55-92b8-42c623c7f590"
   },
   {
     id: 720,
     commune_name_ascii: "Mezloug",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "cad05bf4-a243-47f6-ac28-f5c514919c45"
   },
   {
     id: 709,
     commune_name_ascii: "Guellal",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "9c7e3529-ff92-45ba-8307-89358ad8813c"
   },
   {
     id: 717,
     commune_name_ascii: "Kasr El Abtal",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "84841b36-efff-4231-a70c-742dca3d77ec"
   },
   {
     id: 724,
     commune_name_ascii: "Ouled Si Ahmed",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "eff027a0-1038-4cbe-943d-adba33a055fa"
   },
   {
     id: 684,
     commune_name_ascii: "Ait Naoual Mezada",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "b96f958e-75f1-4b61-a39f-c1229b5ff28b"
   },
   {
     id: 685,
     commune_name_ascii: "Ait-Tizi",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "a2f84770-7b41-40ee-9ff6-95afce2440eb"
   },
   {
     id: 699,
     commune_name_ascii: "Bouandas",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ff3fe168-e701-49de-bb2f-1e5104290f6a"
   },
   {
     id: 701,
     commune_name_ascii: "Bousselam",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "6dd6b8d3-d63f-44d6-a850-1eaef98cef3f"
   },
   {
     id: 713,
     commune_name_ascii: "Hamam Soukhna",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "cb8a5b03-8374-404e-b4e4-bb68b7089475"
   },
   {
     id: 732,
     commune_name_ascii: "Taya",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "a97100d1-1642-434c-b0ed-837c3fcdc22f"
   },
   {
     id: 733,
     commune_name_ascii: "Tella",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "934b69b4-31bd-4477-bd6a-b9d19487ad83"
   },
   {
     id: 680,
     commune_name_ascii: "Ain Oulmene",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "1878ed8c-8413-4b5b-beaa-6b1ce8614fa9"
   },
   {
     id: 702,
     commune_name_ascii: "Boutaleb",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ab5e5e18-0c85-4ff6-b9c9-5f7a7ee45c3f"
   },
   {
     id: 714,
     commune_name_ascii: "Hamma",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "b37607fc-145c-4785-af30-84051549eafc"
   },
   {
     id: 725,
     commune_name_ascii: "Ouled Tebben",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "a1ab01af-1445-4f6a-ab86-b33652ee8c65"
   },
   {
     id: 686,
     commune_name_ascii: "Amoucha",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "002796c1-5802-4d02-af32-e57a459fcfcb"
   },
   {
     id: 727,
     commune_name_ascii: "Salah Bey",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "f2c4947d-1f3d-425d-a809-170c93cc7f73"
   },
   {
     id: 677,
     commune_name_ascii: "Ain Azel",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "3c81659f-7f97-424b-9a22-c3d24919faed"
   },
   {
     id: 679,
     commune_name_ascii: "Ain Lahdjar",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "689c7f30-8f15-4bfd-9c5d-0e9c0d941718"
   },
   {
     id: 689,
     commune_name_ascii: "Beidha Bordj",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "7d30b19d-0729-4654-893a-0e7c48090337"
   },
   {
     id: 697,
     commune_name_ascii: "Bir Haddada",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ad57a8d0-8146-48a1-80aa-42c137a24726"
   },
   {
     id: 711,
     commune_name_ascii: "Guenzet",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ce7c712c-5f80-49d3-b28f-0ee349b1896e"
   },
   {
     id: 716,
     commune_name_ascii: "Harbil",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "4c964c5f-5942-4035-a08a-2a9ed997bbac"
   },
   {
     id: 682,
     commune_name_ascii: "Ain-Roua",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "3894cd05-25ad-47bc-acde-92d0e02c7096"
   },
   {
     id: 694,
     commune_name_ascii: "Beni Oussine",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "9aacd4f4-2eda-4c20-a2e8-e5ccf53d7f07"
   },
   {
     id: 707,
     commune_name_ascii: "El Ouricia",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "5613c0de-d9b8-4aa0-90d6-60fe0b2ebca9"
   },
   {
     id: 700,
     commune_name_ascii: "Bougaa",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "190c52f1-7192-472c-be68-f45bd42be39b"
   },
   {
     id: 705,
     commune_name_ascii: "Draa-Kebila",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "b8accc2b-720f-48ba-953d-6eb2f885ed97"
   },
   {
     id: 715,
     commune_name_ascii: "Hammam Guergour",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "25bf3c19-c40d-41ef-8831-a83095a6dbf8"
   },
   {
     id: 729,
@@ -4053,163 +4053,163 @@ export const cities = [
     id: 678,
     commune_name_ascii: "Ain El Kebira",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "d93ca4a9-6328-4df9-85e8-641e8db40404"
   },
   {
     id: 703,
     commune_name_ascii: "Dehamcha",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ccdf19c6-f59b-4555-9628-7ab0f790c22f"
   },
   {
     id: 722,
     commune_name_ascii: "Ouled Addouane",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "11800d0d-a577-4558-8ab9-da0df4af05c2"
   },
   {
     id: 683,
     commune_name_ascii: "Ain-Sebt",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "3d2228d3-caa7-4d46-a80e-9184e3b018d4"
   },
   {
     id: 695,
     commune_name_ascii: "Beni-Aziz",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "8f0cca7b-83b9-4a43-ad30-ac37db490cad"
   },
   {
     id: 718,
     commune_name_ascii: "Maaouia",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "88b53a42-bac4-4731-b08f-949913077a9f"
   },
   {
     id: 690,
     commune_name_ascii: "Bellaa",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "8290409c-c582-4742-9531-2ac5e3d39c0c"
   },
   {
     id: 698,
     commune_name_ascii: "Bir-El-Arch",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "bf289b27-80d3-4f8c-b3b2-e678a41e4dff"
   },
   {
     id: 708,
     commune_name_ascii: "El-Ouldja",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "54ee3066-5f7e-4405-8c7b-dd4042c2e879"
   },
   {
     id: 730,
     commune_name_ascii: "Tachouda",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "67dcf4c1-c67d-4d0b-87e8-9d152336492e"
   },
   {
     id: 731,
     commune_name_ascii: "Tala-Ifacene",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "5771b298-50c8-4745-8700-95c10cf12ff8"
   },
   {
     id: 728,
     commune_name_ascii: "Serdj-El-Ghoul",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "933558ce-1bf6-4c4b-a4f1-558daa5e5e7b"
   },
   {
     id: 712,
     commune_name_ascii: "Guidjel",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "fb670c62-4163-4f88-8ef0-85950c882044"
   },
   {
     id: 723,
     commune_name_ascii: "Ouled Sabor",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "1d3501f9-9630-4899-8dbf-4938050d71d9"
   },
   {
     id: 688,
     commune_name_ascii: "Bazer-Sakra",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "f423f52d-5292-47a2-bd27-a07a887c87b0"
   },
   {
     id: 706,
     commune_name_ascii: "El Eulma",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "62762808-0c86-4c6a-a605-146a6d124fa3"
   },
   {
     id: 710,
     commune_name_ascii: "Guelta Zerka",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "188fa54f-232b-45e1-afe6-b2e279678953"
   },
   {
     id: 692,
     commune_name_ascii: "Beni Fouda",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "a57b2e14-6dbf-40de-847d-87cc3313fd2e"
   },
   {
     id: 704,
     commune_name_ascii: "Djemila",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "ee5a5f8a-de86-4fa1-9563-060ed7629f6c"
   },
   {
     id: 681,
     commune_name_ascii: "Ain-Legradj",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "3b6bbfc7-37f3-41f2-aee4-3bd21d58fb78"
   },
   {
     id: 691,
     commune_name_ascii: "Beni Chebana",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "787a6ba4-3bc4-404c-8c00-497f205aae47"
   },
   {
     id: 693,
     commune_name_ascii: "Beni Ourtilane",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "91c6ebdc-5325-4a97-ad94-376f7457c259"
   },
   {
     id: 696,
     commune_name_ascii: "Beni-Mouhli",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "47b839a7-cfca-4f4d-b1fd-a95a19ec0f6e"
   },
   {
     id: 675,
     commune_name_ascii: "Ain Abessa",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "f31c850b-539f-4c9b-b60c-2bb7988dc881"
   },
   {
     id: 676,
     commune_name_ascii: "Ain Arnat",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "95fbe866-c39b-4fe8-91db-765cfa9743ef"
   },
   {
     id: 687,
     commune_name_ascii: "Babor",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "f94acef9-eab6-45ae-9293-ce56ec8ecf91"
   },
   {
     id: 719,
     commune_name_ascii: "Maouaklane",
     wilaya_code: "19",
-    itemId: "56ee938d-7887-408e-8731-364d07ad3594"
+    itemId: "a8a57322-9a21-4994-a097-d3620e7dd932"
   },
   {
     id: 745,
@@ -4221,295 +4221,295 @@ export const cities = [
     id: 749,
     commune_name_ascii: "Tircine",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "72602a74-4048-4f80-8998-0d076838d511"
   },
   {
     id: 743,
     commune_name_ascii: "Ouled Brahim",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "b6ac24eb-201c-458c-82e1-406be2481040"
   },
   {
     id: 737,
     commune_name_ascii: "Ain Soltane",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "a259e199-36cd-4a9b-a897-a5f55e2669dc"
   },
   {
     id: 741,
     commune_name_ascii: "Maamora",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "b0ccd655-88d1-4744-948b-21e4d9d1e59b"
   },
   {
     id: 739,
     commune_name_ascii: "El Hassasna",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "0844f12a-8ed8-44e1-bbaf-6431a122b6de"
   },
   {
     id: 736,
     commune_name_ascii: "Ain Sekhouna",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "a64793dc-d307-4ec8-892d-4cfcfb0577ba"
   },
   {
     id: 748,
     commune_name_ascii: "Sidi Boubekeur",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "7f88c99d-0931-4035-85a4-8e24719c3c13"
   },
   {
     id: 744,
     commune_name_ascii: "Ouled Khaled",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "cc176402-3c0f-48d9-ac56-05a1ac4cc29d"
   },
   {
     id: 740,
     commune_name_ascii: "Hounet",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "996a492d-9061-4029-819c-793a4f2ad893"
   },
   {
     id: 750,
     commune_name_ascii: "Youb",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "90268069-6658-4ea6-b835-f416ba0598f3"
   },
   {
     id: 738,
     commune_name_ascii: "Doui Thabet",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "55c66eb9-1026-4ad7-a9a8-379dec3d7b8e"
   },
   {
     id: 746,
     commune_name_ascii: "Sidi Ahmed",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "206f1ef8-3a63-447d-952b-79606b8ce8f3"
   },
   {
     id: 742,
     commune_name_ascii: "Moulay Larbi",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "06ca5444-fa0f-4c9c-b3a9-b2dd70e8a741"
   },
   {
     id: 735,
     commune_name_ascii: "Ain El Hadjar",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "6177ae10-cd9b-4d65-9711-3aa1d263c373"
   },
   {
     id: 747,
     commune_name_ascii: "Sidi Amar",
     wilaya_code: "20",
-    itemId: "27b2042a-77f8-4c91-b62d-60934fa0daca"
+    itemId: "0efdcba3-2805-4470-9250-d059171c734e"
   },
   {
     id: 751,
     commune_name_ascii: "Ain Bouziane",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "63147735-5b19-47cc-bb11-fcc7901fee5b"
   },
   {
     id: 783,
     commune_name_ascii: "Salah Bouchaour",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "ef2b40ae-3441-4f59-a5a9-0068b735357f"
   },
   {
     id: 768,
     commune_name_ascii: "El Hadaiek",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "f6fef8a6-efa7-4b3b-be07-c70254927d1e"
   },
   {
     id: 787,
     commune_name_ascii: "Zerdezas",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "fff5c219-f3e4-4e3f-94db-ba685e74e463"
   },
   {
     id: 780,
     commune_name_ascii: "Ouled Habbaba",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "5dfeeeda-efea-435f-a885-972f02f87b39"
   },
   {
     id: 759,
     commune_name_ascii: "Beni Oulbane",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "619dc5e7-b9f8-4699-ac1b-f49b65f2823a"
   },
   {
     id: 784,
     commune_name_ascii: "Sidi Mezghiche",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "d825ef68-1836-48aa-9f97-ad4dd62c5da2"
   },
   {
     id: 758,
     commune_name_ascii: "Beni Bechir",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "3a91c3a5-64c8-4b7f-a3c5-e908d3842c34"
   },
   {
     id: 782,
     commune_name_ascii: "Ramdane Djamel",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "297db5bc-5fde-49f7-b013-91bd7991e18b"
   },
   {
     id: 761,
     commune_name_ascii: "Bin El Ouiden",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "917e1bd2-8a6e-4101-ba51-1a73f99000dd"
   },
   {
     id: 770,
     commune_name_ascii: "Emjez Edchich",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "21e0f67b-f07f-436d-a5e7-585af462f4ce"
   },
   {
     id: 786,
     commune_name_ascii: "Tamalous",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "0a423fd0-5c79-4b21-b07c-bbf24ab4d541"
   },
   {
     id: 753,
     commune_name_ascii: "Ain Kechra",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "bfac032f-3d69-4a13-a72f-c08b2341cf18"
   },
   {
     id: 778,
     commune_name_ascii: "Ouldja Boulbalout",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "4efb789b-8ac5-4c37-8c97-45ab5b84dc75"
   },
   {
     id: 781,
     commune_name_ascii: "Oum Toub",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "26efec94-57a7-40db-a03a-29c073709da7"
   },
   {
     id: 767,
     commune_name_ascii: "El Ghedir",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "96f6219b-12a5-474f-9749-88180b7c9a63"
   },
   {
     id: 775,
     commune_name_ascii: "Kerkara",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "f8964976-1762-4c14-973a-7ef4d96561d8"
   },
   {
     id: 766,
     commune_name_ascii: "El Arrouch",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "b21a500f-0e04-438d-9b53-dffe503b9d59"
   },
   {
     id: 788,
     commune_name_ascii: "Zitouna",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "3df10e9a-d38c-4acc-b21a-8f6cea1dacc9"
   },
   {
     id: 779,
     commune_name_ascii: "Ouled Attia",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "4c18de3c-eeac-4058-a414-b9d4a6997d80"
   },
   {
     id: 777,
     commune_name_ascii: "Oued Zhour",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "6ebd2305-9a65-4ec1-b344-9af619fbd73d"
   },
   {
     id: 764,
     commune_name_ascii: "Collo",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "e1070a72-47ba-4186-8f07-88fd9aa7908c"
   },
   {
     id: 763,
     commune_name_ascii: "Cheraia",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "061959ca-19d6-4614-baa7-30ee9216fbb6"
   },
   {
     id: 760,
     commune_name_ascii: "Beni Zid",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "99c40c2f-7d02-46bd-8c6a-6deb96b35b64"
   },
   {
     id: 776,
     commune_name_ascii: "Khenag Maoune",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "a70c1243-e045-405b-bea3-dec063698ae6"
   },
   {
     id: 769,
     commune_name_ascii: "El Marsa",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "c0d06b1b-1bfc-47ac-83e1-315b18d0fe2f"
   },
   {
     id: 757,
     commune_name_ascii: "Ben Azzouz",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "84e2a703-650d-48f0-9bdc-24e24dfa2768"
   },
   {
     id: 756,
     commune_name_ascii: "Bekkouche Lakhdar",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "0d320ee3-668a-4381-9e3e-951c6897559d"
   },
   {
     id: 771,
     commune_name_ascii: "Es Sebt",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "c596a9be-fe92-4b95-abea-d1f03e28592f"
   },
   {
     id: 752,
     commune_name_ascii: "Ain Charchar",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "671285e3-ef51-4461-b9c8-5488b0a03d76"
   },
   {
     id: 755,
     commune_name_ascii: "Azzaba",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "f40a6d43-72cf-4267-9ba9-2f97f516912d"
   },
   {
     id: 762,
     commune_name_ascii: "Bouchetata",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "13da1b6a-c236-48f7-bb99-85850b8c81a6"
   },
   {
     id: 772,
     commune_name_ascii: "Filfila",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "8054834e-3493-4b09-a8e3-88ba923c9031"
   },
   {
     id: 773,
     commune_name_ascii: "Hammadi Krouma",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "5b514acd-953b-4f4c-999c-9e0204ce6962"
   },
   {
     id: 785,
@@ -4521,211 +4521,211 @@ export const cities = [
     id: 754,
     commune_name_ascii: "Ain Zouit",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "0af3cfef-0eab-455b-8d78-fec491d2fbb0"
   },
   {
     id: 765,
     commune_name_ascii: "Djendel Saadi Mohamed",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "4c4c527d-d8ba-47ba-9aec-b7bec4915f33"
   },
   {
     id: 774,
     commune_name_ascii: "Kanoua",
     wilaya_code: "21",
-    itemId: "a9df7e26-1086-4319-8a93-19969c99c89b"
+    itemId: "722b62e2-b7c5-4cae-9270-223ae456f1b0"
   },
   {
     id: 822,
     commune_name_ascii: "Sidi Ali Benyoub",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "83aa3a72-3d4d-44b9-a857-75a5d667d596"
   },
   {
     id: 814,
     commune_name_ascii: "Moulay Slissen",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "8a8ec89e-c6b0-456d-b5d0-15d07fa07b13"
   },
   {
     id: 804,
     commune_name_ascii: "El Hacaiba",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "d56c0ed9-9d7b-4af4-a4bc-559110ceaac9"
   },
   {
     id: 792,
     commune_name_ascii: "Ain Tindamine",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "c65b8aa4-2f01-464d-b45c-33f80ee6ceb0"
   },
   {
     id: 837,
     commune_name_ascii: "Tenira",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "46d04806-79bd-443c-9abe-90abd07cfa8b"
   },
   {
     id: 816,
     commune_name_ascii: "Oued Sefioun",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "1fda230b-05eb-46c7-abe0-df8b95f1ef7a"
   },
   {
     id: 805,
     commune_name_ascii: "Hassi Dahou",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "6afc0e70-eecb-450d-b176-840d8184811a"
   },
   {
     id: 817,
     commune_name_ascii: "Oued Taourira",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "7f7b2d2b-e29c-46a1-a3bd-846c6bd16c18"
   },
   {
     id: 798,
     commune_name_ascii: "Benachiba Chelia",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "b10c6623-265c-47e9-97fb-179264287ef8"
   },
   {
     id: 831,
     commune_name_ascii: "Sidi Yacoub",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "c29ca49c-2f09-4b54-8c64-6782e1a95d43"
   },
   {
     id: 830,
     commune_name_ascii: "Sidi Lahcene",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "432dfe75-39d7-45d5-9a45-a21638326576"
   },
   {
     id: 829,
     commune_name_ascii: "Sidi Khaled",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "f1828ccf-5f14-4cf4-8158-4d0c02b18af9"
   },
   {
     id: 832,
     commune_name_ascii: "Tabia",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "7ab99ba1-5288-4305-aade-95193431e0f9"
   },
   {
     id: 825,
     commune_name_ascii: "Sidi Brahim",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "23f9ac66-62a9-4f76-b500-afe1440f6536"
   },
   {
     id: 794,
     commune_name_ascii: "Amarnas",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "74c4be87-39f3-402f-94f8-854eb4e523fb"
   },
   {
     id: 801,
     commune_name_ascii: "Boukhanefis",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "3f9435b3-0236-4490-a88f-94f3396944e3"
   },
   {
     id: 806,
     commune_name_ascii: "Hassi Zahana",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "964b010d-d335-445f-b19f-83b8ac0db1d9"
   },
   {
     id: 802,
     commune_name_ascii: "Chetouane Belaila",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "607c8e1a-eaab-4b5b-9374-80d3dfb3788f"
   },
   {
     id: 797,
     commune_name_ascii: "Ben Badis",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "de46b03f-4ad9-42b2-ba1d-65527280e37b"
   },
   {
     id: 795,
     commune_name_ascii: "Bedrabine El Mokrani",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "3d97e17f-ccbf-4612-a0ef-d86cb8da55ad"
   },
   {
     id: 821,
     commune_name_ascii: "Sfisef",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "22321bce-7543-424c-905a-b21d4cac18f1"
   },
   {
     id: 810,
     commune_name_ascii: "M'cid",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "1bd77432-e9fe-4c47-8dad-7d67c4eb8153"
   },
   {
     id: 800,
     commune_name_ascii: "Boudjebaa El Bordj",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "a063d287-c851-4194-9907-77b5898a8d46"
   },
   {
     id: 793,
     commune_name_ascii: "Ain- Adden",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "c72836ec-db3a-47e5-a6de-1a93ac4f317c"
   },
   {
     id: 828,
     commune_name_ascii: "Sidi Hamadouche",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "fbec9e98-4b5b-4c42-902d-56000172a82c"
   },
   {
     id: 826,
     commune_name_ascii: "Sidi Chaib",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "0d1ee09d-45cf-4164-9171-f348e5a3a223"
   },
   {
     id: 808,
     commune_name_ascii: "Makedra",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "6cb97171-1d52-4bc1-9592-2512e06ebb2b"
   },
   {
     id: 789,
     commune_name_ascii: "Ain El Berd",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "b4d64f15-ce5d-42e5-86a6-344943b8b108"
   },
   {
     id: 819,
     commune_name_ascii: "Redjem Demouche",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "db893977-166b-4470-83f1-06ee99ecf6a8"
   },
   {
     id: 818,
     commune_name_ascii: "Ras El Ma",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "248216bf-0dfa-40f9-853b-d5b4bcce170a"
   },
   {
     id: 815,
     commune_name_ascii: "Oued Sebaa",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "73dfac5e-9483-4642-946c-cc5e93173100"
   },
   {
     id: 809,
     commune_name_ascii: "Marhoum",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "b8a1f16d-e9f6-445b-9aa7-d1f98d41789e"
   },
   {
     id: 824,
@@ -4737,115 +4737,115 @@ export const cities = [
     id: 791,
     commune_name_ascii: "Ain Thrid",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "a35311fd-7f73-416c-b5df-af873ab4d846"
   },
   {
     id: 820,
     commune_name_ascii: "Sehala Thaoura",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "44bdc58a-c6de-462c-9f37-682a440baa52"
   },
   {
     id: 838,
     commune_name_ascii: "Tessala",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "270e25c3-3aa5-45ef-8356-15ded7b5b90f"
   },
   {
     id: 796,
     commune_name_ascii: "Belarbi",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "2e91ef13-668f-4ddc-a340-ad0acc8c6073"
   },
   {
     id: 813,
     commune_name_ascii: "Mostefa  Ben Brahim",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "d9b58473-2eef-405f-b7bc-40d1904d2b39"
   },
   {
     id: 839,
     commune_name_ascii: "Tilmouni",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "d9dc7c74-c916-4c0b-b9fe-f68ab8b17ecf"
   },
   {
     id: 840,
     commune_name_ascii: "Zerouala",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "3f45e21a-d169-42e1-ae59-4b54edfb9cb4"
   },
   {
     id: 803,
     commune_name_ascii: "Dhaya",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "d06b64cf-074b-4b56-a815-4c1aefe50405"
   },
   {
     id: 812,
     commune_name_ascii: "Mezaourou",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "4cf191fb-5d1e-4406-aff7-826db8bd84fc"
   },
   {
     id: 835,
     commune_name_ascii: "Teghalimet",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "6bc57e11-05f5-475a-8f0a-1dd931fec662"
   },
   {
     id: 836,
     commune_name_ascii: "Telagh",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "a1f569cf-df70-40e4-a601-e2f5e2797959"
   },
   {
     id: 790,
     commune_name_ascii: "Ain Kada",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "1de681a9-3669-45fd-abf2-d7ac85308267"
   },
   {
     id: 807,
     commune_name_ascii: "Lamtar",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "e08538d7-e689-420e-bca6-aedc77f6772c"
   },
   {
     id: 823,
     commune_name_ascii: "Sidi Ali Boussidi",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "55d30e29-7401-4c37-84b4-81c2a9e27d0d"
   },
   {
     id: 827,
     commune_name_ascii: "Sidi Dahou Zairs",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "6de3865a-93c9-40a9-96f2-0df93b4b6fa2"
   },
   {
     id: 799,
     commune_name_ascii: "Bir El Hammam",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "691d19f9-dc00-408f-bea4-bd225ed36863"
   },
   {
     id: 811,
     commune_name_ascii: "Merine",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "dee0488b-89fe-49a9-867d-af90327c8ad4"
   },
   {
     id: 834,
     commune_name_ascii: "Tefessour",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "909f25fa-cd14-4312-a068-414a9e6874bd"
   },
   {
     id: 833,
     commune_name_ascii: "Taoudmout",
     wilaya_code: "22",
-    itemId: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4"
+    itemId: "3e3530f9-f5dd-42a0-869b-2bc5d6934efe"
   },
   {
     id: 842,
@@ -4857,103 +4857,103 @@ export const cities = [
     id: 850,
     commune_name_ascii: "Seraidi",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "e3121eae-bebc-471c-8a44-84b675bb42e7"
   },
   {
     id: 843,
     commune_name_ascii: "Berrahal",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "da871166-80f7-4b9b-bd3a-e75ede3206e7"
   },
   {
     id: 849,
     commune_name_ascii: "Oued El Aneb",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "ee4dd723-e34c-4cea-9862-f01c2f447d11"
   },
   {
     id: 848,
     commune_name_ascii: "El Hadjar",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "d3100549-3387-4593-99f0-bf03f3dab100"
   },
   {
     id: 851,
     commune_name_ascii: "Sidi Amar",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "0efdcba3-2805-4470-9250-d059171c734e"
   },
   {
     id: 846,
     commune_name_ascii: "El Bouni",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "d8bf8ec0-8441-43d7-a7bd-df09f6821aed"
   },
   {
     id: 841,
     commune_name_ascii: "Ain El Berda",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "87513f21-5aa8-4854-a657-28ae9b91bd12"
   },
   {
     id: 845,
     commune_name_ascii: "Cheurfa",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "a0de1145-79bb-49a2-9744-0c218ce2c119"
   },
   {
     id: 847,
     commune_name_ascii: "El Eulma",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "62762808-0c86-4c6a-a605-146a6d124fa3"
   },
   {
     id: 852,
     commune_name_ascii: "Treat",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "8befd98f-f6b0-4c3f-b4ce-faf437ade43e"
   },
   {
     id: 844,
     commune_name_ascii: "Chetaibi",
     wilaya_code: "23",
-    itemId: "3fd318e8-7c24-480c-a106-21f6c842583d"
+    itemId: "7aea0a2e-41c0-4ca6-811c-bf58461aea5f"
   },
   {
     id: 875,
     commune_name_ascii: "Nechmaya",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "754947d8-a885-4236-a9af-f92d75f6244e"
   },
   {
     id: 863,
     commune_name_ascii: "Bou Hamdane",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "d1c77b7e-c919-4d01-97de-1cbe362e5838"
   },
   {
     id: 872,
     commune_name_ascii: "Hammam Debagh",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "2e7970e4-81cc-43d9-a50f-c0221eabae6f"
   },
   {
     id: 884,
     commune_name_ascii: "Roknia",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "678af5ad-00cf-4504-b1c2-775ef5faf3bf"
   },
   {
     id: 867,
     commune_name_ascii: "Dahouara",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "2846d70f-0e26-4d91-8c3f-72ff403dcc6f"
   },
   {
     id: 873,
     commune_name_ascii: "Hammam N'bail",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "ec389b6c-d1eb-474b-8e09-7d43ddec877f"
   },
   {
     id: 871,
@@ -4965,229 +4965,229 @@ export const cities = [
     id: 866,
     commune_name_ascii: "Boumahra Ahmed",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "ec0528c2-4ee1-431f-a19a-f019c3ab45be"
   },
   {
     id: 853,
     commune_name_ascii: "Ain Ben Beida",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "caf8d454-8af1-4e2b-8c59-1c582881162b"
   },
   {
     id: 865,
     commune_name_ascii: "Bouchegouf",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "a7c8020c-516e-4d2d-b3ce-0992b8bb2ee2"
   },
   {
     id: 878,
     commune_name_ascii: "Medjez Sfa",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "e909699a-56f2-4eb6-9879-2b82e593123c"
   },
   {
     id: 881,
     commune_name_ascii: "Oued Ferragha",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "692c830c-5e8e-4ad8-b887-caf34f8e317b"
   },
   {
     id: 864,
     commune_name_ascii: "Bouati Mahmoud",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "0c136fee-f675-4f5e-b765-e305d80ce793"
   },
   {
     id: 869,
     commune_name_ascii: "El Fedjoudj",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "30e09463-a8ca-43e3-940a-002d4739d2c2"
   },
   {
     id: 874,
     commune_name_ascii: "Heliopolis",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "8a8bcb77-a597-499c-a1f0-9665e7b11d82"
   },
   {
     id: 877,
     commune_name_ascii: "Medjez Amar",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "f0835646-e309-4d8b-8294-b0bffe0d7611"
   },
   {
     id: 879,
     commune_name_ascii: "Houari Boumedienne",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "bdc0d559-c0dc-4cab-b743-a3c3e35d6197"
   },
   {
     id: 883,
     commune_name_ascii: "Ras El Agba",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "ecc61d05-ec6c-4601-aec8-5a19b2f74a24"
   },
   {
     id: 885,
     commune_name_ascii: "Sellaoua Announa",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "fbe48dc5-dfc7-472b-a176-bf75e2c6f8d4"
   },
   {
     id: 868,
     commune_name_ascii: "Djeballah Khemissi",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "7b98a54a-0575-46e8-87cf-7549f68b11e3"
   },
   {
     id: 861,
     commune_name_ascii: "Bordj Sabath",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "b933243e-175f-49ac-8920-dd18e06246a2"
   },
   {
     id: 882,
     commune_name_ascii: "Oued Zenati",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "154fc8ef-f45e-444b-9bef-43176c591627"
   },
   {
     id: 856,
     commune_name_ascii: "Ain Regada",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "52de75f8-11b8-423c-87b8-651e12aa8a08"
   },
   {
     id: 854,
     commune_name_ascii: "Ain Larbi",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "d618bfb2-a729-4e4f-916d-59ca0cf8cd5f"
   },
   {
     id: 855,
     commune_name_ascii: "Ain Makhlouf",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "4378455f-0fd8-4a04-832b-e1814aa1c997"
   },
   {
     id: 886,
     commune_name_ascii: "Tamlouka",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "a4eb840c-93cd-4672-8a28-4c5c1076fba1"
   },
   {
     id: 857,
     commune_name_ascii: "Ain Sandel",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "a29f68d7-9eb9-4b36-b86f-4abf68b835b3"
   },
   {
     id: 862,
     commune_name_ascii: "Bou Hachana",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "960e5228-6484-4cef-922c-9642621a7198"
   },
   {
     id: 876,
     commune_name_ascii: "Khezaras",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "e88b288f-7968-4ace-a598-12cc305533f8"
   },
   {
     id: 858,
     commune_name_ascii: "Belkheir",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "b40e66dd-4e3a-4730-ac1e-cb5a6ba479ee"
   },
   {
     id: 860,
     commune_name_ascii: "Beni Mezline",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "9c563dc8-2186-4100-9b6f-c11fe352423a"
   },
   {
     id: 870,
     commune_name_ascii: "Guelaat Bou Sbaa",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "57d3e4c2-dd1b-489c-b37d-e91c8f6397a4"
   },
   {
     id: 880,
     commune_name_ascii: "Oued Cheham",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "b7eb9a21-ee38-41e1-9976-5d1aad94ebdf"
   },
   {
     id: 859,
     commune_name_ascii: "Bendjarah",
     wilaya_code: "24",
-    itemId: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd"
+    itemId: "ed28ed37-f1ba-4fd7-8bda-c727ca0a3a2e"
   },
   {
     id: 892,
     commune_name_ascii: "Didouche Mourad",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "69c44c53-2bb7-44fd-a074-97a500a28511"
   },
   {
     id: 894,
     commune_name_ascii: "Hamma Bouziane",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "52dc3a6b-19be-4510-8544-0b947c7d331e"
   },
   {
     id: 890,
     commune_name_ascii: "Beni Hamidane",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "bbe82c4e-e72b-4fc6-a604-7962c4757f6f"
   },
   {
     id: 898,
     commune_name_ascii: "Zighoud Youcef",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "f7841a41-1023-46fe-a2ed-eb54b3a6504c"
   },
   {
     id: 888,
     commune_name_ascii: "Ain Smara",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "692fa553-6835-476a-bd84-63777da38fcf"
   },
   {
     id: 893,
     commune_name_ascii: "El Khroub",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "07eb43c2-c141-48cd-8334-661717d8d3f0"
   },
   {
     id: 897,
     commune_name_ascii: "Ouled Rahmoun",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "fddb0a7e-fe60-4841-a072-22a10b417835"
   },
   {
     id: 887,
     commune_name_ascii: "Ain Abid",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "58050f9a-284e-4fca-b5f5-8234617bc7e2"
   },
   {
     id: 889,
     commune_name_ascii: "Ben Badis",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "de46b03f-4ad9-42b2-ba1d-65527280e37b"
   },
   {
     id: 895,
     commune_name_ascii: "Ibn Ziad",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "58bbb055-1dd1-4641-b951-60a464d91b04"
   },
   {
     id: 896,
     commune_name_ascii: "Messaoud Boudjeriou",
     wilaya_code: "25",
-    itemId: "e9a1e9cf-8475-4768-94cc-0888d094ff47"
+    itemId: "eb4514a0-c692-4fd8-922e-488a61f29b2f"
   },
   {
     id: 891,
@@ -5199,7 +5199,7 @@ export const cities = [
     id: 943,
     commune_name_ascii: "Ouled Hellal",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "d642c3a5-4733-4aa8-a254-a00ba1908e11"
   },
   {
     id: 956,
@@ -5211,91 +5211,91 @@ export const cities = [
     id: 929,
     commune_name_ascii: "Ksar El Boukhari",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "915b57fd-cce7-4dca-9d6e-cb95ff21f605"
   },
   {
     id: 934,
     commune_name_ascii: "M'fatha",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "94fac03b-9e48-43e1-bd6c-ddcbb53579c6"
   },
   {
     id: 947,
     commune_name_ascii: "Saneg",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "10b059f5-b0a1-4332-a5f5-79a90105b268"
   },
   {
     id: 920,
     commune_name_ascii: "El Azizia",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "d5967b7f-fd4f-4bd1-ac56-1ff388e091c8"
   },
   {
     id: 930,
     commune_name_ascii: "Maghraoua",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "6d0da3a2-e09b-4071-82c2-c3e4685b6bd8"
   },
   {
     id: 935,
     commune_name_ascii: "Mihoub",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "5a4bcb0c-3b2f-41c6-965e-993ab0b60cf4"
   },
   {
     id: 909,
     commune_name_ascii: "Bouaiche",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "b934deeb-113d-4fb4-8103-5051638438a9"
   },
   {
     id: 912,
     commune_name_ascii: "Boughzoul",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "22c14da8-339f-4558-a046-a69b0746385e"
   },
   {
     id: 914,
     commune_name_ascii: "Chabounia",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "821b0ca9-527d-47ce-b99f-6975b4f2c6aa"
   },
   {
     id: 926,
     commune_name_ascii: "Hannacha",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "b1f8ab59-e8a5-450c-ad24-ee08b133aff4"
   },
   {
     id: 936,
     commune_name_ascii: "Ouamri",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "c489a319-b08a-4c96-b60b-3da8e236de3f"
   },
   {
     id: 937,
     commune_name_ascii: "Oued Harbil",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "532590d7-2d73-4a38-90d1-2c6261da6402"
   },
   {
     id: 905,
     commune_name_ascii: "Beni Slimane",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "583bea30-3523-4cff-b28c-90159a2997b7"
   },
   {
     id: 910,
     commune_name_ascii: "Bouaichoune",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "21d05e88-26b9-4173-8ecb-90f8a85639ec"
   },
   {
     id: 939,
     commune_name_ascii: "Ouled Bouachra",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "4f956de9-1995-4cda-ac65-8fe3ccfaaa11"
   },
   {
     id: 950,
@@ -5307,7 +5307,7 @@ export const cities = [
     id: 913,
     commune_name_ascii: "Bouskene",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "5f1f8833-5efc-471c-b13b-a196cf7cf14e"
   },
   {
     id: 953,
@@ -5319,25 +5319,25 @@ export const cities = [
     id: 906,
     commune_name_ascii: "Berrouaghia",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "ad23d863-371f-417b-ad15-e6de05ec4baa"
   },
   {
     id: 941,
     commune_name_ascii: "Ouled Deid",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "fe3dfd0d-c990-448d-b0eb-586d1a1c45c7"
   },
   {
     id: 946,
     commune_name_ascii: "Rebaia",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "22104b79-cb2b-4a39-9436-3fbbfbc43f1b"
   },
   {
     id: 932,
     commune_name_ascii: "Medjebar",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "0ed5585e-ff85-4561-8244-e301a7e1fe76"
   },
   {
     id: 961,
@@ -5355,19 +5355,19 @@ export const cities = [
     id: 901,
     commune_name_ascii: "Aissaouia",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "87a11673-1a2f-4e3b-b68c-629af666c902"
   },
   {
     id: 923,
     commune_name_ascii: "El Haoudane",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "cab14803-1fba-4247-aa5b-8891f6f30579"
   },
   {
     id: 933,
     commune_name_ascii: "Mezerana",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "6aa738f6-d8aa-4fad-8541-d0338010bd69"
   },
   {
     id: 957,
@@ -5379,7 +5379,7 @@ export const cities = [
     id: 908,
     commune_name_ascii: "Boghar",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "db211bee-0fcc-4859-9ab7-e7414ccf1087"
   },
   {
     id: 949,
@@ -5391,7 +5391,7 @@ export const cities = [
     id: 919,
     commune_name_ascii: "Draa Esmar",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "ca9efdac-2188-4581-ac92-178e61dbda2e"
   },
   {
     id: 931,
@@ -5409,19 +5409,19 @@ export const cities = [
     id: 904,
     commune_name_ascii: "Ben Chicao",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "2a96d9a8-636d-469d-bf40-5b25def92e85"
   },
   {
     id: 922,
     commune_name_ascii: "El Hamdania",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "9b9ecf3b-602f-4042-ab8c-928933df288f"
   },
   {
     id: 945,
     commune_name_ascii: "Ouzera",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "c4224090-4d03-49b3-9fc1-6af7ce639448"
   },
   {
     id: 960,
@@ -5433,25 +5433,25 @@ export const cities = [
     id: 899,
     commune_name_ascii: "Ain Boucif",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "d88005df-fe0f-4154-b21e-11e1e3f32849"
   },
   {
     id: 925,
     commune_name_ascii: "El Ouinet",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "9ce34166-3bc2-46e9-b756-4e4473c5329a"
   },
   {
     id: 927,
     commune_name_ascii: "Kef Lakhdar",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "ba400a41-0151-4bf5-805d-2cdd799f9ad0"
   },
   {
     id: 942,
     commune_name_ascii: "Ouled Emaaraf",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "93d03b52-1316-4c79-be8f-3c9129e9a047"
   },
   {
     id: 951,
@@ -5463,55 +5463,55 @@ export const cities = [
     id: 903,
     commune_name_ascii: "Baata",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "477cb38f-87be-49bf-af01-28558c00fbdb"
   },
   {
     id: 924,
     commune_name_ascii: "El Omaria",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "ac866a30-1f1a-41ac-8999-b424df633f83"
   },
   {
     id: 940,
     commune_name_ascii: "Ouled Brahim",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "b6ac24eb-201c-458c-82e1-406be2481040"
   },
   {
     id: 907,
     commune_name_ascii: "Bir Ben Laabed",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "33bebd53-98e3-4b36-aa08-8f085769ff46"
   },
   {
     id: 921,
     commune_name_ascii: "El Guelbelkebir",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "e1491ba7-4a69-4274-821a-1142942850c4"
   },
   {
     id: 948,
     commune_name_ascii: "Sedraya",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "6fc51630-b618-465f-a7be-646a82c3c349"
   },
   {
     id: 900,
     commune_name_ascii: "Ain Ouksir",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "20bad11c-3a4e-42c0-86e0-21afd28b249c"
   },
   {
     id: 915,
     commune_name_ascii: "Chelalet El Adhaoura",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "bbcb5320-3659-45a6-b535-09c7eb687032"
   },
   {
     id: 916,
     commune_name_ascii: "Cheniguel",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "b0ec9cb3-a770-40fd-ad73-e350a1001a5f"
   },
   {
     id: 958,
@@ -5523,13 +5523,13 @@ export const cities = [
     id: 911,
     commune_name_ascii: "Bouchrahil",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "b344cd56-8e98-4a08-bd27-5e07f75622d2"
   },
   {
     id: 928,
     commune_name_ascii: "Khams Djouamaa",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "5fe58113-73bd-4455-ac49-8d8f7431e4a6"
   },
   {
     id: 952,
@@ -5541,25 +5541,25 @@ export const cities = [
     id: 902,
     commune_name_ascii: "Aziz",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "aa40d2ed-389e-46ae-8f5c-3cff16050b83"
   },
   {
     id: 917,
     commune_name_ascii: "Derrag",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "d9390689-a991-4e90-ac14-6a0f6a390826"
   },
   {
     id: 944,
     commune_name_ascii: "Oum El Djellil",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "913a628e-e9bf-43a9-a16e-30ef447b0074"
   },
   {
     id: 918,
     commune_name_ascii: "Djouab",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "466d9c40-d4e9-46b6-971b-c8eff8465009"
   },
   {
     id: 954,
@@ -5577,7 +5577,7 @@ export const cities = [
     id: 938,
     commune_name_ascii: "Ouled Antar",
     wilaya_code: "26",
-    itemId: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff"
+    itemId: "f4af6720-a110-44e4-87a2-b4c3d98ad8ff"
   },
   {
     id: 970,
@@ -5745,7 +5745,7 @@ export const cities = [
     id: 976,
     commune_name_ascii: "Mansourah",
     wilaya_code: "27",
-    itemId: "d7175ca6-6dd7-4dfb-a399-d388e782473a"
+    itemId: "cd4baaa2-fd46-4e1d-94b6-50ac300441e1"
   },
   {
     id: 978,
@@ -5937,7 +5937,7 @@ export const cities = [
     id: 1036,
     commune_name_ascii: "Sidi M'hamed",
     wilaya_code: "28",
-    itemId: "75ca308d-ab36-44e2-9702-2e2300a57b8c"
+    itemId: "0b93d266-f7d8-4e87-98dc-9ea01cf8ed9c"
   },
   {
     id: 1020,
@@ -5949,7 +5949,7 @@ export const cities = [
     id: 1021,
     commune_name_ascii: "Menaa",
     wilaya_code: "28",
-    itemId: "75ca308d-ab36-44e2-9702-2e2300a57b8c"
+    itemId: "74ff93ef-f07d-4e95-a8b9-0811398467fc"
   },
   {
     id: 1010,
@@ -6003,7 +6003,7 @@ export const cities = [
     id: 1024,
     commune_name_ascii: "M'tarfa",
     wilaya_code: "28",
-    itemId: "75ca308d-ab36-44e2-9702-2e2300a57b8c"
+    itemId: "1f4e2dfe-6f48-43b1-b3d8-7e46e1f37d18"
   },
   {
     id: 1017,
@@ -6075,7 +6075,7 @@ export const cities = [
     id: 1072,
     commune_name_ascii: "Mohammadia",
     wilaya_code: "29",
-    itemId: "a17a6482-3f48-4948-aaf2-8a653c4c1110"
+    itemId: "1adde934-fc18-48a1-805f-728569f44e18"
   },
   {
     id: 1085,
@@ -6141,7 +6141,7 @@ export const cities = [
     id: 1051,
     commune_name_ascii: "Chorfa",
     wilaya_code: "29",
-    itemId: "a17a6482-3f48-4948-aaf2-8a653c4c1110"
+    itemId: "8c4751ef-24f0-45db-bf06-3c52e861980f"
   },
   {
     id: 1049,
@@ -6351,7 +6351,7 @@ export const cities = [
     id: 1089,
     commune_name_ascii: "Ain Beida",
     wilaya_code: "30",
-    itemId: "ada333a0-708d-476e-a97d-fd70fe661b09"
+    itemId: "6e743974-1d6d-44d2-9d65-475debc85350"
   },
   {
     id: 1095,
@@ -6471,7 +6471,7 @@ export const cities = [
     id: 1112,
     commune_name_ascii: "Ain Turk",
     wilaya_code: "31",
-    itemId: "e772eb46-276a-4f41-bae7-3b67e1bdc616"
+    itemId: "540ed93f-4b1b-47cb-8f11-0535ce439949"
   },
   {
     id: 1131,
@@ -6949,7 +6949,7 @@ export const cities = [
     id: 1228,
     commune_name_ascii: "Timezrit",
     wilaya_code: "35",
-    itemId: "f823492c-f79d-4c2d-befe-933bf9917a65"
+    itemId: "b8c0dd06-b04c-4a18-a397-b97b5921a2de"
   },
   {
     id: 1229,
@@ -7111,13 +7111,13 @@ export const cities = [
     id: 1253,
     commune_name_ascii: "Zitouna",
     wilaya_code: "36",
-    itemId: "e6f4b09c-f63e-42af-92bc-dab9b422c34d"
+    itemId: "3df10e9a-d38c-4acc-b21a-8f6cea1dacc9"
   },
   {
     id: 1235,
     commune_name_ascii: "Besbes",
     wilaya_code: "36",
-    itemId: "e6f4b09c-f63e-42af-92bc-dab9b422c34d"
+    itemId: "9c2d90b7-e126-4d6f-9058-a7d8d4908729"
   },
   {
     id: 1231,
@@ -7313,7 +7313,7 @@ export const cities = [
     id: 1263,
     commune_name_ascii: "Larbaa",
     wilaya_code: "38",
-    itemId: "fb1a9f7a-81a2-4825-af92-79f9d187637f"
+    itemId: "b1053caa-6b7d-429c-b40e-fec2419928ec"
   },
   {
     id: 1266,
@@ -7385,7 +7385,7 @@ export const cities = [
     id: 1283,
     commune_name_ascii: "El Ogla",
     wilaya_code: "39",
-    itemId: "cd82549a-b1f7-48c1-9a25-2f3f05b80b1d"
+    itemId: "0d643bd0-070e-4f57-bc90-afbec2053c48"
   },
   {
     id: 1291,
@@ -7451,7 +7451,7 @@ export const cities = [
     id: 1304,
     commune_name_ascii: "Taghzout",
     wilaya_code: "39",
-    itemId: "cd82549a-b1f7-48c1-9a25-2f3f05b80b1d"
+    itemId: "5354b782-3ae3-4769-89d2-71ef2207402a"
   },
   {
     id: 1287,
@@ -7643,7 +7643,7 @@ export const cities = [
     id: 1329,
     commune_name_ascii: "Ain Soltane",
     wilaya_code: "41",
-    itemId: "56d30b7a-465a-462c-bc2a-3e132c89be63"
+    itemId: "a259e199-36cd-4a9b-a897-a5f55e2669dc"
   },
   {
     id: 1347,
@@ -7823,7 +7823,7 @@ export const cities = [
     id: 1381,
     commune_name_ascii: "Sidi-Amar",
     wilaya_code: "42",
-    itemId: "1435179a-6dbb-4d9c-a186-c521b2a57319"
+    itemId: "0efdcba3-2805-4470-9250-d059171c734e"
   },
   {
     id: 1368,
@@ -7931,7 +7931,7 @@ export const cities = [
     id: 1363,
     commune_name_ascii: "Chaiba",
     wilaya_code: "42",
-    itemId: "1435179a-6dbb-4d9c-a186-c521b2a57319"
+    itemId: "b0d3eb9a-bfc9-4aea-bba9-3526dd85b10c"
   },
   {
     id: 1372,
@@ -8165,7 +8165,7 @@ export const cities = [
     id: 1415,
     commune_name_ascii: "Ain-Benian",
     wilaya_code: "44",
-    itemId: "8d2d130f-460c-4867-85ef-641341a4d586"
+    itemId: "6bc1447c-ebef-4806-8c16-bd5f3ebbedc8"
   },
   {
     id: 1420,
@@ -8285,7 +8285,7 @@ export const cities = [
     id: 1419,
     commune_name_ascii: "Ain-Soltane",
     wilaya_code: "44",
-    itemId: "8d2d130f-460c-4867-85ef-641341a4d586"
+    itemId: "a259e199-36cd-4a9b-a897-a5f55e2669dc"
   },
   {
     id: 1444,
@@ -8543,7 +8543,7 @@ export const cities = [
     id: 1476,
     commune_name_ascii: "Emir Abdelkader",
     wilaya_code: "46",
-    itemId: "fc460ec5-3e71-489c-b95b-e5301ea68341"
+    itemId: "8d67a81d-250d-43fa-ae22-09effc6b5506"
   },
   {
     id: 1488,
@@ -8747,7 +8747,7 @@ export const cities = [
     id: 1515,
     commune_name_ascii: "El Ouldja",
     wilaya_code: "48",
-    itemId: "ad58c5ee-868d-4acb-8f03-409f97a10370"
+    itemId: "54ee3066-5f7e-4405-8c7b-dd4042c2e879"
   },
   {
     id: 1522,
@@ -8843,7 +8843,7 @@ export const cities = [
     id: 1513,
     commune_name_ascii: "El Hassi",
     wilaya_code: "48",
-    itemId: "ad58c5ee-868d-4acb-8f03-409f97a10370"
+    itemId: "891d4701-f5c5-4f5a-afc0-bfe2fc3a9ea4"
   },
   {
     id: 1536,
@@ -8968,31 +8968,31 @@ export const cities = [
     id: 258,
     commune_name_ascii: "Ras El Miad",
     wilaya_code: "51",
-    itemId: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c"
+    itemId: "aff09f34-2d21-460f-a4e3-b7c7ca08d9f4"
   },
   {
     id: 232,
     commune_name_ascii: "Besbes",
     wilaya_code: "51",
-    itemId: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c"
+    itemId: "9c2d90b7-e126-4d6f-9058-a7d8d4908729"
   },
   {
     id: 259,
     commune_name_ascii: "Sidi Khaled",
     wilaya_code: "51",
-    itemId: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c"
+    itemId: "f1828ccf-5f14-4cf4-8158-4d0c02b18af9"
   },
   {
     id: 240,
     commune_name_ascii: "Doucen",
     wilaya_code: "51",
-    itemId: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c"
+    itemId: "8bc9b68b-22b0-48ba-9ed6-59230a7af1d7"
   },
   {
     id: 237,
     commune_name_ascii: "Chaiba",
     wilaya_code: "51",
-    itemId: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c"
+    itemId: "b0d3eb9a-bfc9-4aea-bba9-3526dd85b10c"
   },
   {
     id: 255,
@@ -9010,79 +9010,79 @@ export const cities = [
     id: 282,
     commune_name_ascii: "Tamtert",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "409a0997-b0d5-4f6c-910d-60bbc064c3ee"
   },
   {
     id: 271,
     commune_name_ascii: "Igli",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "63ca947f-cf7d-48aa-bc99-783ef9152211"
   },
   {
     id: 269,
     commune_name_ascii: "El Ouata",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "063fd029-7155-458c-9981-c61a28f10783"
   },
   {
     id: 279,
     commune_name_ascii: "Ouled-Khodeir",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "44e629de-7ae6-4125-8ca6-2f7e3f772af2"
   },
   {
     id: 273,
     commune_name_ascii: "Kerzaz",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "7b3826f7-49b6-4cfa-9242-d8634d31b730"
   },
   {
     id: 283,
     commune_name_ascii: "Timoudi",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "f94e277e-ad61-4005-bcd6-c405a376f934"
   },
   {
     id: 274,
     commune_name_ascii: "Ksabi",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "2d6789e4-30ad-42ad-8844-a958c7a1d0ec"
   },
   {
     id: 266,
     commune_name_ascii: "Beni-Ikhlef",
     wilaya_code: "52",
-    itemId: "ba12c65c-de9e-4f30-a449-6ba0b27dd7d7"
+    itemId: "f684e81f-d80b-473e-8f2f-732f44a0eec6"
   },
   {
     id: 360,
     commune_name_ascii: "Inghar",
     wilaya_code: "53",
-    itemId: "7c752560-8412-4e11-8c75-ed7cd9c22be2"
+    itemId: "c19f1edd-c294-4323-a3f6-5983c285bf4f"
   },
   {
     id: 357,
     commune_name_ascii: "Ain Salah",
     wilaya_code: "53",
-    itemId: "7c752560-8412-4e11-8c75-ed7cd9c22be2"
+    itemId: "81622af1-2248-4042-a054-b9059b38572a"
   },
   {
     id: 358,
     commune_name_ascii: "Foggaret Ezzoua",
     wilaya_code: "53",
-    itemId: "7c752560-8412-4e11-8c75-ed7cd9c22be2"
+    itemId: "e08d1a13-40c5-42ad-8902-be8d4c016a3e"
   },
   {
     id: 363,
     commune_name_ascii: "Tin Zouatine",
     wilaya_code: "54",
-    itemId: "f30136dc-3012-4ac7-912c-33eab37393a9"
+    itemId: "3d6a326d-f46d-4a24-b3b6-937df621e0bd"
   },
   {
     id: 356,
     commune_name_ascii: "Ain Guezzam",
     wilaya_code: "54",
-    itemId: "f30136dc-3012-4ac7-912c-33eab37393a9"
+    itemId: "5d7f6ee0-fd28-4b04-92b2-c6012b66e737"
   },
   {
     id: 1107,
