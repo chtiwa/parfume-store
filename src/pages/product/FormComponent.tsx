@@ -35,10 +35,12 @@ interface FormState {
   phoneNumber: string
   productName: string
   brand: string
-  // productId: string
+  productId: string
   state: string
+  stateId: string
   stateNumber: string | ""
   city: string
+  cityId: string
   shippingMethod: string
   shippingPrice: number
   totalPrice: number
@@ -58,6 +60,10 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
 
   const [errors, setErrors] = useState<FormErrors>({})
+
+  useEffect(() => {
+    console.log("stated id: ", form.stateId, "city id: ", form.cityId)
+  }, [form.cityId, form.stateId])
 
   useEffect(() => {
     if (form.stateNumber && form.shippingMethod && form.selectedVariantItem) {
@@ -95,13 +101,21 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       //  @ts-ignore
       const selectedOptions = e.target.selectedOptions[0]
       const stateNumber = selectedOptions.getAttribute("data-idwilaya")
+      const stateId = selectedOptions.getAttribute("data-id")
 
       //  @ts-ignore
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: stateNumber || ""
+        stateNumber: stateNumber || "",
+        stateId: stateId || ""
       }))
+    } else if (name === "city") {
+      //  @ts-ignore
+      const selectedOptions = e.target.selectedOptions[0]
+      const cityId = selectedOptions.getAttribute("data-itemId")
+      //  @ts-ignore
+      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId: cityId }))
     } else {
       //  @ts-ignore
       setForm((prev: FormState) => ({ ...prev, [name]: value }))
@@ -305,7 +319,11 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
                     (c) => Number(c.wilaya_code) === Number(form.stateNumber)
                   )
                   ?.map((c, i) => (
-                    <option value={c.commune_name_ascii} key={i}>
+                    <option
+                      value={c.commune_name_ascii}
+                      key={i}
+                      data-itemId={c.itemId}
+                    >
                       {c.commune_name_ascii}
                     </option>
                   ))}

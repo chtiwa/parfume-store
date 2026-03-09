@@ -25,8 +25,10 @@ const Product = () => {
     fullName: "",
     phoneNumber: "",
     state: "Alger",
+    stateId: "",
     stateNumber: "16",
     city: "",
+    cityId: "",
     // @ts-ignore
     price: 0,
     shippingMethod: "Domicile",
@@ -60,9 +62,9 @@ const Product = () => {
           setForm((prev) => ({
             ...prev,
             productName: data.data.title,
+            productId: data.data.productId,
             brand: data.data.brand,
             tags: data.data.tags,
-            productId: data.data.productId,
             variants: variants,
             selectedVariantItem: foundVariant,
             price: foundVariant.price,
