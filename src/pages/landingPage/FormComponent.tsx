@@ -5,6 +5,7 @@ import ShippingForm from "../product/ShippingForm.tsx"
 import { BsFillSignpostFill } from "react-icons/bs"
 import { BiChevronDown } from "react-icons/bi"
 import { tarifs, cities, bureaux } from "../../data.ts"
+import { hubs } from "../../hubs.ts"
 import { useAppDispatch } from "../../features/hooks.ts"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
 import QauntityComponent from "../product/QauntityComponent.tsx"
@@ -86,32 +87,82 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     setErrors({}) // Clear errors when variant changes
   }, [form.selectedVariantItem])
 
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  // ) => {
+  //   const { name, value } = e.target
+
+  //   if (name === "state") {
+  //     //  @ts-ignore
+  //     const selectedOptions = e.target.selectedOptions[0]
+  //     const stateNumber = selectedOptions.getAttribute("data-idwilaya")
+  //     const stateId = selectedOptions.getAttribute("data-id")
+
+  //     //  @ts-ignore
+  //     setForm((prev: FormState) => ({
+  //       ...prev,
+  //       state: value,
+  //       stateNumber: stateNumber || "",
+  //       stateId: stateId || ""
+  //     }))
+  //   } else if (name === "city") {
+  //     //  @ts-ignore
+  //     const selectedOptions = e.target.selectedOptions[0]
+  //     const cityId = selectedOptions.getAttribute("data-itemId")
+  //     //  @ts-ignore
+  //     setForm((prev: FormState) => ({ ...prev, [name]: value, cityId: cityId }))
+  //   } else {
+  //     //  @ts-ignore
+  //     setForm((prev: FormState) => ({ ...prev, [name]: value }))
+  //   }
+  // }
+
+  // Add these before the component
+  const stateMap: Record<string, { stateNumber: string; stateId: string }> = {}
+  tarifs.forEach((tarif) => {
+    if (tarif.Domicile !== "0") {
+      stateMap[tarif.Wilaya] = {
+        stateNumber: tarif.IDWilaya,
+        stateId: tarif.id
+      }
+    }
+  })
+
+  const cityMapDomicile: Record<string, string> = {}
+  const cityMapStopdesk: Record<string, string> = {}
+  cities.forEach((c) => {
+    // @ts-ignore
+    cityMapDomicile[c.commune_name_ascii] = c.itemId
+  })
+  bureaux.forEach((b) => {
+    b.headquarters.forEach((h) => {
+      // @ts-ignore
+      cityMapStopdesk[h] = b.stateNumber // Or whatever ID logic fits your data
+    })
+  })
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target
 
     if (name === "state") {
-      //  @ts-ignore
-      const selectedOptions = e.target.selectedOptions[0]
-      const stateNumber = selectedOptions.getAttribute("data-idwilaya")
-      const stateId = selectedOptions.getAttribute("data-id")
-
-      //  @ts-ignore
+      const lookup = stateMap[value]
+      // @ts-ignore
       setForm((prev: FormState) => ({
         ...prev,
         state: value,
-        stateNumber: stateNumber || "",
-        stateId: stateId || ""
+        stateNumber: lookup?.stateNumber || "",
+        stateId: lookup?.stateId || ""
       }))
     } else if (name === "city") {
-      //  @ts-ignore
-      const selectedOptions = e.target.selectedOptions[0]
-      const cityId = selectedOptions.getAttribute("data-itemId")
-      //  @ts-ignore
-      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId: cityId }))
+      const cityMap =
+        form.shippingMethod === "Domicile" ? cityMapDomicile : cityMapStopdesk
+      const cityId = cityMap[value] || ""
+      // @ts-ignore
+      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId }))
     } else {
-      //  @ts-ignore
+      // @ts-ignore
       setForm((prev: FormState) => ({ ...prev, [name]: value }))
     }
   }
@@ -350,22 +401,45 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
               name="city"
               value={form.city}
               className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
-              onChange={handleChange}
+              onChange={(e) => {
+                const selectedHub = hubs.find(
+                  (hub) =>
+                    Number(hub.stateNumber) === Number(form.stateNumber) &&
+                    hub.isPickupPoint === true &&
+                    hub.name === e.target.value
+                )
+
+                if (selectedHub) {
+                  // @ts-ignore
+                  setForm((prev: FormState) => ({
+                    ...prev,
+                    city: selectedHub.name,
+                    hubId: selectedHub.id,
+                    cityId: selectedHub.address.districtTerritoryId,
+                    stateId: selectedHub.address.cityTerritoryId
+                  }))
+                } else {
+                  // @ts-ignore
+                  setForm((prev: FormState) => ({
+                    ...prev,
+                    [e.target.name]: e.target.value
+                  }))
+                }
+              }}
             >
+              <option value="">اختر مكتب الاستلام</option>
               {form.state !== "" &&
-                bureaux
+                hubs
                   ?.filter(
-                    // @ts-ignore
-                    (b) => Number(b.stateNumber) === Number(form.stateNumber)
+                    (hub) =>
+                      Number(hub.stateNumber) === Number(form.stateNumber) &&
+                      hub.isPickupPoint === true
                   )
-                  ?.map((b) =>
-                    // @ts-ignore
-                    b.headquarters.map((h: string, i: number) => (
-                      <option value={h} key={i}>
-                        {h}
-                      </option>
-                    ))
-                  )}
+                  ?.map((hub) => (
+                    <option key={hub.id} value={hub.name}>
+                      {hub.name}
+                    </option>
+                  ))}
             </select>
           )}
           <BiChevronDown

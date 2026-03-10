@@ -9711,11 +9711,27 @@ export const tarifs = [
 export const bureaux = [
   {
     stateNumber: 1,
-    headquarters: ["ADRAR"]
+    headquarters: [
+      {
+        name: "ADRAR",
+        hubId: "ee77ffe4-19bf-4e34-9435-01a4b7670b7a",
+        cityId: "6e978fc5-f20a-4b5f-9adf-61dd21a7672a"
+      }
+    ]
   },
   {
     stateNumber: 2,
-    headquarters: ["CHLEF", "TENES"]
+    headquarters: [
+      {
+        name: "CHLEF",
+        hubId: "46a61165-5378-484d-a0c9-f5c1df785df9",
+        cityId: "981f136a-996f-463e-a536-8e643daab193"
+      },
+      {
+        name: "TENES",
+        hubId: "a53e622e-f201-4ea9-a443-b2c1682fadc3",
+        cityId: "981f136a-996f-463e-a536-8e643daab193"
+      }]
   },
   {
     stateNumber: 3,

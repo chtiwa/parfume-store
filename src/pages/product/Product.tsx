@@ -25,8 +25,9 @@ const Product = () => {
     fullName: "",
     phoneNumber: "",
     state: "Alger",
-    stateId: "",
+    stateId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4",
     stateNumber: "16",
+    hubId: "",
     city: "",
     cityId: "",
     // @ts-ignore
@@ -62,7 +63,7 @@ const Product = () => {
           setForm((prev) => ({
             ...prev,
             productName: data.data.title,
-            productId: data.data.productId,
+            productId: data.data.id,
             brand: data.data.brand,
             tags: data.data.tags,
             variants: variants,

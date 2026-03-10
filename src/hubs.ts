@@ -1538,33 +1538,33 @@ export const hubs = [
     },
     createdAt: "2025-11-07T13:52:27.9451583+00:00"
   },
-  //   {
-  //     id: "02b9859e-17be-452a-9158-acdddddea798",
-  //     name: "CENTRE DE TRI Chlef 02 مركز فرز الشلف",
-  //     type: "sorting-center-hub",
-  //     stateNumber: "02",
-  //     isPickupPoint: false,
-  //     address: {
-  //       street: "Rue du 20 Août",
-  //       city: "Chlef",
-  //       cityTerritoryId: "981f136a-996f-463e-a536-8e643daab193",
-  //       district: "Chlef",
-  //       districtTerritoryId: "fc22bf39-a1f5-44bf-ac5e-b25280768926",
-  //       postalCode: "02000",
-  //       country: "algeria",
-  //       coordinates: {
-  //         lat: 36.164063463311095,
-  //         lng: 1.3338088989257815
-  //       }
-  //     },
-  //     openingHours: "08:30-16:30",
-  //     phone: {
-  //       number1: "+213770993571",
-  //       number2: "",
-  //       number3: ""
-  //     },
-  //     createdAt: "2025-11-06T23:18:43.6807123+00:00"
-  //   },
+  {
+    id: "02b9859e-17be-452a-9158-acdddddea798",
+    name: "CENTRE DE TRI Chlef 02 مركز فرز الشلف",
+    type: "sorting-center-hub",
+    stateNumber: "02",
+    isPickupPoint: false,
+    address: {
+      street: "Rue du 20 Août",
+      city: "Chlef",
+      cityTerritoryId: "981f136a-996f-463e-a536-8e643daab193",
+      district: "Chlef",
+      districtTerritoryId: "fc22bf39-a1f5-44bf-ac5e-b25280768926",
+      postalCode: "02000",
+      country: "algeria",
+      coordinates: {
+        lat: 36.164063463311095,
+        lng: 1.3338088989257815
+      }
+    },
+    openingHours: "08:30-16:30",
+    phone: {
+      number1: "+213770993571",
+      number2: "",
+      number3: ""
+    },
+    createdAt: "2025-11-06T23:18:43.6807123+00:00"
+  },
   {
     id: "0da58310-7e5b-4825-ab4a-ae3b290894a5",
     name: "Hub Médéa 26 مكتب المدية",
@@ -2402,32 +2402,32 @@ export const hubs = [
     },
     createdAt: "2025-11-07T11:03:36.4054017+00:00"
   },
-  //   {
-  //     id: "2429e83e-a56d-4069-9205-fc70fec84725",
-  //     name: "Tri Souakria 16 مركز فرز سواكرية",
-  //     type: "sorting-center",
-  //     isPickupPoint: false,
-  //     address: {
-  //       street: "SOUAKRIA",
-  //       city: "Alger",
-  //       cityTerritoryId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4",
-  //       district: "Les Eucalyptus",
-  //       districtTerritoryId: "68a7377a-1fa3-427a-b136-f5c1842cffc2",
-  //       postalCode: "16057",
-  //       country: "algeria",
-  //       coordinates: {
-  //         lat: 36.65238162377833,
-  //         lng: 3.204244673252106
-  //       }
-  //     },
-  //     openingHours: "08:30-16:30",
-  //     phone: {
-  //       number1: "+213770085300",
-  //       number2: "",
-  //       number3: ""
-  //     },
-  //     createdAt: "2025-11-08T01:06:48.6689121+00:00"
-  //   },
+  {
+    id: "2429e83e-a56d-4069-9205-fc70fec84725",
+    name: "Tri Souakria 16 مركز فرز سواكرية",
+    type: "sorting-center",
+    isPickupPoint: false,
+    address: {
+      street: "SOUAKRIA",
+      city: "Alger",
+      cityTerritoryId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4",
+      district: "Les Eucalyptus",
+      districtTerritoryId: "68a7377a-1fa3-427a-b136-f5c1842cffc2",
+      postalCode: "16057",
+      country: "algeria",
+      coordinates: {
+        lat: 36.65238162377833,
+        lng: 3.204244673252106
+      }
+    },
+    openingHours: "08:30-16:30",
+    phone: {
+      number1: "+213770085300",
+      number2: "",
+      number3: ""
+    },
+    createdAt: "2025-11-08T01:06:48.6689121+00:00"
+  },
   {
     id: "7d6e7a8c-c5b0-4495-8271-fcf24efd3d7d",
     name: "Hub Ouled Djellal 51 مكتب أولاد جلال",

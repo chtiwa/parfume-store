@@ -20,7 +20,10 @@ const LandingPage = () => {
     phoneNumber: "",
     state: "Alger",
     stateNumber: 16,
+    hubId: "",
+    stateId: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4",
     city: "",
+    cityId: "",
     // @ts-ignore
     price: 0,
     shippingMethod: "Domicile",
