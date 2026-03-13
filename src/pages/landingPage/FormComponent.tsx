@@ -14,6 +14,7 @@ import Variants from "../product/Variants.tsx"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
 import { toast } from "sonner"
+import TikTokPixel from "tiktok-pixel"
 
 interface FormErrors {
   fullName?: string
@@ -219,6 +220,21 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           orderedProductTitle: product.title
         })
       )
+
+      if (source === "tiktok") {
+        TikTokPixel.track("Purchase", {
+          // @ts-ignore
+          value: parseFloat(form.price), // Number, not string
+          currency: "DZD",
+          order_id: res.order_id,
+          contents: [
+            {
+              content_id: res.order_id,
+              content_type: "product" // Fixed: always 'product', not productName
+            }
+          ]
+        })
+      }
     }
   }
 
