@@ -15,6 +15,8 @@ import PrivacyPolicy from "./pages/termsOfService/PrivacyPolicy"
 import Pack from "./pages/pack/Pack"
 import LandingPage from "./pages/landingPage/LandingPage"
 import MetaPixel from "./components/MetaPixel"
+import { useEffect } from "react"
+import TikTokPixel from "tiktok-pixel"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,6 +48,11 @@ const router = createBrowserRouter(
 )
 
 const App = () => {
+  useEffect(() => {
+    // Init pixel - your pixel ID
+    TikTokPixel.init("D4BHC4BC77U50IDU7SFG")
+    TikTokPixel.pageView() // Page view
+  }, [])
   return <RouterProvider router={router} />
 }
 

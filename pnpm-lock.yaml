@@ -56,6 +56,9 @@ dependencies:
   tailwindcss:
     specifier: ^4.1.10
     version: 4.1.10
+  tiktok-pixel:
+    specifier: ^2.0.3
+    version: 2.0.3(react@19.1.0)
 
 devDependencies:
   '@eslint/js':
@@ -2909,6 +2912,15 @@ packages:
       minizlib: 3.0.2
       mkdirp: 3.0.1
       yallist: 5.0.0
+    dev: false
+
+  /tiktok-pixel@2.0.3(react@19.1.0):
+    resolution: {integrity: sha512-OL55YB/GK7cjqD0vMeIy9WDasQik2kxEE83hb5v6a1STD8dNx47llMScLjXhZ+0B7lNdbxy9kFfCv8S807xgaQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 19.1.0
     dev: false
 
   /tinyglobby@0.2.14:
