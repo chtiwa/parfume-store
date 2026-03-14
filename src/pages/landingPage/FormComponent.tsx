@@ -22,6 +22,7 @@ interface FormErrors {
   state?: string
   city?: string
   shippingMethod?: string
+  orderLimit?: string
 }
 
 interface Product {
@@ -39,7 +40,7 @@ interface FormState {
   productId: string
   state: string
   stateId: string
-  stateNumber: string | ""
+  stateNumber: string
   city: string
   cityId: string
   hubId: string
@@ -47,107 +48,99 @@ interface FormState {
   shippingPrice: number
   totalPrice: number
   quantity: number
-  selectedVariantItem: { price: number; value: string }
+  selectedVariantItem: { price: number; value: string } | null
 }
 
 interface FormComponentProps {
   product: Product
   form: FormState
-  setForm: (form: FormState) => void
+  setForm: React.Dispatch<React.SetStateAction<FormState>>
 }
+
+// Precompute maps OUTSIDE component if possible (to avoid re‑creation every render)
+const stateMap: Record<string, { stateNumber: string; stateId: string }> = {}
+tarifs.forEach((tarif) => {
+  if (tarif.Domicile !== "0") {
+    stateMap[tarif.Wilaya] = {
+      stateNumber: tarif.IDWilaya,
+      stateId: tarif.id
+    }
+  }
+})
+
+const cityMapDomicile: Record<string, string> = {}
+const cityMapStopdesk: Record<string, string> = {}
+
+cities.forEach((c) => {
+  // @ts-ignore
+  cityMapDomicile[c.commune_name_ascii] = c.itemId
+})
+
+bureaux.forEach((b) => {
+  b.headquarters.forEach((h) => {
+    // @ts-ignore
+    cityMapStopdesk[h] = b.stateNumber
+  })
+})
 
 const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
-
   const [errors, setErrors] = useState<FormErrors>({})
 
+  // Recompute shipping / total whenever relevant pieces change
   useEffect(() => {
-    if (form?.stateNumber && form.shippingMethod && form.selectedVariantItem) {
-      // @ts-ignore
-      setForm((prev: FormState) => ({
+    setForm((prev) => {
+      if (
+        !prev.stateNumber ||
+        !prev.shippingMethod ||
+        !prev.selectedVariantItem
+      ) {
+        return {
+          ...prev,
+          shippingPrice: 0,
+          totalPrice: prev.selectedVariantItem
+            ? prev.selectedVariantItem.price * prev.quantity
+            : 0
+        }
+      }
+
+      const index = Number(prev.stateNumber) - 1
+      const tarifRow = tarifs[index]
+      const shippingPriceRaw =
+        tarifRow && prev.shippingMethod in tarifRow
+          ? // @ts-ignore
+            Number(tarifRow[prev.shippingMethod])
+          : 0
+
+      const shippingPrice = isNaN(shippingPriceRaw) ? 0 : shippingPriceRaw
+      const productPrice =
+        Number(prev.selectedVariantItem.price) * prev.quantity
+
+      return {
         ...prev,
-        // @ts-ignore
-        shippingPrice: Number(
-          // @ts-ignore
-          tarifs[Number(form.stateNumber) - 1][form.shippingMethod]
-        ),
-        totalPrice:
-          Number(form.selectedVariantItem.price) * prev.quantity +
-          // @ts-ignore
-          Number(tarifs[Number(form.stateNumber) - 1][form.shippingMethod])
-      }))
-    }
+        shippingPrice,
+        totalPrice: productPrice + shippingPrice
+      }
+    })
   }, [
     form.stateNumber,
     form.shippingMethod,
+    form.quantity,
     form.selectedVariantItem,
-    form.quantity
+    setForm
   ])
 
+  // Clear errors when variant changes
   useEffect(() => {
-    setErrors({}) // Clear errors when variant changes
+    setErrors({})
   }, [form.selectedVariantItem])
 
-  useEffect(() => {
-    console.log("state id", form.stateId)
-    console.log("city id", form.cityId)
-    console.log("hub id", form.hubId)
-  }, [form.stateId, form.cityId, form.hubId])
-
-  // const handleChange = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  // ) => {
-  //   const { name, value } = e.target
-
-  //   if (name === "state") {
-  //     //  @ts-ignore
-  //     const selectedOptions = e.target.selectedOptions[0]
-  //     const stateNumber = selectedOptions.getAttribute("data-idwilaya")
-  //     const stateId = selectedOptions.getAttribute("data-id")
-
-  //     //  @ts-ignore
-  //     setForm((prev: FormState) => ({
-  //       ...prev,
-  //       state: value,
-  //       stateNumber: stateNumber || "",
-  //       stateId: stateId || ""
-  //     }))
-  //   } else if (name === "city") {
-  //     //  @ts-ignore
-  //     const selectedOptions = e.target.selectedOptions[0]
-  //     const cityId = selectedOptions.getAttribute("data-itemId")
-  //     //  @ts-ignore
-  //     setForm((prev: FormState) => ({ ...prev, [name]: value, cityId: cityId }))
-  //   } else {
-  //     //  @ts-ignore
-  //     setForm((prev: FormState) => ({ ...prev, [name]: value }))
-  //   }
-  // }
-
-  // Add these before the component
-  const stateMap: Record<string, { stateNumber: string; stateId: string }> = {}
-  tarifs.forEach((tarif) => {
-    if (tarif.Domicile !== "0") {
-      stateMap[tarif.Wilaya] = {
-        stateNumber: tarif.IDWilaya,
-        stateId: tarif.id
-      }
-    }
-  })
-
-  const cityMapDomicile: Record<string, string> = {}
-  const cityMapStopdesk: Record<string, string> = {}
-  cities.forEach((c) => {
-    // @ts-ignore
-    cityMapDomicile[c.commune_name_ascii] = c.itemId
-  })
-  bureaux.forEach((b) => {
-    b.headquarters.forEach((h) => {
-      // @ts-ignore
-      cityMapStopdesk[h] = b.stateNumber // Or whatever ID logic fits your data
-    })
-  })
+  // useEffect(() => {
+  //   console.log("state id", form.stateId)
+  //   console.log("city id", form.cityId)
+  //   console.log("hub id", form.hubId)
+  // }, [form.stateId, form.cityId, form.hubId])
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -156,71 +149,92 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
     if (name === "state") {
       const lookup = stateMap[value]
-      // @ts-ignore
-      setForm((prev: FormState) => ({
+      setForm((prev) => ({
         ...prev,
         state: value,
-        stateNumber: lookup?.stateNumber || "",
-        stateId: lookup?.stateId || ""
+        stateNumber: lookup?.stateNumber ?? "",
+        stateId: lookup?.stateId ?? "",
+        // reset dependent fields
+        city: "",
+        cityId: "",
+        hubId: ""
       }))
-    } else if (name === "city") {
-      const cityMap =
-        form.shippingMethod === "Domicile" ? cityMapDomicile : cityMapStopdesk
-      const cityId = cityMap[value] || ""
-      // @ts-ignore
-      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId }))
-    } else {
-      // @ts-ignore
-      setForm((prev: FormState) => ({ ...prev, [name]: value }))
+      return
     }
+
+    if (name === "city") {
+      setForm((prev) => {
+        // Use prev.shippingMethod (not outer form) to avoid stale reads
+        const isDomicile = prev.shippingMethod === "Domicile"
+        const cityMap = isDomicile ? cityMapDomicile : cityMapStopdesk
+        const cityId = cityMap[value] ?? ""
+
+        return {
+          ...prev,
+          city: value,
+          cityId
+        }
+      })
+      return
+    }
+
+    // default text input / other fields
+    setForm((prev) => ({
+      ...prev,
+      [name]: value
+    }))
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Check last order timestamp in localStorage
+
     const lastOrderTime = localStorage.getItem("lastOrderTime")
     const now = Date.now()
-    const oneDayInMs = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+    const oneDayInMs = 24 * 60 * 60 * 1000
 
-    if (lastOrderTime && now - parseInt(lastOrderTime) < oneDayInMs) {
+    if (lastOrderTime && now - parseInt(lastOrderTime, 10) < oneDayInMs) {
       const timeLeft = Math.ceil(
-        (oneDayInMs - (now - parseInt(lastOrderTime))) / (60 * 60 * 1000)
+        (oneDayInMs - (now - parseInt(lastOrderTime, 10))) / (60 * 60 * 1000)
       )
+      const msg = `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       setErrors((prev) => ({
         ...prev,
-        orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
+        orderLimit: msg
       }))
-      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
+      toast(msg)
       return
-    } else {
-      if (validateForm()) {
-        handleCreateOrder()
-      }
+    }
+
+    if (validateForm()) {
+      void handleCreateOrder()
     }
   }
 
   const handleCreateOrder = async () => {
-    // get the facebook params
     const { fbclid, fbp, fbc } = getFacebookParams()
     const { ttclid } = getTikTokParams()
-    let source = "organic"
+
+    let source: "organic" | "facebook" | "tiktok" = "organic"
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
 
-    const res = await createOrder({
+    const payload = {
       ...form,
       stateNumber: `${form.stateNumber}`,
-      variant: form.selectedVariantItem.value,
+      variant: form.selectedVariantItem?.value ?? "",
       FBclid: fbclid,
       FBp: fbp,
       FBc: fbc,
       Ttclid: ttclid,
       conversionSource: source
-    }).unwrap()
+    }
+
+    const res = await createOrder(payload).unwrap()
+
     if (res.success) {
-      // Store current timestamp in localStorage
       const now = Date.now()
       localStorage.setItem("lastOrderTime", now.toString())
+
       dispatch(
         setIsSuccessModalOpen({
           isSuccessModalOpen: true,
@@ -230,14 +244,13 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
       if (source === "tiktok") {
         TikTokPixel.track("Purchase", {
-          // @ts-ignore
-          value: parseFloat(form.price), // Number, not string
+          value: Number(form.totalPrice) || 0,
           currency: "DZD",
           order_id: res.order_id,
           contents: [
             {
               content_id: res.order_id,
-              content_type: "product" // Fixed: always 'product', not productName
+              content_type: "product"
             }
           ]
         })
@@ -253,35 +266,30 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const validateForm = () => {
     const newErrors: FormErrors = {}
 
-    // Check for fullName
     if (!form.fullName || !form.fullName.trim()) {
       newErrors.fullName = "يجب عليك كتابة اسمك"
     }
 
-    // Check for phoneNumber
     if (!form.phoneNumber || !form.phoneNumber.trim()) {
       newErrors.phoneNumber = "يجب عليك كتابة رقمك"
     } else if (!isValidPhoneNumber(form.phoneNumber)) {
       newErrors.phoneNumber = "يجب عليك كتابة رقم صحيح"
     }
 
-    // Check for state
     if (!form.state || !form.state.trim()) {
       newErrors.state = "يجب عليك كتابة ولايتك"
     }
 
-    // Check for city
     if (!form.city || !form.city.trim()) {
       newErrors.city = "يجب عليك كتابة مدينتك"
     }
 
-    // Check for shippingMethod
     if (!form.shippingMethod || !form.shippingMethod.trim()) {
       newErrors.shippingMethod = "يجب عليك اختيار طريقة شحن"
     } else if (
       form.stateNumber &&
       form.shippingMethod === "Stopdesk" &&
-      tarifs[Number(form.stateNumber) - 1]["Stopdesk"] === "0"
+      tarifs[Number(form.stateNumber) - 1]?.["Stopdesk"] === "0"
     ) {
       newErrors.shippingMethod = "يجب عليك اختيار طريقة شحن صالحة"
     }
@@ -296,6 +304,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       className="w-full max-w-xl px-4 flex flex-col gap-2 rtl"
       id="landing-page-form"
     >
+      {/* UI unchanged except for using new handleChange */}
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
         <span className="text-3xl sm:text-4xl font-extrabold text-black leading-none w-full px-2 sm:px-4">
           {form?.productName}
@@ -305,7 +314,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
         <span className="text-3xl sm:text-4xl font-semibold text-red-500 line-through">
           {product?.oldPrice} {" د.ج"}
-          {/* {"3900"} {" د.ج"} */}
         </span>
       </div>
 
@@ -322,6 +330,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       <span className="mt-2">
         {"يرجى التأكد من تعبئة جميع الحقول الإلزامية في النموذج أدناه."}
       </span>
+
       <div className="flex flex-col gap-2">
         <label htmlFor="fullName">الاسم الكامل :</label>
         <div className="relative w-full">
@@ -340,6 +349,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.fullName}</span>
         )}
       </div>
+
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="phoneNumber">رقم الهاتف :</label>
         <div className="relative w-full">
@@ -358,6 +368,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.phoneNumber}</span>
         )}
       </div>
+
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="state">الولاية :</label>
         <div className="relative w-full">
@@ -367,16 +378,12 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
             className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
             onChange={handleChange}
           >
+            <option value="">اختر ولايتك</option>
             {tarifs?.map((tarif, i) => {
-              const { IDWilaya, Wilaya, Domicile, id } = tarif
+              const { IDWilaya, Wilaya, Domicile } = tarif
               if (Domicile !== "0") {
                 return (
-                  <option
-                    value={Wilaya}
-                    key={i}
-                    data-idwilaya={IDWilaya}
-                    data-id={id}
-                  >
+                  <option value={Wilaya} key={i}>
                     {IDWilaya}-{Wilaya}
                   </option>
                 )
@@ -394,6 +401,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.state}</span>
         )}
       </div>
+
       <div className="flex flex-col gap-2 w-full">
         <label htmlFor="city">البلدية :</label>
         <div className="relative w-full">
@@ -404,17 +412,14 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
               className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
               onChange={handleChange}
             >
-              {form.state !== "" &&
+              <option value="">اختر بلديتك</option>
+              {form.stateNumber !== "" &&
                 cities
                   ?.filter(
                     (c) => Number(c.wilaya_code) === Number(form.stateNumber)
                   )
                   ?.map((c, i) => (
-                    <option
-                      value={c.commune_name_ascii}
-                      data-itemId={c.itemId}
-                      key={i}
-                    >
+                    <option value={c.commune_name_ascii} key={i}>
                       {c.commune_name_ascii}
                     </option>
                   ))}
@@ -425,33 +430,38 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
               value={form.city}
               className="border-2 border-gray-700 outline-0 pt-2 pb-2.5 pr-16 w-full appearance-none rounded"
               onChange={(e) => {
-                const selectedHub = hubs.find(
-                  (hub) =>
-                    Number(hub.stateNumber) === Number(form.stateNumber) &&
-                    hub.isPickupPoint === true &&
-                    hub.name === e.target.value
-                )
+                const value = e.target.value
+                setForm((prev) => {
+                  if (!prev.stateNumber) {
+                    return { ...prev, city: value }
+                  }
 
-                if (selectedHub) {
-                  // @ts-ignore
-                  setForm((prev: FormState) => ({
+                  const selectedHub = hubs.find(
+                    (hub) =>
+                      Number(hub.stateNumber) === Number(prev.stateNumber) &&
+                      hub.isPickupPoint === true &&
+                      hub.name === value
+                  )
+
+                  if (selectedHub) {
+                    return {
+                      ...prev,
+                      city: selectedHub.name,
+                      hubId: selectedHub.id,
+                      cityId: selectedHub.address.districtTerritoryId,
+                      stateId: selectedHub.address.cityTerritoryId
+                    }
+                  }
+
+                  return {
                     ...prev,
-                    city: selectedHub.name,
-                    hubId: selectedHub.id,
-                    cityId: selectedHub.address.districtTerritoryId,
-                    stateId: selectedHub.address.cityTerritoryId
-                  }))
-                } else {
-                  // @ts-ignore
-                  setForm((prev: FormState) => ({
-                    ...prev,
-                    [e.target.name]: e.target.value
-                  }))
-                }
+                    city: value
+                  }
+                })
               }}
             >
               <option value="">اختر مكتب الاستلام</option>
-              {form.state !== "" &&
+              {form.stateNumber !== "" &&
                 hubs
                   ?.filter(
                     (hub) =>
@@ -475,16 +485,24 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           <span className="text-red-500 text-base">{errors.city}</span>
         )}
       </div>
+
       <QauntityComponent form={form} setForm={setForm} />
       <ShippingForm form={form} setForm={setForm} tarifs={tarifs} />
+
       {errors.shippingMethod && (
         <span className="text-red-500 text-base">{errors.shippingMethod}</span>
       )}
+      {errors.orderLimit && (
+        <span className="text-red-500 text-base">{errors.orderLimit}</span>
+      )}
+
       <div className="flex items-center justify-between gap-2 w-full pt-4 font-semibold text-lg sm:text-xl">
-        <span className="">المجموع :</span>
+        <span>المجموع :</span>
         <span>{form.totalPrice} د.ج</span>
       </div>
+
       {error && <span className="text-red-500">Internal Server Error</span>}
+
       <button
         className="flex items-center justify-center px-8 pt-2 pb-2.5 border border-gray-500 font-bold text-xl text-white bg-black hover:scale-105 hover:border-green-500 animate-bounce transition duration-300 cursor-pointer mt-8 rounded"
         type="submit"

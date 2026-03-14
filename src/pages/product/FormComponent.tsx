@@ -54,8 +54,33 @@ interface FormState {
 interface FormComponentProps {
   product: Product
   form: FormState
-  setForm: (form: FormState) => void
+  setForm: React.Dispatch<React.SetStateAction<FormState>>
 }
+// Precompute maps OUTSIDE component if possible (to avoid re‑creation every render)
+const stateMap: Record<string, { stateNumber: string; stateId: string }> = {}
+tarifs.forEach((tarif) => {
+  if (tarif.Domicile !== "0") {
+    stateMap[tarif.Wilaya] = {
+      stateNumber: tarif.IDWilaya,
+      stateId: tarif.id
+    }
+  }
+})
+
+const cityMapDomicile: Record<string, string> = {}
+const cityMapStopdesk: Record<string, string> = {}
+
+cities.forEach((c) => {
+  // @ts-ignore
+  cityMapDomicile[c.commune_name_ascii] = c.itemId
+})
+
+bureaux.forEach((b) => {
+  b.headquarters.forEach((h) => {
+    // @ts-ignore
+    cityMapStopdesk[h] = b.stateNumber
+  })
+})
 
 const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   // const { id } = useParams()
@@ -64,31 +89,52 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
   const [errors, setErrors] = useState<FormErrors>({})
 
+  // Recompute shipping / total whenever relevant pieces change
   useEffect(() => {
-    if (form.stateNumber && form.shippingMethod && form.selectedVariantItem) {
-      // @ts-ignore
-      setForm((prev: FormState) => ({
+    setForm((prev) => {
+      if (
+        !prev.stateNumber ||
+        !prev.shippingMethod ||
+        !prev.selectedVariantItem
+      ) {
+        return {
+          ...prev,
+          shippingPrice: 0,
+          totalPrice: prev.selectedVariantItem
+            ? prev.selectedVariantItem.price * prev.quantity
+            : 0
+        }
+      }
+
+      const index = Number(prev.stateNumber) - 1
+      const tarifRow = tarifs[index]
+      const shippingPriceRaw =
+        tarifRow && prev.shippingMethod in tarifRow
+          ? // @ts-ignore
+            Number(tarifRow[prev.shippingMethod])
+          : 0
+
+      const shippingPrice = isNaN(shippingPriceRaw) ? 0 : shippingPriceRaw
+      const productPrice =
+        Number(prev.selectedVariantItem.price) * prev.quantity
+
+      return {
         ...prev,
-        // @ts-ignore
-        shippingPrice: Number(
-          // @ts-ignore
-          tarifs[Number(form.stateNumber) - 1][form.shippingMethod]
-        ),
-        totalPrice:
-          Number(form.selectedVariantItem.price) * prev.quantity +
-          // @ts-ignore
-          Number(tarifs[Number(form.stateNumber) - 1][form.shippingMethod])
-      }))
-    }
+        shippingPrice,
+        totalPrice: productPrice + shippingPrice
+      }
+    })
   }, [
     form.stateNumber,
     form.shippingMethod,
+    form.quantity,
     form.selectedVariantItem,
-    form.quantity
+    setForm
   ])
 
+  // Clear errors when variant changes
   useEffect(() => {
-    setErrors({}) // Clear errors when variant changes
+    setErrors({})
   }, [form.selectedVariantItem])
 
   // const handleChange = (
@@ -121,30 +167,6 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   //   }
   // }
 
-  // Add these before the component
-  const stateMap: Record<string, { stateNumber: string; stateId: string }> = {}
-  tarifs.forEach((tarif) => {
-    if (tarif.Domicile !== "0") {
-      stateMap[tarif.Wilaya] = {
-        stateNumber: tarif.IDWilaya,
-        stateId: tarif.id
-      }
-    }
-  })
-
-  const cityMapDomicile: Record<string, string> = {}
-  const cityMapStopdesk: Record<string, string> = {}
-  cities.forEach((c) => {
-    // @ts-ignore
-    cityMapDomicile[c.commune_name_ascii] = c.itemId
-  })
-  bureaux.forEach((b) => {
-    b.headquarters.forEach((h) => {
-      // @ts-ignore
-      cityMapStopdesk[h] = b.stateNumber // Or whatever ID logic fits your data
-    })
-  })
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
@@ -152,95 +174,115 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
     if (name === "state") {
       const lookup = stateMap[value]
-      // @ts-ignore
-      setForm((prev: FormState) => ({
+      setForm((prev) => ({
         ...prev,
         state: value,
-        stateNumber: lookup?.stateNumber || "",
-        stateId: lookup?.stateId || ""
+        stateNumber: lookup?.stateNumber ?? "",
+        stateId: lookup?.stateId ?? "",
+        // reset dependent fields
+        city: "",
+        cityId: "",
+        hubId: ""
       }))
-    } else if (name === "city") {
-      const cityMap =
-        form.shippingMethod === "Domicile" ? cityMapDomicile : cityMapStopdesk
-      const cityId = cityMap[value] || ""
-      // @ts-ignore
-      setForm((prev: FormState) => ({ ...prev, [name]: value, cityId }))
-    } else {
-      // @ts-ignore
-      setForm((prev: FormState) => ({ ...prev, [name]: value }))
+      return
     }
+
+    if (name === "city") {
+      setForm((prev) => {
+        // Use prev.shippingMethod (not outer form) to avoid stale reads
+        const isDomicile = prev.shippingMethod === "Domicile"
+        const cityMap = isDomicile ? cityMapDomicile : cityMapStopdesk
+        const cityId = cityMap[value] ?? ""
+
+        return {
+          ...prev,
+          city: value,
+          cityId
+        }
+      })
+      return
+    }
+
+    // default text input / other fields
+    setForm((prev) => ({
+      ...prev,
+      [name]: value
+    }))
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Check last order timestamp in localStorage
+
     const lastOrderTime = localStorage.getItem("lastOrderTime")
     const now = Date.now()
-    const oneDayInMs = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+    const oneDayInMs = 24 * 60 * 60 * 1000
 
-    if (lastOrderTime && now - parseInt(lastOrderTime) < oneDayInMs) {
+    if (lastOrderTime && now - parseInt(lastOrderTime, 10) < oneDayInMs) {
       const timeLeft = Math.ceil(
-        (oneDayInMs - (now - parseInt(lastOrderTime))) / (60 * 60 * 1000)
+        (oneDayInMs - (now - parseInt(lastOrderTime, 10))) / (60 * 60 * 1000)
       )
+      const msg = `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
       setErrors((prev) => ({
         ...prev,
-        orderLimit: `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
+        orderLimit: msg
       }))
-      toast(`يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`)
+      toast(msg)
       return
     }
 
     if (validateForm()) {
-      console.log(form)
-      handleCreateOrder()
+      void handleCreateOrder()
     }
   }
 
   const handleCreateOrder = async () => {
-    // get the facebook params
     const { fbclid, fbp, fbc } = getFacebookParams()
     const { ttclid } = getTikTokParams()
-    let source = "organic"
+
+    let source: "organic" | "facebook" | "tiktok" = "organic"
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
 
-    // console.log(product.data.id)
-    const res = await createOrder({
+    const payload = {
       ...form,
       stateNumber: `${form.stateNumber}`,
-      variant: form.selectedVariantItem.value,
+      variant: form.selectedVariantItem?.value ?? "",
       FBclid: fbclid,
       FBp: fbp,
       FBc: fbc,
       Ttclid: ttclid,
       conversionSource: source
-    }).unwrap()
+    }
+
+    // console.log(form)
+    // return
+
+    const res = await createOrder(payload).unwrap()
+
     if (res.success) {
-      // Store current timestamp in localStorage
       const now = Date.now()
       localStorage.setItem("lastOrderTime", now.toString())
+
       dispatch(
         setIsSuccessModalOpen({
           isSuccessModalOpen: true,
           orderedProductTitle: product.title
         })
       )
+
       if (source === "tiktok") {
         TikTokPixel.track("Purchase", {
-          // @ts-ignore
-          value: parseFloat(form.price), // Number, not string
+          value: Number(form.totalPrice) || 0,
           currency: "DZD",
           order_id: res.order_id,
           contents: [
             {
               content_id: res.order_id,
-              content_type: "product" // Fixed: always 'product', not productName
+              content_type: "product"
             }
           ]
         })
       }
-
-      console.log("TikTok Purchase fired:", res.order_id) // Debug
     }
   }
 
