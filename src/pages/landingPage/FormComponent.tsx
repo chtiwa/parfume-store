@@ -42,6 +42,7 @@ interface FormState {
   stateNumber: string | ""
   city: string
   cityId: string
+  hubId: string
   shippingMethod: string
   shippingPrice: number
   totalPrice: number
@@ -87,6 +88,12 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   useEffect(() => {
     setErrors({}) // Clear errors when variant changes
   }, [form.selectedVariantItem])
+
+  useEffect(() => {
+    console.log("state id", form.stateId)
+    console.log("city id", form.cityId)
+    console.log("hub id", form.hubId)
+  }, [form.stateId, form.cityId, form.hubId])
 
   // const handleChange = (
   //   e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
