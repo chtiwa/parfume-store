@@ -9254,48 +9254,48 @@ export const tarifs = [
     IDWilaya: "02",
     id: "981f136a-996f-463e-a536-8e643daab193",
     Wilaya: "Chlef",
-    Domicile: "650",
-    Stopdesk: "200",
+    Domicile: "700",
+    Stopdesk: "300",
     Annuler: "150"
   },
   {
     IDWilaya: "03",
     id: "00b5ef4b-ae2e-4b7f-bd26-70c1a376b69b",
     Wilaya: "Laghouat",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "750",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "04",
     id: "37c70742-df6b-4019-981a-a16a29a14748",
     Wilaya: "Oum El Bouaghi",
-    Domicile: "650",
-    Stopdesk: "200",
+    Domicile: "750",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "05",
     id: "a8c05822-e30a-4d5a-bcb3-3b3bb23c079b",
     Wilaya: "Batna",
-    Domicile: "650",
-    Stopdesk: "200",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "06",
     id: "295585ad-4cf4-4b7e-b276-9bb62d019749",
     Wilaya: "Bejaia",
-    Domicile: "650",
-    Stopdesk: "200",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "07",
     id: "796e70df-1102-44da-9582-2da66ead2ba6",
     Wilaya: "Biskra",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "750",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9311,7 +9311,7 @@ export const tarifs = [
     id: "a7e764cf-e9ca-4c1f-8232-89852d102aec",
     Wilaya: "Blida",
     Domicile: "500",
-    Stopdesk: "250",
+    Stopdesk: "350",
     Annuler: "150"
   },
   {
@@ -9319,7 +9319,7 @@ export const tarifs = [
     id: "a1f0229c-4f34-40aa-9238-fadde6757cba",
     Wilaya: "Bouira",
     Domicile: "650",
-    Stopdesk: "250",
+    Stopdesk: "350",
     Annuler: "150"
   },
   {
@@ -9334,24 +9334,24 @@ export const tarifs = [
     IDWilaya: "12",
     id: "5afdfab6-e505-4691-abc7-5e8bd79afad5",
     Wilaya: "Tebessa",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "13",
     id: "53c9e062-9c4e-4c77-8b71-55eabf887f83",
     Wilaya: "Tlemcen",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "14",
     id: "ada5bb27-ffe5-4977-a917-3105c2b3d9c6",
     Wilaya: "Tiaret",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9359,119 +9359,119 @@ export const tarifs = [
     id: "5bef8e95-fad8-4a15-95f0-8d6f5c80f69e",
     Wilaya: "Tizi Ouzou",
     Domicile: "500",
-    Stopdesk: "250",
+    Stopdesk: "350",
     Annuler: "150"
   },
   {
     IDWilaya: "16",
     id: "d134c182-7dac-4655-9d9b-bbdb62aa2ec4",
     Wilaya: "Alger",
-    Domicile: "350",
-    Stopdesk: "150",
+    Domicile: "400",
+    Stopdesk: "250",
     Annuler: "150"
   },
   {
     IDWilaya: "17",
     id: "9ee8eac2-77e5-4d70-ac49-bde455d06bee",
     Wilaya: "Djelfa",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "18",
     id: "dc851e52-55b2-4beb-a7f1-79d4e73e9458",
     Wilaya: "Jijel",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "19",
     id: "56ee938d-7887-408e-8731-364d07ad3594",
     Wilaya: "Setif",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "20",
     id: "27b2042a-77f8-4c91-b62d-60934fa0daca",
     Wilaya: "Saida",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "21",
     id: "a9df7e26-1086-4319-8a93-19969c99c89b",
     Wilaya: "Skikda",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "22",
     id: "2cec2b2a-cc37-480a-9183-59fdfdb65cd4",
     Wilaya: "Sidi Bel Abbes",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "23",
     id: "3fd318e8-7c24-480c-a106-21f6c842583d",
     Wilaya: "Annaba",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "24",
     id: "2d1e61ff-e2af-4b4d-a592-0a6436c5fffd",
     Wilaya: "Guelma",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "25",
     id: "e9a1e9cf-8475-4768-94cc-0888d094ff47",
     Wilaya: "Constantine",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "26",
     id: "0e0f2d43-6d78-47dd-8bb7-0f2771cb97ff",
     Wilaya: "Medea",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "27",
     id: "d7175ca6-6dd7-4dfb-a399-d388e782473a",
     Wilaya: "Mostaganem",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "28",
     id: "75ca308d-ab36-44e2-9702-2e2300a57b8c",
     Wilaya: "M'Sila",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "29",
     id: "a17a6482-3f48-4948-aaf2-8a653c4c1110",
     Wilaya: "Mascara",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9479,15 +9479,15 @@ export const tarifs = [
     id: "ada333a0-708d-476e-a97d-fd70fe661b09",
     Wilaya: "Ouargla",
     Domicile: "700",
-    Stopdesk: "300",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "31",
     id: "e772eb46-276a-4f41-bae7-3b67e1bdc616",
     Wilaya: "Oran",
-    Domicile: "600",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9511,23 +9511,23 @@ export const tarifs = [
     id: "80d1b557-03b2-4073-a8c2-89a8712a7fc8",
     Wilaya: "Bordj Bou Arreridj",
     Domicile: "700",
-    Stopdesk: "250",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "35",
     id: "f823492c-f79d-4c2d-befe-933bf9917a65",
     Wilaya: "Boumerdes",
-    Domicile: "450",
-    Stopdesk: "200",
+    Domicile: "500",
+    Stopdesk: "300",
     Annuler: "150"
   },
   {
     IDWilaya: "36",
     id: "e6f4b09c-f63e-42af-92bc-dab9b422c34d",
     Wilaya: "El Tarf",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9542,56 +9542,56 @@ export const tarifs = [
     IDWilaya: "38",
     id: "fb1a9f7a-81a2-4825-af92-79f9d187637f",
     Wilaya: "Tissemsilt",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "39",
     id: "cd82549a-b1f7-48c1-9a25-2f3f05b80b1d",
     Wilaya: "El Oued",
-    Domicile: "650",
-    Stopdesk: "300",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "40",
     id: "d4549528-8327-4a3f-9732-5a5462c84b8d",
     Wilaya: "Khenchela",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "41",
     id: "56d30b7a-465a-462c-bc2a-3e132c89be63",
     Wilaya: "Souk Ahras",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "42",
     id: "1435179a-6dbb-4d9c-a186-c521b2a57319",
     Wilaya: "Tipaza",
-    Domicile: "450",
-    Stopdesk: "200",
+    Domicile: "500",
+    Stopdesk: "350",
     Annuler: "150"
   },
   {
     IDWilaya: "43",
     id: "0c8476c5-bbe4-46e4-80e5-67d3501195cc",
     Wilaya: "Mila",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "44",
     id: "8d2d130f-460c-4867-85ef-641341a4d586",
     Wilaya: "Ain Defla",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9606,24 +9606,24 @@ export const tarifs = [
     IDWilaya: "46",
     id: "fc460ec5-3e71-489c-b95b-e5301ea68341",
     Wilaya: "Ain Temouchent",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "47",
     id: "e7b51620-74f4-4748-85c5-216fb9b01b03",
     Wilaya: "Ghardaia",
-    Domicile: "650",
-    Stopdesk: "300",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
     IDWilaya: "48",
     id: "ad58c5ee-868d-4acb-8f03-409f97a10370",
     Wilaya: "Relizane",
-    Domicile: "650",
-    Stopdesk: "250",
+    Domicile: "700",
+    Stopdesk: "400",
     Annuler: "150"
   },
   {
@@ -9647,7 +9647,7 @@ export const tarifs = [
     id: "0f2dab00-094c-412c-a7d0-ebd0268d3d3c",
     Wilaya: "Ouled Djellal",
     Domicile: "900",
-    Stopdesk: "300",
+    Stopdesk: "500",
     Annuler: "150"
   },
   {
@@ -9731,7 +9731,8 @@ export const bureaux = [
         name: "TENES",
         hubId: "a53e622e-f201-4ea9-a443-b2c1682fadc3",
         cityId: "981f136a-996f-463e-a536-8e643daab193"
-      }]
+      }
+    ]
   },
   {
     stateNumber: 3,
