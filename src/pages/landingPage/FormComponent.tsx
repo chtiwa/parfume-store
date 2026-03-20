@@ -8,13 +8,13 @@ import { tarifs, cities, bureaux } from "../../data.ts"
 import { hubs } from "../../hubs.ts"
 import { useAppDispatch } from "../../features/hooks.ts"
 import { useCreateOrderMutation } from "../../services/ordersService.ts"
-import QauntityComponent from "../product/QauntityComponent.tsx"
 import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import Variants from "../product/Variants.tsx"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
 import { toast } from "sonner"
 import TikTokPixel from "tiktok-pixel"
+import QauntityComponent from "./QauntityComponent.tsx"
 
 interface FormErrors {
   fullName?: string
@@ -89,6 +89,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const [errors, setErrors] = useState<FormErrors>({})
 
   // Recompute shipping / total whenever relevant pieces change
+  // Replace the existing useEffect in FormComponent with this:
   useEffect(() => {
     setForm((prev) => {
       if (
@@ -99,9 +100,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
         return {
           ...prev,
           shippingPrice: 0,
-          totalPrice: prev.selectedVariantItem
-            ? prev.selectedVariantItem.price * prev.quantity
-            : 0
+          totalPrice: 0
         }
       }
 
@@ -112,21 +111,33 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
           ? // @ts-ignore
             Number(tarifRow[prev.shippingMethod])
           : 0
-
       const shippingPrice = isNaN(shippingPriceRaw) ? 0 : shippingPriceRaw
-      const productPrice =
-        Number(prev.selectedVariantItem.price) * prev.quantity
+
+      // FIXED: Use upsell pricing logic
+      const basePrice = Number(prev.selectedVariantItem.price)
+      let productPrice = 0
+
+      if (prev.quantity === 1) {
+        productPrice = basePrice * 1
+      } else if (prev.quantity === 2) {
+        productPrice = basePrice * 0.9 * 2 // 10% off per perfume
+      } else if (prev.quantity === 3) {
+        productPrice = basePrice * 0.8 * 3 // 20% off per perfume
+      }
+
+      // Override shipping for qty 3 (free shipping)
+      const finalShipping = prev.quantity === 3 ? 0 : shippingPrice
 
       return {
         ...prev,
-        shippingPrice,
-        totalPrice: productPrice + shippingPrice
+        shippingPrice: finalShipping,
+        totalPrice: productPrice + finalShipping
       }
     })
   }, [
     form.stateNumber,
     form.shippingMethod,
-    form.quantity,
+    form.quantity, // Now properly triggers on qty change
     form.selectedVariantItem,
     setForm
   ])
@@ -312,16 +323,16 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       </div>
 
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
-        <span className="text-3xl sm:text-4xl font-semibold text-red-500 line-through">
+        <span className="text-2xl sm:text-4xl font-semibold text-red-500 line-through">
           {product?.oldPrice} {" د.ج"}
         </span>
       </div>
 
       <div className="flex items-center justify-center w-full mb-2 gap-1 text-center">
-        <span className="text-4xl sm:text-5xl font-extrabold text-green-800 leading-none">
+        <span className="text-4xl sm:text-5xl font-extrabold text-green-700 leading-none">
           {form?.selectedVariantItem?.price}
         </span>
-        <span className="text-green-900 font-semibold text-lg sm:text-xl">
+        <span className="text-green-700 font-semibold text-2xl sm:text-3xl">
           د.ج
         </span>
       </div>
