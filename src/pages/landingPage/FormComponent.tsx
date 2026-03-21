@@ -12,9 +12,10 @@ import { setIsSuccessModalOpen } from "../../features/modalsSlice.ts"
 import Variants from "../product/Variants.tsx"
 import { getFacebookParams, getTikTokParams } from "../../utils/tracking.ts"
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
-import { toast } from "sonner"
+// import { toast } from "sonner"
 import TikTokPixel from "tiktok-pixel"
 import QauntityComponent from "./QauntityComponent.tsx"
+import { toast } from "sonner"
 
 interface FormErrors {
   fullName?: string
@@ -87,6 +88,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
   const dispatch = useAppDispatch()
   const [createOrder, { error, isLoading }] = useCreateOrderMutation()
   const [errors, setErrors] = useState<FormErrors>({})
+  const [hasAutoOrdered, setHasAutoOrdered] = useState(false)
 
   // Recompute shipping / total whenever relevant pieces change
   // Replace the existing useEffect in FormComponent with this:
@@ -147,6 +149,39 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     setErrors({})
   }, [form.selectedVariantItem])
 
+  useEffect(() => {
+    const hasBasicInfo = form.fullName?.trim() && form.phoneNumber?.trim()
+
+    const lastOrderTime = localStorage.getItem("lastAutoOrderTime")
+    const now = Date.now()
+    const oneDayInMs = 24 * 60 * 60 * 1000
+
+    if (lastOrderTime && now - parseInt(lastOrderTime, 10) < oneDayInMs) {
+      const timeLeft = Math.ceil(
+        (oneDayInMs - (now - parseInt(lastOrderTime, 10))) / (60 * 60 * 1000)
+      )
+      const msg = `يرجى الانتظار ${timeLeft} ساعة قبل تقديم طلب آخر`
+      setErrors((prev) => ({
+        ...prev,
+        orderLimit: msg
+      }))
+      toast(msg)
+      return
+    }
+
+    if (hasBasicInfo && !hasAutoOrdered) {
+      const handleBeforeUnload = () => {
+        handleSubmitOrAuto(true)
+      }
+
+      window.addEventListener("beforeunload", handleBeforeUnload)
+
+      return () => {
+        window.removeEventListener("beforeunload", handleBeforeUnload)
+      }
+    }
+  }, [form.fullName, form.phoneNumber, hasAutoOrdered])
+
   // useEffect(() => {
   //   console.log("state id", form.stateId)
   //   console.log("city id", form.cityId)
@@ -196,10 +231,13 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const handleSubmitOrAuto = async (isAuto = false) => {
+    // Skip if already auto-ordered or invalid form
+    if (hasAutoOrdered || !form.fullName || !form.phoneNumber) return
 
-    const lastOrderTime = localStorage.getItem("lastOrderTime")
+    const lastOrderTime = isAuto
+      ? localStorage.getItem("lastOrderTime")
+      : localStorage.getItem("lastAutoOrderTime")
     const now = Date.now()
     const oneDayInMs = 24 * 60 * 60 * 1000
 
@@ -216,18 +254,15 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       return
     }
 
-    if (validateForm()) {
-      void handleCreateOrder()
-    }
-  }
+    if (isAuto && !isValidPhoneNumber(form.phoneNumber)) return
 
-  const handleCreateOrder = async () => {
     const { fbclid, fbp, fbc } = getFacebookParams()
     const { ttclid } = getTikTokParams()
 
-    let source: "organic" | "facebook" | "tiktok" = "organic"
+    let source: "organic" | "facebook" | "tiktok" | "auto_pending" = "organic"
     if (fbclid) source = "facebook"
     if (ttclid) source = "tiktok"
+    if (isAuto) source = "auto_pending"
 
     const payload = {
       ...form,
@@ -237,37 +272,103 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       FBp: fbp,
       FBc: fbc,
       Ttclid: ttclid,
-      conversionSource: source
+      conversionSource: source,
+      status: isAuto ? "Abandonné" : "En attente", // Backend distinguishes
+      autoCreated: isAuto
     }
 
-    const res = await createOrder(payload).unwrap()
+    try {
+      const res = await createOrder(payload).unwrap()
 
-    if (res.success) {
-      const now = Date.now()
-      localStorage.setItem("lastOrderTime", now.toString())
+      if (res.success) {
+        // localStorage.setItem("lastOrderTime", now.toString())
+        setHasAutoOrdered(isAuto)
 
-      dispatch(
-        setIsSuccessModalOpen({
-          isSuccessModalOpen: true,
-          orderedProductTitle: product.title
-        })
-      )
+        if (isAuto) {
+          localStorage.setItem("lastAutoOrderTime", now.toString())
+        } else {
+          localStorage.setItem("lastOrderTime", now.toString())
+        }
 
-      if (source === "tiktok") {
-        TikTokPixel.track("Purchase", {
-          value: Number(form.totalPrice) || 0,
-          currency: "DZD",
-          order_id: res.order_id,
-          contents: [
-            {
-              content_id: res.order_id,
-              content_type: "product"
-            }
-          ]
-        })
+        if (!isAuto) {
+          // Manual success flow
+          dispatch(
+            setIsSuccessModalOpen({
+              isSuccessModalOpen: true,
+              orderedProductTitle: product.title
+            })
+          )
+        }
+
+        // Still track TikTok for auto orders (lead value)
+        if (source === "tiktok") {
+          TikTokPixel.track("Lead", {
+            value: 1,
+            currency: "DZD",
+            order_id: res.order_id,
+            contents: [{ content_id: res.order_id, content_type: "lead" }]
+          })
+        }
       }
+    } catch (err) {
+      console.error("Auto order failed:", err)
     }
   }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (validateForm()) {
+      void handleSubmitOrAuto(false) // false = manual order
+    }
+  }
+
+  // const handleCreateOrder = async () => {
+  //   const { fbclid, fbp, fbc } = getFacebookParams()
+  //   const { ttclid } = getTikTokParams()
+
+  //   let source: "organic" | "facebook" | "tiktok" = "organic"
+  //   if (fbclid) source = "facebook"
+  //   if (ttclid) source = "tiktok"
+
+  //   const payload = {
+  //     ...form,
+  //     stateNumber: `${form.stateNumber}`,
+  //     variant: form.selectedVariantItem?.value ?? "",
+  //     FBclid: fbclid,
+  //     FBp: fbp,
+  //     FBc: fbc,
+  //     Ttclid: ttclid,
+  //     conversionSource: source
+  //   }
+
+  //   const res = await createOrder(payload).unwrap()
+
+  //   if (res.success) {
+  //     const now = Date.now()
+  //     localStorage.setItem("lastOrderTime", now.toString())
+
+  //     dispatch(
+  //       setIsSuccessModalOpen({
+  //         isSuccessModalOpen: true,
+  //         orderedProductTitle: product.title
+  //       })
+  //     )
+
+  //     if (source === "tiktok") {
+  //       TikTokPixel.track("Purchase", {
+  //         value: Number(form.totalPrice) || 0,
+  //         currency: "DZD",
+  //         order_id: res.order_id,
+  //         contents: [
+  //           {
+  //             content_id: res.order_id,
+  //             content_type: "product"
+  //           }
+  //         ]
+  //       })
+  //     }
+  //   }
+  // }
 
   const isValidPhoneNumber = (phone: string) => {
     const regex = /^(05|06|07)\d{8}$/
