@@ -117,23 +117,23 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
 
       // FIXED: Use upsell pricing logic
       const basePrice = Number(prev.selectedVariantItem.price)
-      let productPrice = 0
+      let productPrice = basePrice * prev.quantity
 
-      if (prev.quantity === 1) {
-        productPrice = basePrice * 1
-      } else if (prev.quantity === 2) {
-        productPrice = basePrice * 0.9 * 2 // 10% off per perfume
-      } else if (prev.quantity === 3) {
-        productPrice = basePrice * 0.8 * 3 // 20% off per perfume
-      }
+      // if (prev.quantity === 1) {
+      //   productPrice = basePrice * 1
+      // } else if (prev.quantity === 2) {
+      //   productPrice = basePrice * 0.9 * 2 // 10% off per perfume
+      // } else if (prev.quantity === 3) {
+      //   productPrice = basePrice * 0.8 * 3 // 20% off per perfume
+      // }
 
-      // Override shipping for qty 3 (free shipping)
-      const finalShipping = prev.quantity === 3 ? 0 : shippingPrice
+      // // Override shipping for qty 3 (free shipping)
+      // const finalShipping = prev.quantity === 3 ? 0 : shippingPrice
 
       return {
         ...prev,
-        shippingPrice: finalShipping,
-        totalPrice: productPrice + finalShipping
+        shippingPrice: shippingPrice,
+        totalPrice: productPrice + shippingPrice
       }
     })
   }, [
