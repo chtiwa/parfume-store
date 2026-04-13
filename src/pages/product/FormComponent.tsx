@@ -48,7 +48,7 @@ interface FormState {
   shippingPrice: number
   totalPrice: number
   quantity: number
-  selectedVariantItem: { price: number; value: string }
+  selectedVariantItem: { price: number; value: string; id: string }
 }
 
 interface FormComponentProps {
@@ -247,6 +247,7 @@ const FormComponent = ({ product, form, setForm }: FormComponentProps) => {
       ...form,
       stateNumber: `${form.stateNumber}`,
       variant: form.selectedVariantItem?.value ?? "",
+      variantItemId: form.selectedVariantItem?.id ?? "",
       FBclid: fbclid,
       FBp: fbp,
       FBc: fbc,

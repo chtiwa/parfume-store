@@ -33,6 +33,7 @@ const LandingPage = () => {
     // @ts-ignore
     variants: [],
     selectedVariantItem: [],
+    variantItemId: "",
     selectedVariantItems: []
   })
 

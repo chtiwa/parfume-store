@@ -18,7 +18,7 @@ const Variants = ({ form, setForm }: VariantsProps) => {
 
               return (
                 <button
-                type="button"
+                  type="button"
                   key={item.value}
                   className={`hover:cursor-pointer border rounded px-4 py-2 text-sm flex items-center justify-center gap-2 ${
                     isSelected
@@ -37,9 +37,9 @@ const Variants = ({ form, setForm }: VariantsProps) => {
                 >
                   {item.imageUrl !== "" && (
                     <img
-                    src={item.imageUrl}
-                    alt=""
-                    className="w-10 h-10 rounded-full"
+                      src={item.imageUrl}
+                      alt=""
+                      className="w-10 h-10 rounded-full"
                     />
                   )}
                   <span className="font-semibold">{item.value}</span>

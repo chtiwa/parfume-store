@@ -23,6 +23,7 @@ const Variants = ({ form, setForm }: VariantsProps) => {
                   setForm((prev: any) => ({
                     ...prev,
                     selectedVariantItem: variantItem,
+                    variantItemId: variantItem.id,
                     price: variantItem.price
                   }))
                 }}

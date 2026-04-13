@@ -38,7 +38,8 @@ const Product = () => {
     quantity: 1,
     // @ts-ignore
     variants: [],
-    selectedVariantItem: {}
+    selectedVariantItem: {},
+    variantItemId: ""
   })
 
   useEffect(() => {
